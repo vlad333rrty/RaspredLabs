@@ -10,7 +10,7 @@ public class KeyCompare implements WritableComparable<KeyCompare> {
 
     @Override
     public void write(DataOutput out) throws IOException {
-        
+
     }
 
     @Override
