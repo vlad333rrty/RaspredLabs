@@ -13,6 +13,6 @@ public class CSVReader implements Writable {
 
     @Override
     public void readFields(DataInput in) throws IOException {
-
+        
     }
 }
