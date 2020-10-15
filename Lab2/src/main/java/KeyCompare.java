@@ -19,4 +19,9 @@ public class KeyCompare implements WritableComparable<KeyCompare> {
     public void readFields(DataInput in) throws IOException {
 
     }
+
+    @Override
+    public int compareTo(KeyCompare o) {
+        return 0;
+    }
 }
