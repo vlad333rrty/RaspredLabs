@@ -8,7 +8,7 @@ public class CSVReader implements Writable {
 
     @Override
     public void write(DataOutput out) throws IOException {
-        
+
     }
 
     @Override
