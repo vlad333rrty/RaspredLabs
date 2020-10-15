@@ -5,10 +5,8 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class KeyCompare implements WritableComparable<KeyCompare> {
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
+    private int aeroportID;
+    private boolean is
 
     @Override
     public void write(DataOutput out) throws IOException {
