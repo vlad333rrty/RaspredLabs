@@ -25,5 +25,5 @@ public class WordCountApp {
         job.setOutputValueClass(IntWritable.class);
         job.setNumReduceTasks(2);
         System.exit(job.waitForCompletion(true) ? 0 : 1);
-    }
+    }   
 }

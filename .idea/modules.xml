@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lab2/Lab2.iml" filepath="$PROJECT_DIR$/Lab2/Lab2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RaspredLabs.iml" filepath="$PROJECT_DIR$/.idea/RaspredLabs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1/hadoop-examples.iml" filepath="$PROJECT_DIR$/Lab1/hadoop-examples.iml" />
     </modules>
   </component>
 </project>
