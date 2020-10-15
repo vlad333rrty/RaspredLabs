@@ -22,11 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/main/java/com/lab/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/main/java/com/lab/WordCountApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,10 +80,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1602768445454">
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1602769744104">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1602768445454" />
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1602769744104" />
     <state x="841" y="453" width="310" height="207" key="Github.ShareDialog" timestamp="1602765329607">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -96,5 +92,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="757" y="240" width="467" height="634" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602765341281" />
+    <state x="685" y="263" width="621" height="580" key="find.popup" timestamp="1602769685519">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="685" y="263" width="621" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602769685519" />
   </component>
 </project>
