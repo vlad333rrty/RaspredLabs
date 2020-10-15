@@ -1,2 +1,2 @@
-public class CSVReader{
+public class CSVReader {
 }
