@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class KeyCompare {
+import org.apache.hadoop.io.WritableComparator;
+
+public class KeyCompare extends WritableComparator {
 }
