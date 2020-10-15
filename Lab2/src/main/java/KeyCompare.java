@@ -5,8 +5,8 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class KeyCompare implements WritableComparable<KeyCompare> {
-    private int aeroportID;
-    private boolean is
+    private int airportID;
+    private boolean withAirport;
 
     @Override
     public void write(DataOutput out) throws IOException {
@@ -15,7 +15,8 @@ public class KeyCompare implements WritableComparable<KeyCompare> {
 
     @Override
     public void readFields(DataInput in) throws IOException {
-
+        airportID=in.readInt();
+        withAirport=in.readBoolean();
     }
 
     @Override
