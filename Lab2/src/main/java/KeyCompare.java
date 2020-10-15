@@ -4,7 +4,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class KeyCompare implements WritableComparable<> {
+public class KeyCompare implements WritableComparable<KeyCompare> {
     @Override
     public int compareTo(Object o) {
         return 0;
