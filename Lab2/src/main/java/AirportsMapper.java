@@ -10,6 +10,6 @@ public class AirportsMapper extends Mapper<LongWritable, Text,Data,Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         super.map(key, value, context);
         String[] a=value.toString().split(",");
-        Arrays.stream(a).forEach(System.out::println);
+        
     }
 }
