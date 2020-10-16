@@ -14,6 +14,7 @@ public class Main {
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
             job.setMapperClass(AirportsMapper.class);
             job.setPartitionerClass(AirportPartitioner.class);
+            job.setGroupingComparatorClass(GroupComparator.class);
             job.setMapOutputKeyClass(Data.class);
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);
