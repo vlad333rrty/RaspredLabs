@@ -8,7 +8,23 @@ public class Data implements WritableComparable<Data> {
     private int airportID;
     private boolean withAirport;
 
-    public Data(int airportID,boolean withAirport){
+    public int getAirportID() {
+        return airportID;
+    }
+
+    public void setAirportID(int airportID) {
+        this.airportID = airportID;
+    }
+
+    public boolean isWithAirport() {
+        return withAirport;
+    }
+
+    public void setWithAirport(boolean withAirport) {
+        this.withAirport = withAirport;
+    }
+
+    public Data(int airportID, boolean withAirport){
         this.airportID=airportID;
         this.withAirport=withAirport;
     }
