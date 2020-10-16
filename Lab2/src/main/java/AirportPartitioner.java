@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class AirportPartitioner {
+import org.apache.hadoop.mapreduce.Partitioner;
+
+public class AirportPartitioner extends Partitioner {
 }
