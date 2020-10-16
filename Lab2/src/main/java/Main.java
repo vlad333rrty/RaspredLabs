@@ -5,7 +5,7 @@ public class Main {
         try{
             Job job=Job.getInstance();
             job.setJarByClass(Main.class);
-            
+
         }catch (Exception e){
             e.printStackTrace();
         }
