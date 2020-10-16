@@ -8,19 +8,5 @@ import org.w3c.dom.Text;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class AirportReducer implements Reducer<Data, Text, IntWritable, Text> {
-    @Override
-    public void reduce(Data key, Iterator<Text> values, OutputCollector<IntWritable, Text> output, Reporter reporter) throws IOException {
-
-    }
-
-    @Override
-    public void close() throws IOException {
-
-    }
-
-    @Override
-    public void configure(JobConf job) {
-
-    }
+public class AirportReducer {
 }
