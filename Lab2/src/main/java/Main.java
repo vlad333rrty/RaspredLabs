@@ -13,7 +13,7 @@ public class Main {
             job.setJarByClass(Main.class);
             job.setJobName("Lab2");
 
-            MultipleInputs.addInputPath(job,new Path(args[1]), TextInputFormat.class,AirportsMapper.class);
+            MultipleInputs.addInputPath(job,new Path(args[0]), TextInputFormat.class,AirportsMapper.class);
 
             //FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
