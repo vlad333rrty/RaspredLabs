@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/KeyCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/KeyCompare.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1602769882553">
