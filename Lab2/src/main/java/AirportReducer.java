@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class AirportReducer {
+import org.apache.hadoop.mapred.Reducer;
+
+public class AirportReducer extends Reducer {
 }
