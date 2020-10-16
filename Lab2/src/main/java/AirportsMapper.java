@@ -11,7 +11,7 @@ public class AirportsMapper extends Mapper<LongWritable, Text,Data,Text> {
         super.map(key, value, context);
         String[] a=value.toString().split(",");
         for (String s:a){
-            context.write(new Data());
+            context.write(new Data(1,true));
         }
     }
 }
