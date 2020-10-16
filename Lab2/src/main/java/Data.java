@@ -29,6 +29,8 @@ public class Data implements WritableComparable<Data> {
         this.withAirport=withAirport;
     }
 
+    public Data(){}
+
     @Override
     public void write(DataOutput out) throws IOException {
         out.write(airportID);
