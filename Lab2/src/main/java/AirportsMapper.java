@@ -3,7 +3,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class AirportsMapper extends Mapper<LongWritable, Text,Data,Text> {
     @Override
@@ -11,7 +10,7 @@ public class AirportsMapper extends Mapper<LongWritable, Text,Data,Text> {
         super.map(key, value, context);
         String[] a=value.toString().split(",");
         for (String s:a){
-            context.write(new Data(1,true),new Text());
+            context.write(new Data(1,true),new Text(s));
         }
     }
 }
