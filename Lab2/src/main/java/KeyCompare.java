@@ -11,17 +11,17 @@ public class KeyCompare implements WritableComparable<KeyCompare> {
     @Override
     public void write(DataOutput out) throws IOException {
         out.write(airportID);
-        out.write(withAirport ? 1:0);
+        out.write(withAirport ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
         airportID=in.readInt();
-        withAirport=in.readBoolean();
+        withAirport=in.readInt()==1;
     }
 
     @Override
     public int compareTo(KeyCompare o) {
-        return 0;
+        return airportID-o.airportID;
     }
 }
