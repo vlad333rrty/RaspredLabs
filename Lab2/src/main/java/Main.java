@@ -14,6 +14,8 @@ public class Main {
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
             job.setMapperClass(AirportsMapper.class);
             job.setOutputKeyClass(Text.class);
+            job.setOutputValueClass(Text.class);
+            job.setNumReduceTasks(2);
         }catch (Exception e){
             e.printStackTrace();
         }
