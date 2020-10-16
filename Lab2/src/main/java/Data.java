@@ -8,6 +8,11 @@ public class Data implements WritableComparable<Data> {
     private int airportID;
     private boolean withAirport;
 
+    public Data(int airportID,boolean withAirport){
+        this.airportID=airportID;
+        this.withAirport=withAirport;
+    }
+
     @Override
     public void write(DataOutput out) throws IOException {
         out.write(airportID);
