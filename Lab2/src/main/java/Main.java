@@ -11,7 +11,7 @@ public class Main {
             FileInputFormat.addInputPath(job, new Path(args[0]));
             FileInputFormat.addInputPath(job, new Path(args[1]));
             job.setMapperClass(AirportsMapper.class);
-            
+
         }catch (Exception e){
             e.printStackTrace();
         }
