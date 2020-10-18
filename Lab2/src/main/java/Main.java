@@ -22,6 +22,7 @@ public class Main {
 
 
             FileSystem fileSystem=FileSystem.get(new Configuration());
+            fileSystem.delete()
 
             //FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[2]));
