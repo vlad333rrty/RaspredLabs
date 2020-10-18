@@ -3,6 +3,7 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -18,17 +19,19 @@ public class Main {
             job.setJarByClass(Main.class);
             job.setJobName("Lab2");
 
-            MultipleInputs.addInputPath(job,new Path(args[0]), TextInputFormat.class,AirportsMapper.class);
+            //MultipleInputs.addInputPath(job,new Path(args[0]), TextInputFormat.class,AirportsMapper.class);
 
+            FileSystem fileSystem = FileSystem.get(new Configuration());
+            fileSystem.delete(new Path(args[2]), true);
 
-
-            //FileInputFormat.addInputPath(job, new Path(args[0]));
+            FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[2]));
             job.setMapperClass(AirportsMapper.class);
             job.setPartitionerClass(AirportPartitioner.class);
             job.setGroupingComparatorClass(GroupComparator.class);
             job.setReducerClass(AirportReducer.class);
             job.setMapOutputKeyClass(Data.class);
+
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);
             job.setNumReduceTasks(2);
