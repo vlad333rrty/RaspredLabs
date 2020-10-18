@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class Main {
     public static void main(String[] args){
         if (args.length!=3){
-            System.err.println("Usage: <input path> <output path>");
+            System.err.println("Usage: <input path> <input path> <output path>");
             System.exit(-1);
         }
         try{
