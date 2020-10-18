@@ -21,8 +21,6 @@ public class Main {
             MultipleInputs.addInputPath(job,new Path(args[0]), TextInputFormat.class,AirportsMapper.class);
 
 
-            FileSystem fileSystem=FileSystem.get(new Configuration());
-            fileSystem.delete(new Path(args[2]),true);
 
             //FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[2]));
