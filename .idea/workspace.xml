@@ -23,6 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab2/script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab2/664600583_T_ONTIME_sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
