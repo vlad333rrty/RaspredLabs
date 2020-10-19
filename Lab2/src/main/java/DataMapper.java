@@ -9,8 +9,6 @@ public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] data=value.toString().split(",");
 
-        if (key.get()>0){
-            context.write(new Data(10,true),new Text(data[0]));
-        }
+
     }
 }
