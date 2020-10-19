@@ -7,8 +7,6 @@ import java.io.IOException;
 public class ResultReducer extends Reducer<Data, Text, IntWritable,Text> {
     @Override
     protected void reduce(Data key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        for (Text t:values){
-            context.write(new IntWritable(key.getAirportID()),t);
-        }
+        context.write(new IntWritable(key.getAirportID()),new Text("222"));
     }
 }
