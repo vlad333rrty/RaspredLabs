@@ -23,14 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/DataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/DataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/AirportPartitioner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/AirportsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/DataMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/GroupComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/ResultReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/AirportPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/AirportPartitioner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +83,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1602887579118">
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603137269379">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1602887579118" />
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603137269379" />
     <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603131217072">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
