@@ -1,6 +1,7 @@
-AirportsMapper.class
 AirportPartitioner.class
-AirportReducer.class
 Main.class
-Data.class
+ResultReducer.class
+DataMapper.class
 GroupComparator.class
+AirportsMapper.class
+Data.class
