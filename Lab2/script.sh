@@ -2,7 +2,7 @@ mvn package
 
 hadoop fs -rm airports.csv
 hadoop fs -rm data.csv
-hdfs dfs -rm -r --ignore-fail-on-non-empty output
+hadoop fs -rmdir --ignore-fail-on-non-empty output
 
 hadoop fs -copyFromLocal airports.csv
 hadoop fs -copyFromLocal data.csv
