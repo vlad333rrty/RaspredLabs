@@ -25,6 +25,7 @@ public class ResultReducer extends Reducer<Data, Text, IntWritable,Text> {
         }
 
         averageDelayTime /= i;
-        context.write(new IntWritable(key.getAirportID()),new Text(String.format("%s %f %f %f",name,minDelay,maxDelay,averageDelayTime)));
+        context.write(new IntWritable(key.getAirportID()),
+                new Text(String.format("%s %f %f %f",name,minDelay,maxDelay,averageDelayTime)));
     }
 }
