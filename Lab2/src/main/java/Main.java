@@ -20,12 +20,12 @@ public class Main {
             MultipleInputs.addInputPath(job,new Path(args[1]), TextInputFormat.class,AirportsMapper.class);
 
             FileOutputFormat.setOutputPath(job, new Path(args[2]));
-            
-            job.setMapperClass(AirportsMapper.class);
-            job.setPartitionerClass(AirportPartitioner.class);
-            job.setGroupingComparatorClass(GroupComparator.class);
-            job.setReducerClass(ResultReducer.class);
-            job.setMapOutputKeyClass(Data.class);
+//
+//            job.setMapperClass(AirportsMapper.class);
+//            job.setPartitionerClass(AirportPartitioner.class);
+//            job.setGroupingComparatorClass(GroupComparator.class);
+//            job.setReducerClass(ResultReducer.class);
+//            job.setMapOutputKeyClass(Data.class);
 
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);
