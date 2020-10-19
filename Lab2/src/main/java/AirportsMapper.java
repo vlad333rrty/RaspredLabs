@@ -8,11 +8,9 @@ public class AirportsMapper extends Mapper<LongWritable,Text,Data,Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] a=value.toString().split(",");
-
         if (key.get()>0) {
-            for (String s : a) {
-                context.write(new Data(1, true), new Text(s));
-            }
+            int id=Integer.parseInt(a[0]);
+            context.write(new Data(id,true),new Text(a[1]));
         }
     }
 }
