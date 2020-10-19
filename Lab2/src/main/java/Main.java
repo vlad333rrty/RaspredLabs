@@ -23,7 +23,7 @@ public class Main {
 
 //            job.setMapperClass(AirportsMapper.class);
 //            job.setPartitionerClass(AirportPartitioner.class);
-//            job.setGroupingComparatorClass(GroupComparator.class);
+            job.setGroupingComparatorClass(GroupComparator.class);
 //            job.setReducerClass(ResultReducer.class);
             job.setMapOutputKeyClass(Data.class);
 
