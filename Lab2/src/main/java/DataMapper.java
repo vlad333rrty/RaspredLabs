@@ -10,7 +10,10 @@ public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
         String[] data=value.toString().split(",");
 
         if (key.get()>0){
-            context.write(new Data(),new Text("w"));
+            if (!data[19].equals("1.00")){
+                int id=Integer.parseInt(data[14]);
+                context.write(new Data(id,false),new Text("0.00"));
+            }
         }
     }
 }
