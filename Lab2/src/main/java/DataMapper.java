@@ -12,7 +12,11 @@ public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
         if (key.get()>0){
             if (!data[19].equals("1.00")){
                 int id=Integer.parseInt(data[14]);
-                context.write(new Data(id,false),new Text("0.00"));
+                if (data[18].isEmpty()){
+                    context.write(new Data(id,false),new Text("0.00"));
+                }else{
+                    context.write(new Data(id,false),new Text(data[19]));
+                }
             }
         }
     }
