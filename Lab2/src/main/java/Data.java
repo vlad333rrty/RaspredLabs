@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Data implements WritableComparable<Data> {
     private int airportID;
-    private boolean withAirport;
+    private boolean airport;
 
     public int getAirportID() {
         return airportID;
@@ -16,17 +16,17 @@ public class Data implements WritableComparable<Data> {
         this.airportID = airportID;
     }
 
-    public boolean isWithAirport() {
-        return withAirport;
+    public boolean isAirport() {
+        return airport;
     }
 
-    public void setWithAirport(boolean withAirport) {
-        this.withAirport = withAirport;
+    public void setAirport(boolean airport) {
+        this.airport = airport;
     }
 
-    public Data(int airportID, boolean withAirport){
+    public Data(int airportID, boolean airport){
         this.airportID=airportID;
-        this.withAirport=withAirport;
+        this.airport = airport;
     }
 
     public Data(){}
@@ -34,13 +34,13 @@ public class Data implements WritableComparable<Data> {
     @Override
     public void write(DataOutput out) throws IOException {
         out.write(airportID);
-        out.write(withAirport ? 1 : 0);
+        out.write(airport ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
         airportID=in.readInt();
-        withAirport=in.readInt()==1;
+        airport =in.readInt()==1;
     }
 
     @Override
