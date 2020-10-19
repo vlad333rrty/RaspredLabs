@@ -5,17 +5,25 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
+    private static final int AIRPORT_ID = 14;
+    private static final int DELAY_TIME = 18;
+    private static final int IS_CANCELLED = 19;
+
+    private static final String ONE="1.00";
+    private static final String ZERO="0.00";
+    private static final String COMMA=",";
+
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String[] data=value.toString().split(",");
+        String[] data=value.toString().split(COMMA);
 
         if (key.get()>0){
-            if (!data[19].equals("1.00")){
-                int id=Integer.parseInt(data[14]);
-                if (data[18].isEmpty()){
-                    context.write(new Data(id,false),new Text("0.00"));
+            if (!data[IS_CANCELLED].equals(ONE)){
+                int id=Integer.parseInt(data[AIRPORT_ID]);
+                if (data[DELAY_TIME].isEmpty()){
+                    context.write(new Data(id,false),new Text(ZERO));
                 }else{
-                    context.write(new Data(id,false),new Text(data[19]));
+                    context.write(new Data(id,false),new Text(data[DELAY_TIME]));
                 }
             }
         }
