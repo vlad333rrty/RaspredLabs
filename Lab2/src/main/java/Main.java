@@ -30,7 +30,7 @@ public class Main {
             job.setGroupingComparatorClass(GroupComparator.class);
             job.setReducerClass(ResultReducer.class);
 
-            job.setMapOutputKeyClass(Data.class);
+            job.setMapOutputKeyClass(Key.class);
 
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);

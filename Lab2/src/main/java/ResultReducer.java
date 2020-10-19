@@ -5,9 +5,9 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class ResultReducer extends Reducer<Data, Text, IntWritable,Text> {
+public class ResultReducer extends Reducer<Key, Text, IntWritable,Text> {
     @Override
-    protected void reduce(Data key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+    protected void reduce(Key key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         Iterator<Text> it = values.iterator();
 
         String name = it.next().toString();

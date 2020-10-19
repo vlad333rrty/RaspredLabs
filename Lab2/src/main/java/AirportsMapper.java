@@ -4,7 +4,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class AirportsMapper extends Mapper<LongWritable,Text,Data,Text> {
+public class AirportsMapper extends Mapper<LongWritable,Text, Key,Text> {
     private static final String COMMA=",";
 
     @Override
@@ -15,7 +15,7 @@ public class AirportsMapper extends Mapper<LongWritable,Text,Data,Text> {
         }
         if (key.get()>0) {
             int id=Integer.parseInt(data[0]);
-            context.write(new Data(id,true),new Text(data[1]));
+            context.write(new Key(id,true),new Text(data[1]));
         }
     }
 }

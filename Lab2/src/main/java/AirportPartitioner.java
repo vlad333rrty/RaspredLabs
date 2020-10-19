@@ -1,10 +1,10 @@
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
-public class AirportPartitioner extends Partitioner<Data, Text> {
+public class AirportPartitioner extends Partitioner<Key, Text> {
 
     @Override
-    public int getPartition(Data data, Text text, int numPartitions) {
-        return data.getAirportID()%numPartitions;
+    public int getPartition(Key key, Text text, int numPartitions) {
+        return key.getAirportID()%numPartitions;
     }
 }

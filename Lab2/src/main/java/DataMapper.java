@@ -4,7 +4,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
+public class DataMapper extends Mapper<LongWritable, Text, Key,Text> {
     private static final int AIRPORT_ID = 14;
     private static final int DELAY_TIME = 18;
     private static final int IS_CANCELLED = 19;
@@ -21,9 +21,9 @@ public class DataMapper extends Mapper<LongWritable, Text,Data,Text> {
             if (!data[IS_CANCELLED].equals(ONE)){
                 int id=Integer.parseInt(data[AIRPORT_ID]);
                 if (data[DELAY_TIME].isEmpty()){
-                    context.write(new Data(id,false),new Text(ZERO));
+                    context.write(new Key(id,false),new Text(ZERO));
                 }else{
-                    context.write(new Data(id,false),new Text(data[DELAY_TIME]));
+                    context.write(new Key(id,false),new Text(data[DELAY_TIME]));
                 }
             }
         }
