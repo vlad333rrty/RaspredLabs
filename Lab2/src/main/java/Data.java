@@ -43,13 +43,10 @@ public class Data implements WritableComparable {
         airport =in.readInt()==1;
     }
 
-    @Override
-    public int compareTo(Data o) {
-        return airportID-o.airportID;
-    }
+
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        return airportID-((Data)o).airportID;
     }
 }
