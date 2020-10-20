@@ -8,11 +8,11 @@ public class Key implements WritableComparable {
     private int id;
     private Type type;
 
-    public Key(){}
+    public Key() {}
 
-    public Key(int id,Type type){
-        this.id=id;
-        this.type=type;
+    public Key(int key, Type type) {
+        this.id = key;
+        this.type = type;
     }
 
     public int getId() {
@@ -33,23 +33,23 @@ public class Key implements WritableComparable {
 
     @Override
     public int compareTo(Object o) {
-        Key k=(Key)o;
+        Key k = (Key)o;
         return k.id==id ? type.compareTo(k.type) : id-k.id;
     }
 
     @Override
     public void write(DataOutput out) throws IOException {
-        out.write(id);
-        out.write(type.equals(Type.AIRPORT) ? 1 : 0);
+        out.writeInt(id);
+        out.writeInt(type.equals(Type.AIRPORT) ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-        id=in.readInt();
-        type=(in.readInt()==1 ? Type.AIRPORT : Type.DATA);
+        id = in.readInt();
+        type = (in.readInt() == 1 ? Type.AIRPORT : Type.DATA);
     }
 
-    public enum Type{
-        AIRPORT,DATA
+    public enum Type {
+        AIRPORT, DATA
     }
 }

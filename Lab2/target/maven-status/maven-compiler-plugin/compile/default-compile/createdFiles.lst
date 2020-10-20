@@ -1,3 +1,8 @@
 Key.class
-AirportsMapper.class
+AirportPartitioner.class
+Main.class
+ResultReducer.class
 Key$Type.class
+DataMapper.class
+GroupComparator.class
+AirportsMapper.class
