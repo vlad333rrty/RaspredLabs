@@ -13,19 +13,19 @@ public class ResultReducer extends Reducer<Key, Text, IntWritable,Text>{
         double maxDelay=Double.MIN_VALUE;
         double minDelay=Double.MAX_VALUE;
         double averageDelayTime=0;
-        int i=0;
-
+        int i;
         String name=it.next().toString();
 
-        while (it.hasNext()){
+        for (i=0;it.hasNext();i++){
             double t=Double.parseDouble(it.next().toString());
             averageDelayTime+=t;
             maxDelay=Math.max(t,maxDelay);
             minDelay=Math.min(t,minDelay);
-            i++;
         }
 
-        averageDelayTime/=i;
-        context.write(new IntWritable(i),new Text(String.format("%s %f %f %f",name,minDelay,maxDelay,averageDelayTime)));
+        if (i>0){
+            averageDelayTime/=i;
+            context.write(new IntWritable(i),new Text(String.format("%s %f %f %f",name,minDelay,maxDelay,averageDelayTime)));
+        }
     }
 }
