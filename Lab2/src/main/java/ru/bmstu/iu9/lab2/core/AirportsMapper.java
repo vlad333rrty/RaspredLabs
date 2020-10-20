@@ -1,11 +1,14 @@
+package ru.bmstu.iu9.lab2.core;
+
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import ru.bmstu.iu9.lab2.Key;
 
 import java.io.IOException;
 import java.util.Arrays;
 
-public class AirportsMapper extends Mapper<LongWritable, Text,Key,Text>{
+public class AirportsMapper extends Mapper<LongWritable, Text, Key,Text>{
     private static final String COMMA=",";
     private static final int AIRPORT_ID=0;
     private static final int AIRPORT_NAME=1;

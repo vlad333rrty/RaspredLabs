@@ -1,9 +1,12 @@
+package ru.bmstu.iu9.lab2;
+
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import ru.bmstu.iu9.lab2.core.*;
 
 public class Main {
     public static void main(String[] args){
@@ -16,8 +19,8 @@ public class Main {
             job.setJarByClass(Main.class);
             job.setJobName("Lab2");
 
-            MultipleInputs.addInputPath(job,new Path(args[0]),TextInputFormat.class,DataMapper.class);
-            MultipleInputs.addInputPath(job,new Path(args[1]),TextInputFormat.class,AirportsMapper.class);
+            MultipleInputs.addInputPath(job,new Path(args[0]),TextInputFormat.class, DataMapper.class);
+            MultipleInputs.addInputPath(job,new Path(args[1]),TextInputFormat.class, AirportsMapper.class);
 
             FileOutputFormat.setOutputPath(job,new Path(args[2]));
 

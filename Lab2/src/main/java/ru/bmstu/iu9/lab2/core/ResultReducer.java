@@ -1,6 +1,9 @@
+package ru.bmstu.iu9.lab2.core;
+
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
+import ru.bmstu.iu9.lab2.Key;
 
 import java.io.IOException;
 import java.util.Iterator;
