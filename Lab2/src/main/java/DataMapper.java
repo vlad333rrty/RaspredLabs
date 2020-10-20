@@ -5,7 +5,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 public class DataMapper extends Mapper<LongWritable,Text,Key, Text>{
-    private static final int 
+    private static final int CANCELLED
 
 
     @Override
