@@ -34,17 +34,20 @@ public class Key implements WritableComparable {
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Key k=(Key)o;
+        return k.id==id ? type.compareTo(k.type) : id-k.id;
     }
 
     @Override
     public void write(DataOutput out) throws IOException {
-
+        out.write(id);
+        out.write(type.equals(Type.AIRPORT) ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-
+        id=in.readInt();
+        type=(in.readInt()==1 ? Type.AIRPORT : Type.DATA);
     }
 
     public enum Type{
