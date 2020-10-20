@@ -10,7 +10,7 @@ public class DataMapper extends Mapper<LongWritable,Text,Key, Text>{
         String[] data=value.toString().split(",");
 
         if (key.get()>0){
-
+            
         }
     }
 }
