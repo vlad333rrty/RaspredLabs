@@ -18,23 +18,6 @@ public class Main {
             job.setJarByClass(Main.class);
             job.setJobName("Lab2");
 
-            MultipleInputs.addInputPath(job,new Path(args[0]),TextInputFormat.class,DataMapper.class);
-            MultipleInputs.addInputPath(job,new Path(args[1]), TextInputFormat.class,AirportsMapper.class);
-
-            FileSystem fileSystem = FileSystem.get(new Configuration());
-            fileSystem.delete(new Path(args[2]), true);
-
-            FileOutputFormat.setOutputPath(job, new Path(args[2]));
-
-            job.setPartitionerClass(AirportPartitioner.class);
-            job.setGroupingComparatorClass(GroupComparator.class);
-            job.setReducerClass(ResultReducer.class);
-
-            job.setMapOutputKeyClass(Key.class);
-
-            job.setOutputKeyClass(Text.class);
-            job.setOutputValueClass(Text.class);
-
             job.setNumReduceTasks(2);
 
             System.exit(job.waitForCompletion(true) ? 0 : 1);

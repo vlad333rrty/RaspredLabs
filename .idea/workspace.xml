@@ -23,7 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/AirportPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/AirportPartitioner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/AirportsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/AirportsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/DataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/DataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/GroupComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/GroupComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/ResultReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/ResultReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/target/classes/GroupComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/target/classes/GroupComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/target/hadoop-examples-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/target/hadoop-examples-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +92,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603188147276">
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603189450697">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603188147276" />
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603189450697" />
     <state x="684" y="27" width="613" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603143712492">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
