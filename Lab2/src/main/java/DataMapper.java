@@ -5,7 +5,12 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 public class DataMapper extends Mapper<LongWritable,Text,Key, Text>{
-    private static final int CANCELLED
+    private static final int CANCELLED=19;
+    private static final int DELAY_TIME=18;
+    private static final int AIRPORT_ID=14;
+
+    private static final String ONE="1.00";
+    private static final String ZERO="0.00";
 
 
     @Override
