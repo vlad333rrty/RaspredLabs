@@ -15,7 +15,6 @@ public class Key implements WritableComparable {
         this.type=type;
     }
 
-
     public int getId() {
         return id;
     }
