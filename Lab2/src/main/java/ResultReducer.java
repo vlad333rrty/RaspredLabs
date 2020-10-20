@@ -24,6 +24,6 @@ public class ResultReducer extends Reducer<Key, Text, IntWritable,Text>{
         }
 
         averageDelayTime/=i;
-        context.write(new IntWritable());
+        context.write(new IntWritable(i),new Text(String.format("%d %d %d",minDelay,maxDelay,averageDelayTime)));
     }
 }
