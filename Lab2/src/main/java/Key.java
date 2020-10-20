@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Key implements WritableComparable {
     private int airportID;
-    private boolean airport;
+    private Type type;
 
     public int getAirportID() {
         return airportID;
@@ -16,17 +16,17 @@ public class Key implements WritableComparable {
         this.airportID = airportID;
     }
 
-    public boolean isAirport() {
-        return airport;
+    public Type getType() {
+        return type;
     }
 
-    public void setAirport(boolean airport) {
-        this.airport = airport;
+    public void setType(Type type) {
+        this.type = type;
     }
 
-    public Key(int airportID, boolean airport){
+    public Key(int airportID, Type type){
         this.airportID=airportID;
-        this.airport = airport;
+        this.type=type;
     }
 
     public Key(){}
@@ -34,25 +34,23 @@ public class Key implements WritableComparable {
     @Override
     public void write(DataOutput out) throws IOException {
         out.write(airportID);
-        out.write(airport ? 1 : 0);
+        out.write(type.equals(Type.AIRPORT) ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
         airportID=in.readInt();
-        airport =in.readInt()==1;
-    }
-
-    @Override
-    public int compareTo(Key o) {
-        if (o.getAirportID()!=airportID) return airportID-o.getAirportID();
-        if (airport && ! o.airport) return 1;
-        if (!airport && o.airport) return -1;
-        return 0;
+        type =(in.readInt()==1 ? Type.AIRPORT : Type.DATA);
     }
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        Key k=(Key)o;
+        if (k.airportID==airportID) return type.compareTo(k.type);
+        return airportID-k.airportID;
+    }
+
+    public enum Type{
+        AIRPORT,DATA
     }
 }

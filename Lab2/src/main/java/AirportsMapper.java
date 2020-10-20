@@ -15,7 +15,7 @@ public class AirportsMapper extends Mapper<LongWritable,Text, Key,Text> {
         }
         if (key.get()>0) {
             int id=Integer.parseInt(data[0]);
-            context.write(new Key(id,true),new Text(data[1]));
+            context.write(new Key(id,Key.Type.AIRPORT),new Text(data[1]));
         }
     }
 }

@@ -21,9 +21,9 @@ public class DataMapper extends Mapper<LongWritable, Text, Key,Text> {
             if (!data[IS_CANCELLED].equals(ONE)){
                 int id=Integer.parseInt(data[AIRPORT_ID]);
                 if (data[DELAY_TIME].isEmpty()){
-                    context.write(new Key(id,false),new Text(ZERO));
+                    context.write(new Key(id,Key.Type.DATA),new Text(ZERO));
                 }else{
-                    context.write(new Key(id,false),new Text(data[DELAY_TIME]));
+                    context.write(new Key(id,Key.Type.DATA),new Text(data[DELAY_TIME]));
                 }
             }
         }
