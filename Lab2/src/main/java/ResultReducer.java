@@ -15,6 +15,8 @@ public class ResultReducer extends Reducer<Key, Text, IntWritable,Text>{
         double averageDelayTime=0;
         int i=0;
 
+        String name=it.next().toString();
+
         while (it.hasNext()){
             double t=Double.parseDouble(it.next().toString());
             averageDelayTime+=t;
@@ -24,6 +26,6 @@ public class ResultReducer extends Reducer<Key, Text, IntWritable,Text>{
         }
 
         averageDelayTime/=i;
-        context.write(new IntWritable(i),new Text(String.format("%d %d %d",minDelay,maxDelay,averageDelayTime)));
+        context.write(new IntWritable(i),new Text(String.format("%s %f %f %f",name,minDelay,maxDelay,averageDelayTime)));
     }
 }
