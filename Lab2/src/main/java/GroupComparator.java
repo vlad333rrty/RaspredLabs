@@ -7,6 +7,6 @@ public class GroupComparator extends WritableComparator {
 
     @Override
     public int compare(Object a, Object b) {
-        return ((Key)a).compareTo((Key)b);
+        return ((Key)a).getAirportID()-((Key)b).getAirportID();
     }
 }
