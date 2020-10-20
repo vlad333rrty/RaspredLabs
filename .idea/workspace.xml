@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="" />
+    <list default="true" id="b320c583-5c1e-4d16-9e10-494205ec46e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/main/java/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/main/java/Key.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,18 +84,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603141849028">
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603187374515">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603141849028" />
+    <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603187374515" />
     <state x="684" y="27" width="613" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603143712492">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="684" y="27" width="613" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1603143712492" />
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603131217072">
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603182205771">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603131217072" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603182205771" />
     <state x="841" y="453" width="310" height="207" key="Github.ShareDialog" timestamp="1602765329607">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -105,5 +108,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="685" y="263" width="621" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602769685519" />
+    <state x="590" y="257" width="802" height="599" key="new project wizard" timestamp="1603182217978">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="590" y="257" width="802" height="599" key="new project wizard/72.27.1848.1053@72.27.1848.1053" timestamp="1603182217978" />
   </component>
 </project>

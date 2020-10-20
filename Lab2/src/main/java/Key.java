@@ -4,7 +4,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class Key implements WritableComparable<Key> {
+public class Key implements WritableComparable {
     private int airportID;
     private boolean airport;
 
@@ -48,6 +48,11 @@ public class Key implements WritableComparable<Key> {
         if (o.getAirportID()!=airportID) return airportID-o.getAirportID();
         if (airport && ! o.airport) return 1;
         if (!airport && o.airport) return -1;
+        return 0;
+    }
+
+    @Override
+    public int compareTo(Object o) {
         return 0;
     }
 }
