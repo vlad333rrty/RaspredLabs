@@ -57,6 +57,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Temporary" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.bmstu.iu9.lab2.core" />
+      <recent name="ru.bmstu.iu9.lab2" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,6 +91,14 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="804" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603191611851" />
+    <state x="724" y="335" width="524" height="451" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603195189117">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="724" y="335" width="524" height="451" key="#com.intellij.ide.util.PackageChooserDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1603195189117" />
+    <state x="744" y="417" width="593" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603195245763">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="744" y="417" width="593" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/72.27.1848.1053@72.27.1848.1053" timestamp="1603195245763" />
     <state x="684" y="27" width="613" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603143712492">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
