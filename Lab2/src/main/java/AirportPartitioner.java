@@ -4,6 +4,6 @@ public class AirportPartitioner extends Partitioner{
 
     @Override
     public int getPartition(Object o, Object o2, int numPartitions) {
-        return 0;
+        return ((Key)o).getId()%numPartitions;
     }
 }
