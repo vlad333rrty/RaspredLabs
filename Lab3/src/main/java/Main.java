@@ -13,6 +13,6 @@ public class Main {
         JavaRDD<String> file=sc.textFile("airports.csv");
         JavaPairRDD<String,Integer> pair=file.flatMap((s)-> Arrays.asList(s.split(",")).iterator())
                 .mapToPair(s->new Tuple2<>(s,1));
-        
+        pair.saveAsTextFile("result");
     }
 }
