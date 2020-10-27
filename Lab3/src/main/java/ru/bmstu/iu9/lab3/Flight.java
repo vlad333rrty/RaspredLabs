@@ -3,7 +3,8 @@ package ru.bmstu.iu9.lab3;
 import scala.Serializable;
 
 public class Flight implements Serializable {
-    
+    private static final int CANCELLED=18;
+    private static final int 
 
     private final Airport origin,destination;
 
