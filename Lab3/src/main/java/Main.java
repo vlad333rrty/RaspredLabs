@@ -13,9 +13,8 @@ public class Main {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
-        JavaRDD<String> file=sc.textFile("airports.csv");
-        JavaPairRDD<String,Integer> pair=file.flatMap((s) -> Arrays.asList(s.split(",")).iterator())
-                .mapToPair(s->new Tuple2<>(s,1));
-        pair.saveAsTextFile(RESULT_FILE_NAME);
+        JavaRDD<String> airports=sc.textFile(args[0]);
+        JavaRDD<String> data=sc.textFile(args[1]);
+        
     }
 }
