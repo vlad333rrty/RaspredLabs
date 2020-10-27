@@ -4,6 +4,6 @@ import org.apache.spark.api.java.JavaSparkContext;
 public class Main {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("Lab3");
-        JavaSparkContext sc=
+        JavaSparkContext sc=new JavaSparkContext()
     }
 }
