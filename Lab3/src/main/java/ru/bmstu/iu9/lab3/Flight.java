@@ -9,5 +9,12 @@ public class Flight implements Serializable {
     public Flight(Airport origin,Airport destination){
         this.origin=origin;
         this.destination=destination;
+        isCancelled=false;
+    }
+
+    public Flight(){
+        isCancelled=true;
+        origin=null;
+        destination=null;
     }
 }
