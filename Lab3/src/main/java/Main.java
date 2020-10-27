@@ -12,6 +12,6 @@ public class Main {
         JavaSparkContext sc=new JavaSparkContext(conf);
         JavaRDD<String> file=sc.textFile("airports.csv");
         JavaPairRDD<String,String> pair=file.flatMap((s)-> Arrays.asList(s.split(",")).iterator())
-                .mapToPair(s->new Tuple2<>())
+                .mapToPair(s->new Tuple2<>(s,1))
     }
 }
