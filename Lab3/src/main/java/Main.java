@@ -8,6 +8,6 @@ public class Main {
         SparkConf conf = new SparkConf().setAppName("Lab3");
         JavaSparkContext sc=new JavaSparkContext(conf);
         JavaRDD<String> file=sc.textFile("airports.csv");
-        JavaPairRDD<String,String> pair=file.mapToPair(()->)
+        JavaPairRDD<String,String> pair=file.flatMap((s)->)
     }
 }
