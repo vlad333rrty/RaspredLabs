@@ -1,1 +1,1 @@
-spark-submit 
+spark-submit --class 
