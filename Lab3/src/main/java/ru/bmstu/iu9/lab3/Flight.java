@@ -4,7 +4,7 @@ import scala.Serializable;
 
 public class Flight implements Serializable {
     private static final int CANCELLED=18;
-    private static final int 
+    private static final int DELAY_TIME=
 
     private final Airport origin,destination;
 
