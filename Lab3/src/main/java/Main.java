@@ -7,12 +7,15 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 public class Main {
+    private static final String RESULT="result";
+    private static final String APP_NAME="Lab3";
+
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("Lab3");
+        SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
         JavaRDD<String> file=sc.textFile("airports.csv");
         JavaPairRDD<String,Integer> pair=file.flatMap((s) -> Arrays.asList(s.split(",")).iterator())
                 .mapToPair(s->new Tuple2<>(s,1));
-        pair.saveAsTextFile("result");
+        pair.saveAsTextFile(RESULT);
     }
 }
