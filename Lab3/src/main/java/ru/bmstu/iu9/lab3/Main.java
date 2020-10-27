@@ -1,3 +1,5 @@
+package ru.bmstu.iu9.lab3;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -16,5 +18,6 @@ public class Main {
         JavaRDD<String> airports=sc.textFile(args[0]);
         JavaRDD<String> data=sc.textFile(args[1]);
 
+        
     }
 }

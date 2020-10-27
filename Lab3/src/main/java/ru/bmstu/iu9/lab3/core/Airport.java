@@ -1,4 +1,4 @@
-package ru.bmstu.iu9.lab3;
+package ru.bmstu.iu9.lab3.core;
 
 import scala.Serializable;
 
