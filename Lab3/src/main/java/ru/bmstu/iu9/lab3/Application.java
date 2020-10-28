@@ -36,7 +36,22 @@ public class Application {
 
     private class Data{
         private double maxDelay;
-        private double latePercent;
-        
+        private double lateFlightsPercent;
+        private double cancelledFlightsPercent;
+
+        public Data(double maxDelay, double lateFlightsPercent, double cancelledFlightsPercent) {
+            this.maxDelay = maxDelay;
+            this.lateFlightsPercent = lateFlightsPercent;
+            this.cancelledFlightsPercent = cancelledFlightsPercent;
+        }
+
+        @Override
+        public String toString() {
+            return "Data{" +
+                    "maxDelay=" + maxDelay +
+                    ", lateFlightsPercent=" + lateFlightsPercent +
+                    ", cancelledFlightsPercent=" + cancelledFlightsPercent +
+                    '}';
+        }
     }
 }
