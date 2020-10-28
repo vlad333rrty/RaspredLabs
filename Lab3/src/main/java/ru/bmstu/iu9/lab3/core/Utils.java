@@ -2,6 +2,8 @@ package ru.bmstu.iu9.lab3.core;
 
 import org.apache.spark.api.java.JavaRDD;
 
+import java.util.Arrays;
+
 public class Utils {
     private static final int IS_CANCELLED=19;
     private static final int DELAY_TIME=18;
@@ -14,6 +16,7 @@ public class Utils {
 
     public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights){
         return flights.map(s->s.split(DELIMITER))
+                .filter(s-> Arrays.stream(s).anyMatch(str->str.chars().anyMatch(Character::isDigit)))
                 .map(s-> {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight();
