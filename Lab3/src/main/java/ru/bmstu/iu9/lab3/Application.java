@@ -8,6 +8,8 @@ import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
+import scala.Tuple1;
+import scala.Tuple2;
 
 import java.util.Map;
 
@@ -30,6 +32,8 @@ public class Application {
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
+        JavaPairRDD<Tuple2<Airport,Airport>,Data> result=
+                flights.groupBy()
 
         airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
