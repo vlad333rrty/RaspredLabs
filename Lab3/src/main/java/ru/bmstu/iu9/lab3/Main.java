@@ -11,11 +11,13 @@ import java.util.Arrays;
 public class Main {
     private static final String RESULT_FILE_NAME="result";
     private static final String APP_NAME="Lab3";
+    private static final String AIRPORTS_DATA_FILE_NAME="airports.csv";
+    private static final String FLIGHT_DATA_FILE_NAME="flights.csv";
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
-        JavaRDD<String> airports=sc.textFile(args[0]);
+        JavaRDD<String> airports=sc.textFile(AIRPORTS_DATA_FILE_NAME;
         JavaRDD<String> data=sc.textFile(args[1]);
 
         JavaPairRDD<String,String> air=airports.map(s->
