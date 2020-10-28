@@ -22,10 +22,7 @@ public class Main {
         JavaRDD<String> airports=sc.textFile(AIRPORTS_DATA_FILE_NAME);
         JavaRDD<String> flights=sc.textFile(FLIGHTS_DATA_FILE_NAME);
 
-        JavaPairRDD<Integer,String> air=airports.map(s->s.split(DELIMITER))
-                .mapToPair(s->new Tuple2<>(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
-
-        JavaRDD<Airport> rdd=airports.map(s->s.split(DELIMITER))
+        JavaRDD<Airport> airportsRdd=airports.map(s->s.split(DELIMITER))
                 .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
 
 

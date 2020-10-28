@@ -17,4 +17,12 @@ public class Airport implements Serializable {
     public long getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Airport{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
