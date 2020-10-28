@@ -11,15 +11,13 @@ public class Utils {
     private static final String DELIMITER=",";
     private static final String ONE="1.00";
 
-    public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights,JavaRDD<Airport> airportsRDD){
-        JavaRDD<Flight> result=flights.map(s->s.split(DELIMITER))
+    public static JavaRDD<Object> getFlightsRDD(JavaRDD<String> flights,JavaRDD<Airport> airportsRDD){
+        JavaRDD<Object> result=flights.map(s->s.split(DELIMITER))
                 .map(s-> {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight();
                     }
-                    return new Flight(getAirportById(airportsRDD, s[ORIGIN_AIRPORT_ID]),
-                            getAirportById(airportsRDD, s[DESTINATION_AIRPORT_ID]),
-                            Double.parseDouble(s[DELAY_TIME]));
+                    return getAirportById(airportsRDD, s[ORIGIN_AIRPORT_ID]);
                 });
         return result;
     }
