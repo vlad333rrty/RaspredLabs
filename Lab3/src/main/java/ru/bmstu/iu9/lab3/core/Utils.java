@@ -32,7 +32,7 @@ public class Utils {
         return airports.map(s->s.split(DELIMITER))
                 .map(s-> {
                     String id=s[0].substring(1,s[0].length()-1);
-                    String name=s[1].substring(1).concat(s[2].substring(0,s[2].length()-1));
+                    String name=s[1].substring(1);
                     return new Airport(Integer.parseInt(id), name);
                 });
     }
@@ -41,7 +41,7 @@ public class Utils {
         return airports.map(s->s.split(DELIMITER))
                 .mapToPair(s->{
                    String id=s[0].substring(1,s[0].length()-1);
-                   String name=s[1].substring(1).concat(s[2].substring(0,s[2].length()-1));
+                   String name=s[1].substring(1);
                    return new Tuple2<>(id,new Airport(Integer.parseInt(id),name));
                 });
     }
