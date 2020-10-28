@@ -18,5 +18,7 @@ public class Main {
         JavaRDD<String> airports=sc.textFile(args[0]);
         JavaRDD<String> data=sc.textFile(args[1]);
 
+        JavaPairRDD<String,String> air=airports.flatMap(s-> Arrays.stream(s.split(",")).iterator())
+                .mapToPair()
     }
 }
