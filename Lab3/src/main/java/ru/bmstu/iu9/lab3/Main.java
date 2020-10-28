@@ -4,6 +4,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
@@ -26,6 +27,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        final 
+        final Broadcast
     }
 }
