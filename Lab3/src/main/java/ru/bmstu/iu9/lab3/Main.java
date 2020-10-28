@@ -35,7 +35,6 @@ public class Main {
 
         
 
-
         airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
