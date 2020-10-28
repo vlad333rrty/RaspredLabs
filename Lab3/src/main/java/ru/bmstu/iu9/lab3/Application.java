@@ -32,8 +32,7 @@ public class Application {
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
-        JavaPairRDD<Tuple2<Airport,Airport>,Data> result=
-                flights.groupBy()
+
 
         airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
