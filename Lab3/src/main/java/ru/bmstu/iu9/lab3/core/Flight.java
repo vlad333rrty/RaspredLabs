@@ -14,10 +14,10 @@ public class Flight implements Serializable {
         this.delay=delay;
     }
 
-    public Flight(){
+    public Flight(int originId,int destinationId){
         isCancelled=true;
-        originId=-1;
-        destinationId=-1;
+        this.originId=originId;
+        this.destinationId=destinationId;
         delay=0;
     }
 

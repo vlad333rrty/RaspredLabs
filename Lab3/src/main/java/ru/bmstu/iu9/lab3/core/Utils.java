@@ -19,7 +19,7 @@ public class Utils {
                 .filter(s-> Arrays.stream(s).anyMatch(str->str.chars().anyMatch(Character::isDigit)))
                 .map(s-> {
                     if (s[IS_CANCELLED].equals(ONE)){
-                        return new Flight();
+                        return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]));
                     }
                     String delay=s[DELAY_TIME].isEmpty() ? ZERO : s[DELAY_TIME];
                     return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]),
