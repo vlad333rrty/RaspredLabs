@@ -17,6 +17,9 @@ public class Main {
     private static final String FLIGHTS_DATA_FILE_NAME="flights.csv";
     private static final String DELIMITER=",";
 
+    private static final int IS_CANCELLED=19;
+    
+
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
