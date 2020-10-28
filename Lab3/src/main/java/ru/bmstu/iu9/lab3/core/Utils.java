@@ -10,7 +10,7 @@ public class Utils {
     private static final int IS_CANCELLED=19;
     private static final int DELAY_TIME=18;
     private static final int DESTINATION_AIRPORT_ID=14;
-    private static final int ORIGIN_AIRPORT_ID =11;
+    private static final int ORIGIN_AIRPORT_ID=11;
 
     private static final String DELIMITER=",";
     private static final String ONE="1.00";
