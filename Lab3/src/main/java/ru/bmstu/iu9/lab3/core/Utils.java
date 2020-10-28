@@ -47,7 +47,6 @@ public class Utils {
     }
 
     public static JavaRDD<String> getPreparedData(JavaRDD<String> data){
-        final String firstLine=data.first();
-        return data.filter(s->!s.equals(firstLine));
+        return data.filter(s-> Arrays.stream(s.split(DELIMITER)).anyMatch(str->str.chars().anyMatch(Character::isDigit)));
     }
 }

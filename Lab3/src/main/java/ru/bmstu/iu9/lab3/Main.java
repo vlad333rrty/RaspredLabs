@@ -23,14 +23,9 @@ public class Main {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
-        JavaRDD<String> airports=sc.textFile(AIRPORTS_DATA_FILE_NAME);
-        JavaRDD<String> flights=sc.textFile(FLIGHTS_DATA_FILE_NAME);
+        JavaRDD<String> airports=Utils.getPreparedData(sc.textFile(AIRPORTS_DATA_FILE_NAME));
+        JavaRDD<String> flights=Utils.getPreparedData(sc.textFile(FLIGHTS_DATA_FILE_NAME));
 
-        final String line=airports.first();
-        airports=airports.filter(s->!s.equals(line));
-
-        final String line1=flights.first();
-        flights=flights.filter(s->!s.equals(line1));
 
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
