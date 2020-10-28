@@ -10,6 +10,7 @@ public class Utils {
 
     private static final String DELIMITER=",";
     private static final String ONE="1.00";
+    private static final String ZERO="0.00";
 
     public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights){
         return flights.map(s->s.split(DELIMITER))
@@ -17,8 +18,9 @@ public class Utils {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight();
                     }
+                    String delay=s[DELAY_TIME];
                     return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]),
-                            Double.parseDouble(s[DELAY_TIME]));
+                            Double.parseDouble(delay.isEmpty() ? ZERO : delay));
                 });
     }
 
