@@ -20,7 +20,7 @@ public class Main {
         JavaRDD<String> flights=sc.textFile(FLIGHTS_DATA_FILE_NAME);
 
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
-        JavaRDD<Object> flightsRDD=Utils.getFlightsRDD(flights,airportsRDD);
+        JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
         flightsRDD.saveAsTextFile(RESULT_FILE_NAME);
     }

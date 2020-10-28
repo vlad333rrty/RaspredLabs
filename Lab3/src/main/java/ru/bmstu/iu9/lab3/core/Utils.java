@@ -11,23 +11,19 @@ public class Utils {
     private static final String DELIMITER=",";
     private static final String ONE="1.00";
 
-    public static JavaRDD<Object> getFlightsRDD(JavaRDD<String> flights,JavaRDD<Airport> airportsRDD){
-        JavaRDD<Object> result=flights.map(s->s.split(DELIMITER))
+    public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights){
+        return flights.map(s->s.split(DELIMITER))
                 .map(s-> {
-                    if (!s[IS_CANCELLED].equals(ONE)){
-                        return getAirportById(airportsRDD,s[ORIGIN_AIRPORT_ID]);
+                    if (s[IS_CANCELLED].equals(ONE)){
+                        return new Flight();
                     }
-                    return new Object();
+                    return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]),
+                            Double.parseDouble(s[DELAY_TIME]));
                 });
-        return result;
     }
 
     public static JavaRDD<Airport> getAirportsRDD(JavaRDD<String> airports){
         return airports.map(s->s.split(DELIMITER)).filter(s->s.length>2)
                 .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
-    }
-
-    private static Airport getAirportById(JavaRDD<Airport> airportsRDD, String id){
-        return airportsRDD.filter(airport -> airport.getId()==Integer.parseInt(id)).first();
     }
 }

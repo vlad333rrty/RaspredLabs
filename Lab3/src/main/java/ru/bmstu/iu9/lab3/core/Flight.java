@@ -3,34 +3,34 @@ package ru.bmstu.iu9.lab3.core;
 import scala.Serializable;
 
 public class Flight implements Serializable {
-    private final Airport origin,destination;
+    private final int originId,destinationId;
     private final boolean isCancelled;
     private final double delay;
 
-    public Flight(Airport origin,Airport destination,double delay){
-        this.origin=origin;
-        this.destination=destination;
+    public Flight(int originId,int destinationId,double delay){
+        this.originId=originId;
+        this.destinationId=destinationId;
         isCancelled=false;
         this.delay=delay;
     }
 
     public Flight(){
         isCancelled=true;
-        origin=null;
-        destination=null;
+        originId=-1;
+        destinationId=-1;
         delay=0;
+    }
+
+    public int getOriginId() {
+        return originId;
+    }
+
+    public int getDestinationId() {
+        return destinationId;
     }
 
     public boolean isCancelled() {
         return isCancelled;
-    }
-
-    public Airport getOrigin() {
-        return origin;
-    }
-
-    public Airport getDestination() {
-        return destination;
     }
 
     public double getDelay() {
@@ -40,8 +40,8 @@ public class Flight implements Serializable {
     @Override
     public String toString() {
         return "Flight{" +
-                "origin=" + origin +
-                ", destination=" + destination +
+                "originId=" + originId +
+                ", destinationId=" + destinationId +
                 ", isCancelled=" + isCancelled +
                 ", delay=" + delay +
                 '}';
