@@ -4,8 +4,8 @@ import scala.Serializable;
 
 public class Airport implements Serializable {
     private final String name;
-    private final long id;
-    public Airport(long id,String name){
+    private final int id;
+    public Airport(int id,String name){
         this.id=id;
         this.name=name;
     }

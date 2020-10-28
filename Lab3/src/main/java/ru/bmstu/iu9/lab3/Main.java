@@ -20,8 +20,8 @@ public class Main {
         JavaRDD<String> airports=sc.textFile(AIRPORTS_DATA_FILE_NAME);
         JavaRDD<String> flights=sc.textFile(FLIGHT_DATA_FILE_NAME);
 
-        JavaPairRDD<String,String> air=airports.map(s->s.split(","))
-                .mapToPair(s->new Tuple2<>(s[0],s[1]));
+        JavaPairRDD<Integer,String> air=airports.map(s->s.split(","))
+                .mapToPair(s->new Tuple2<>(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
         air.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
