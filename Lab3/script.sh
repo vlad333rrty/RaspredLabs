@@ -2,7 +2,7 @@ mvn package
 
 hadoop fs -rm airports.csv
 hadoop fs -rm flights.csv
-hdfs dfs -rm -r output
+hdfs dfs -rm -r result
 
 hadoop fs -copyFromLocal airports.csv
 hadoop fs -copyFromLocal flights.csv
