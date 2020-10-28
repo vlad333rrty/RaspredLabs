@@ -31,7 +31,8 @@ public class Main {
 
         JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
 
-        final Broadcast<Map<String,Airport>> broadcast=
+        final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
+        
 
         airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
