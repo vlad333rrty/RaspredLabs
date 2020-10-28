@@ -25,6 +25,6 @@ public class Main {
         JavaRDD<Airport> airportsRdd=airports.map(s->s.split(DELIMITER))
                 .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
 
-
+        airportsRdd.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
