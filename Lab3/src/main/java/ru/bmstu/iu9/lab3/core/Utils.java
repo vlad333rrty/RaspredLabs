@@ -2,6 +2,7 @@ package ru.bmstu.iu9.lab3.core;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
+import scala.Tuple2;
 
 import java.util.Arrays;
 
@@ -17,7 +18,6 @@ public class Utils {
 
     public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights){
         return flights.map(s->s.split(DELIMITER))
-                .filter(s-> Arrays.stream(s).anyMatch(str->str.chars().anyMatch(Character::isDigit)))
                 .map(s-> {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]));
@@ -29,9 +29,25 @@ public class Utils {
     }
 
     public static JavaRDD<Airport> getAirportsRDD(JavaRDD<String> airports){
-        return airports.map(s->s.split(DELIMITER)).filter(s->s.length>2)
-                .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
+        return airports.map(s->s.split(DELIMITER))
+                .map(s-> {
+                    String id=s[0].substring(1,s[0].length()-1);
+                    String name=s[1].substring(1).concat(s[2].substring(0,s[2].length()-1));
+                    return new Airport(Integer.parseInt(id), name);
+                });
     }
 
-    public static JavaPairRDD<String,Airport> get
+    public static JavaPairRDD<String,Airport> getPairRDD(JavaRDD<String> airports){
+        return airports.map(s->s.split(DELIMITER))
+                .mapToPair(s->{
+                   String id=s[0].substring(1,s[0].length()-1);
+                   String name=s[1].substring(1).concat(s[2].substring(0,s[2].length()-1));
+                   return new Tuple2<>(id,new Airport(Integer.parseInt(id),name));
+                });
+    }
+
+    public static JavaRDD<String> getPreparedData(JavaRDD<String> data){
+        final String firstLine=data.first();
+        return data.filter(s->!s.equals(firstLine));
+    }
 }
