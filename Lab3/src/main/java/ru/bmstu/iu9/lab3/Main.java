@@ -25,6 +25,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        flightsRDD.collect(Collectors.groupingBy())
+        flightsRDD.collect(Collectors.groupingBy(Flight::getOriginId))
     }
 }
