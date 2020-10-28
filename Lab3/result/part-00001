@@ -1,0 +1,3167 @@
+Airport{name='Misima Island', id=13318}
+Airport{name='Shafter', id=13319}
+Airport{name='Maiduguri', id=13320}
+Airport{name='Millville', id=13321}
+Airport{name='Marshalltown', id=13322}
+Airport{name='Miriti', id=13323}
+Airport{name='Mainoru', id=13324}
+Airport{name='Manja', id=13325}
+Airport{name='Mejit Island', id=13326}
+Airport{name='Man', id=13327}
+Airport{name='Moenjodaro', id=13328}
+Airport{name='Mosjoen', id=13329}
+Airport{name='Mayajigua', id=13330}
+Airport{name='Mitiga', id=13331}
+Airport{name='Mouila', id=13332}
+Airport{name='Mbuji-Mayi', id=13333}
+Airport{name='Majunga', id=13334}
+Airport{name='Jackson', id=13335}
+Airport{name='Mytilene', id=13336}
+Airport{name='Murcia', id=13337}
+Airport{name='Toms River', id=13338}
+Airport{name='Mirny', id=13339}
+Airport{name='Marianske Lazne', id=13340}
+Airport{name='Kansas City', id=13341}
+Airport{name='Milwaukee', id=13342}
+Airport{name='Muskegon', id=13344}
+Airport{name='Obo Mboki', id=13345}
+Airport{name='Makoua', id=13346}
+Airport{name='Hoolehua', id=13347}
+Airport{name='Jackson', id=13348}
+Airport{name='Mukah', id=13349}
+Airport{name='Muskogee', id=13350}
+Airport{name='Makemo', id=13351}
+Airport{name='Meekatharra', id=13352}
+Airport{name='Mekane Selam', id=13353}
+Airport{name='Mankato', id=13354}
+Airport{name='Makokou', id=13355}
+Airport{name='Manokwari', id=13356}
+Airport{name='Mackay', id=13357}
+Airport{name='Malacca', id=13358}
+Airport{name='Malta', id=13359}
+Airport{name='Melbourne', id=13360}
+Airport{name='McAlester', id=13361}
+Airport{name='Malad City', id=13362}
+Airport{name='Male', id=13363}
+Airport{name='Milford', id=13364}
+Airport{name='Malang', id=13365}
+Airport{name='Mulhouse', id=13366}
+Airport{name='Moline', id=13367}
+Airport{name='Malta', id=13368}
+Airport{name='Marshall', id=13369}
+Airport{name='Morelia', id=13370}
+Airport{name='Melilla', id=13371}
+Airport{name='Milos', id=13372}
+Airport{name='Malabang', id=13373}
+Airport{name='Malalaua', id=13374}
+Airport{name='Miles City', id=13375}
+Airport{name='Millinocket', id=13376}
+Airport{name='Monroe', id=13377}
+Airport{name='Merluna', id=13378}
+Airport{name='Monrovia', id=13379}
+Airport{name='Malatya', id=13380}
+Airport{name='Manley Hot Springs', id=13381}
+Airport{name='Melo', id=13382}
+Airport{name='Malmo', id=13383}
+Airport{name='Memanbetsu', id=13384}
+Airport{name='Ciudad Mante', id=13385}
+Airport{name='Minami Daito', id=13386}
+Airport{name='Darlington', id=13387}
+Airport{name='Mammoth Lakes', id=13388}
+Airport{name='Athens', id=13389}
+Airport{name='Matsumoto', id=13390}
+Airport{name='Murmansk', id=13391}
+Airport{name='Marshall', id=13392}
+Airport{name='Middlemount', id=13393}
+Airport{name='Stow', id=13394}
+Airport{name='Mompos', id=13395}
+Airport{name='Mbala', id=13396}
+Airport{name='Columbia', id=13397}
+Airport{name='Morristown', id=13398}
+Airport{name='Malmo', id=13399}
+Airport{name='Miyakojima', id=13400}
+Airport{name='Fosston', id=13401}
+Airport{name='Moose Lake', id=13402}
+Airport{name='Ortonville', id=13403}
+Airport{name='Moanda', id=13404}
+Airport{name='Nacala', id=13405}
+Airport{name='Montserrat', id=13406}
+Airport{name='Maiana', id=13407}
+Airport{name='Manila', id=13408}
+Airport{name='Marinette', id=13409}
+Airport{name='Marion', id=13410}
+Airport{name='Manono', id=13411}
+Airport{name='Mongu', id=13413}
+Airport{name='Mansa', id=13414}
+Airport{name='Minto', id=13415}
+Airport{name='Mawlamyine', id=13416}
+Airport{name='Manicore', id=13417}
+Airport{name='Manassas', id=13418}
+Airport{name='Mosby', id=13419}
+Airport{name='Washington', id=13420}
+Airport{name='Moa', id=13421}
+Airport{name='Mobile', id=13422}
+Airport{name='Montes Claros', id=13423}
+Airport{name='Modesto', id=13424}
+Airport{name='Mong Hsat', id=13425}
+Airport{name='Molde', id=13426}
+Airport{name='Moudjeria', id=13427}
+Airport{name='Mount Cook', id=13428}
+Airport{name='Mount Pleasant', id=13429}
+Airport{name='Morondava', id=13430}
+Airport{name='Morristown', id=13431}
+Airport{name='Moses Point', id=13432}
+Airport{name='Minot', id=13433}
+Airport{name='Mountain Village', id=13434}
+Airport{name='Moscow', id=13435}
+Airport{name='Monterrey', id=13437}
+Airport{name='Moorea Island', id=13438}
+Airport{name='Miami', id=13439}
+Airport{name='Montpelier', id=13440}
+Airport{name='Morrilton', id=13441}
+Airport{name='Mokpo', id=13442}
+Airport{name='Montpellier', id=13443}
+Airport{name='Maputo', id=13444}
+Airport{name='Mount Pleasant', id=13445}
+Airport{name='Mt. Pocono', id=13446}
+Airport{name='McPherson', id=13447}
+Airport{name='Mount Pleasant', id=13448}
+Airport{name='Maliana', id=13449}
+Airport{name='Montpelier/Barre', id=13450}
+Airport{name='Miyanmin', id=13451}
+Airport{name='Macomb', id=13452}
+Airport{name='Indianapolis', id=13453}
+Airport{name='Mildura', id=13454}
+Airport{name='Mo I Rana', id=13455}
+Airport{name='Nelspruit', id=13456}
+Airport{name='Moundou', id=13457}
+Airport{name='Mustique', id=13458}
+Airport{name='Marquette', id=13459}
+Airport{name='Mek'ele', id=13460}
+Airport{name='Smyrna', id=13461}
+Airport{name='Misurata', id=13462}
+Airport{name='Martinsburg', id=13463}
+Airport{name='Columbia', id=13464}
+Airport{name='Merida', id=13465}
+Airport{name='Morehead City', id=13466}
+Airport{name='Anchorage', id=13467}
+Airport{name='Marco Island', id=13469}
+Airport{name='Morganton', id=13470}
+Airport{name='Grand Case', id=13471}
+Airport{name='Marseille', id=13472}
+Airport{name='Mauritius Island', id=13473}
+Airport{name='Mineralnyye Vody', id=13474}
+Airport{name='Margarita Island', id=13475}
+Airport{name='Monterey', id=13476}
+Airport{name='Moree', id=13477}
+Airport{name='Grenada', id=13478}
+Airport{name='Muskrat Dam', id=13479}
+Airport{name='Mesa', id=13480}
+Airport{name='Manston', id=13481}
+Airport{name='Masirah', id=13482}
+Airport{name='Misawa', id=13483}
+Airport{name='Muscle Shoals', id=13484}
+Airport{name='Madison', id=13485}
+Airport{name='Missoula', id=13486}
+Airport{name='Minneapolis', id=13487}
+Airport{name='Minsk', id=13488}
+Airport{name='Massena', id=13490}
+Airport{name='Maastricht', id=13491}
+Airport{name='Maseru', id=13492}
+Airport{name='Monticello', id=13493}
+Airport{name='Massawa', id=13494}
+Airport{name='New Orleans', id=13495}
+Airport{name='Namibe', id=13496}
+Airport{name='Colstrip', id=13497}
+Airport{name='Mt. Clemens', id=13498}
+Airport{name='Mt. Sandford', id=13499}
+Airport{name='Monte Alegre', id=13500}
+Airport{name='Marathon', id=13501}
+Airport{name='Montrose/Delta', id=13502}
+Airport{name='Maitland', id=13503}
+Airport{name='Metlakatla', id=13504}
+Airport{name='Baltimore', id=13505}
+Airport{name='Mattoon/Charleston', id=13506}
+Airport{name='Montauk Point', id=13507}
+Airport{name='Monteria', id=13508}
+Airport{name='Manzini', id=13509}
+Airport{name='Minatitlan', id=13510}
+Airport{name='Mota Lava', id=13511}
+Airport{name='Manitowoc', id=13512}
+Airport{name='Fairbanks', id=13513}
+Airport{name='Monterrey', id=13514}
+Airport{name='Masada', id=13515}
+Airport{name='Munda', id=13516}
+Airport{name='Maun', id=13517}
+Airport{name='Munich', id=13518}
+Airport{name='Kamuela', id=13520}
+Airport{name='Mulege', id=13521}
+Airport{name='Mersa Matruh', id=13522}
+Airport{name='Moultrie', id=13523}
+Airport{name='Maturin', id=13524}
+Airport{name='Mountain Home', id=13525}
+Airport{name='Marudi', id=13526}
+Airport{name='Muscatine', id=13527}
+Airport{name='Multan', id=13528}
+Airport{name='Musoma', id=13530}
+Airport{name='Mvengue', id=13531}
+Airport{name='Montevideo', id=13532}
+Airport{name='Mossoro', id=13533}
+Airport{name='Mandeville', id=13534}
+Airport{name='Morrisville', id=13535}
+Airport{name='Kayenta', id=13536}
+Airport{name='Mount Vernon', id=13537}
+Airport{name='Maroua', id=13539}
+Airport{name='Burlington/Mount Vernon', id=13540}
+Airport{name='Martha's Vineyard', id=13541}
+Airport{name='Marion/Herrin', id=13543}
+Airport{name='Milwaukee', id=13544}
+Airport{name='Mianwali', id=13545}
+Airport{name='Moses Lake', id=13546}
+Airport{name='Mineral Wells', id=13547}
+Airport{name='Windom', id=13548}
+Airport{name='Middletown', id=13549}
+Airport{name='Magwe', id=13550}
+Airport{name='Mwanza', id=13551}
+Airport{name='Masamba', id=13552}
+Airport{name='Monticello', id=13553}
+Airport{name='Maxton', id=13554}
+Airport{name='Montgomery', id=13555}
+Airport{name='Marlboro', id=13556}
+Airport{name='Moro', id=13557}
+Airport{name='Minna', id=13558}
+Airport{name='Mexicali', id=13559}
+Airport{name='Milan', id=13560}
+Airport{name='Maota', id=13561}
+Airport{name='Maintirano', id=13562}
+Airport{name='Mora', id=13563}
+Airport{name='McCarthy', id=13564}
+Airport{name='Moruya', id=13565}
+Airport{name='Mayumba', id=13566}
+Airport{name='Maracay', id=13567}
+Airport{name='Malindi', id=13568}
+Airport{name='Miyake Jima', id=13569}
+Airport{name='San Diego', id=13570}
+Airport{name='Mayaguana', id=13571}
+Airport{name='Marble Canyon', id=13572}
+Airport{name='Matsuyama', id=13573}
+Airport{name='May Creek', id=13574}
+Airport{name='McCall', id=13575}
+Airport{name='Mary', id=13576}
+Airport{name='Myrtle Beach', id=13577}
+Airport{name='Myitkyina', id=13578}
+Airport{name='Mekoryuk', id=13579}
+Airport{name='Marysville', id=13580}
+Airport{name='Mtwara', id=13581}
+Airport{name='Miri', id=13582}
+Airport{name='Mocimboa Da Praia', id=13584}
+Airport{name='Makung', id=13585}
+Airport{name='Mopti', id=13586}
+Airport{name='Marana', id=13587}
+Airport{name='Marakei', id=13588}
+Airport{name='Manizales', id=13589}
+Airport{name='Metz', id=13590}
+Airport{name='Minj', id=13591}
+Airport{name='Manzanillo', id=13592}
+Airport{name='Mazar-I-Sherif', id=13593}
+Airport{name='Mazatlan', id=13594}
+Airport{name='Marion', id=13595}
+Airport{name='Pottstown', id=13596}
+Airport{name='Robbinsville', id=13597}
+Airport{name='Narrabri', id=13598}
+Airport{name='North Adams', id=13599}
+Airport{name='Nagpur', id=13600}
+Airport{name='Nakhon Ratchasima', id=13601}
+Airport{name='Nadi', id=13602}
+Airport{name='Nanchong', id=13603}
+Airport{name='Naples', id=13604}
+Airport{name='Nassau', id=13605}
+Airport{name='Natal', id=13606}
+Airport{name='Napuka Islnd', id=13607}
+Airport{name='Star Harbour', id=13609}
+Airport{name='Nambaiyufa', id=13610}
+Airport{name='Naberevnye Chelny', id=13611}
+Airport{name='New Orleans', id=13612}
+Airport{name='Newburgh', id=13613}
+Airport{name='Bangkok', id=13614}
+Airport{name='Nairobi', id=13616}
+Airport{name='Glenview', id=13617}
+Airport{name='Guantanamo', id=13618}
+Airport{name='Gastonia', id=13619}
+Airport{name='Smithfield', id=13620}
+Airport{name='Shelby', id=13621}
+Airport{name='Currituck', id=13622}
+Airport{name='Kenansville', id=13623}
+Airport{name='North Caicos', id=13624}
+Airport{name='Nice', id=13625}
+Airport{name='Nachingwea', id=13626}
+Airport{name='Necocli', id=13627}
+Airport{name='Newcastle', id=13628}
+Airport{name='Chenega', id=13629}
+Airport{name='North Kingstown', id=13630}
+Airport{name='Subic Bay', id=13631}
+Airport{name='Marietta', id=13632}
+Airport{name='Newcastle', id=13633}
+Airport{name='Nicoya', id=13634}
+Airport{name='Nukus', id=13635}
+Airport{name='Annecy', id=13636}
+Airport{name='Kindred', id=13637}
+Airport{name='Nouadhibou', id=13638}
+Airport{name='Nanded', id=13639}
+Airport{name='Ndjamena', id=13641}
+Airport{name='Ndele', id=13642}
+Airport{name='Nador', id=13643}
+Airport{name='Cuxhaven', id=13644}
+Airport{name='Gothenburg', id=13645}
+Airport{name='Blair', id=13646}
+Airport{name='Brunswick', id=13647}
+Airport{name='Negril', id=13648}
+Airport{name='Lakehurst', id=13650}
+Airport{name='Neryungri', id=13651}
+Airport{name='New Bight', id=13652}
+Airport{name='Sam Neua', id=13653}
+Airport{name='Nevis', id=13654}
+Airport{name='New Orleans', id=13655}
+Airport{name='Fallon', id=13656}
+Airport{name='Young', id=13657}
+Airport{name='Ningbo', id=13658}
+Airport{name='Grand Canyon', id=13659}
+Airport{name='Anegada', id=13660}
+Airport{name='N'Gaoundere', id=13661}
+Airport{name='Kaneohe', id=13662}
+Airport{name='Guam', id=13663}
+Airport{name='Nagoya', id=13664}
+Airport{name='Corpus Christi', id=13665}
+Airport{name='Nagasaki', id=13666}
+Airport{name='Norfolk', id=13667}
+Airport{name='Alameda', id=13668}
+Airport{name='Nha-Trang', id=13669}
+Airport{name='Dubai', id=13670}
+Airport{name='Patuxent River', id=13671}
+Airport{name='Northolt', id=13672}
+Airport{name='Nuku Hiva', id=13673}
+Airport{name='Brunswick', id=13674}
+Airport{name='Nimba', id=13675}
+Airport{name='Nikolai', id=13676}
+Airport{name='Nicosia', id=13677}
+Airport{name='Niblack', id=13678}
+Airport{name='Nikunau', id=13679}
+Airport{name='Niamey', id=13680}
+Airport{name='Ninilchik', id=13681}
+Airport{name='Jacksonville', id=13682}
+Airport{name='Niort', id=13683}
+Airport{name='Nioro', id=13684}
+Airport{name='Berlin', id=13685}
+Airport{name='West Creek', id=13686}
+Airport{name='Atsugi', id=13687}
+Airport{name='Nizhnevartovsk', id=13688}
+Airport{name='El Centro', id=13689}
+Airport{name='Nkan', id=13690}
+Airport{name='Nouakchott', id=13691}
+Airport{name='Nanjing', id=13692}
+Airport{name='Naukiti', id=13693}
+Airport{name='Nagoya', id=13694}
+Airport{name='Nankina', id=13695}
+Airport{name='Nkongsamba', id=13696}
+Airport{name='Cherry Point', id=13697}
+Airport{name='Nichen Cove', id=13698}
+Airport{name='Diego Garcia', id=13699}
+Airport{name='San Diego', id=13700}
+Airport{name='Ndola', id=13701}
+Airport{name='Lemoore', id=13702}
+Airport{name='Nuevo Laredo', id=13703}
+Airport{name='Nelson Lagoon', id=13704}
+Airport{name='Norfolk Island', id=13705}
+Airport{name='Kinshasa', id=13706}
+Airport{name='Nelspruit', id=13707}
+Airport{name='Nicholson', id=13708}
+Airport{name='Norman's Cay', id=13709}
+Airport{name='Nightmute', id=13710}
+Airport{name='San Miguel', id=13711}
+Airport{name='Kenitra', id=13712}
+Airport{name='Nanning', id=13713}
+Airport{name='Naknek', id=13714}
+Airport{name='Nondalton', id=13715}
+Airport{name='Nanuque', id=13716}
+Airport{name='Nanyang', id=13717}
+Airport{name='Nowra', id=13718}
+Airport{name='Connaught', id=13719}
+Airport{name='Nogales', id=13720}
+Airport{name='Nonouti', id=13721}
+Airport{name='Mactan Island', id=13722}
+Airport{name='Nordfjordur', id=13723}
+Airport{name='Nossi-Be', id=13724}
+Airport{name='Novato', id=13725}
+Airport{name='Noumea', id=13726}
+Airport{name='Huambo', id=13727}
+Airport{name='Pensacola', id=13728}
+Airport{name='Napier', id=13729}
+Airport{name='New Plymouth', id=13730}
+Airport{name='Newport', id=13731}
+Airport{name='Millington', id=13732}
+Airport{name='Kingsville', id=13733}
+Airport{name='Neuquen', id=13734}
+Airport{name='ru.bmstu.iu9.lab2.Key West', id=13736}
+Airport{name='Newquay', id=13737}
+Airport{name='Narrandera', id=13738}
+Airport{name='Mayport', id=13739}
+Airport{name='Afton', id=13740}
+Airport{name='Norrkoping', id=13741}
+Airport{name='North Ronaldsay', id=13742}
+Airport{name='Ceiba', id=13743}
+Airport{name='Tokyo', id=13744}
+Airport{name='Noosa', id=13745}
+Airport{name='Bimini', id=13746}
+Airport{name='Milton', id=13747}
+Airport{name='Camp Springs', id=13748}
+Airport{name='Yaounde', id=13749}
+Airport{name='Merritt Island', id=13750}
+Airport{name='Nelson', id=13751}
+Airport{name='Scone', id=13752}
+Airport{name='Nakhon Si Thammarat', id=13753}
+Airport{name='Sigonella', id=13754}
+Airport{name='Snap Lake', id=13755}
+Airport{name='Port Hueneme', id=13756}
+Airport{name='Nantes', id=13757}
+Airport{name='Newcastle', id=13758}
+Airport{name='Normanton', id=13759}
+Airport{name='Santo Antao', id=13760}
+Airport{name='Wajima', id=13761}
+Airport{name='Monterrey', id=13762}
+Airport{name='Oceana', id=13763}
+Airport{name='Sun City', id=13764}
+Airport{name='Nuremberg', id=13765}
+Airport{name='Nuguria', id=13766}
+Airport{name='Nuiqsut', id=13767}
+Airport{name='Nulato', id=13768}
+Airport{name='Pensacola', id=13769}
+Airport{name='Nunapitchuk', id=13770}
+Airport{name='Mountain View', id=13771}
+Airport{name='Whidbey Island', id=13772}
+Airport{name='Overton', id=13773}
+Airport{name='Neiva', id=13774}
+Airport{name='Nevada', id=13775}
+Airport{name='Narvik', id=13776}
+Airport{name='Navegantes', id=13777}
+Airport{name='Norwich', id=13778}
+Airport{name='Willow Grove', id=13780}
+Airport{name='Kingston', id=13781}
+Airport{name='Fulton', id=13782}
+Airport{name='Oneonta', id=13783}
+Airport{name='New York', id=13784}
+Airport{name='Yuma', id=13785}
+Airport{name='Nykoping', id=13786}
+Airport{name='Nyaung-U', id=13787}
+Airport{name='Jacksonville', id=13788}
+Airport{name='Santa Ana', id=13789}
+Airport{name='South Weymouth', id=13790}
+Airport{name='San Diego', id=13791}
+Airport{name='Redding', id=13792}
+Airport{name='Orange', id=13793}
+Airport{name='Bagram', id=13794}
+Airport{name='Jacksonville/Camp Lejeune', id=13795}
+Airport{name='Oakland', id=13796}
+Airport{name='Oamaru', id=13797}
+Airport{name='Olanchito', id=13798}
+Airport{name='Oaxaca', id=13799}
+Airport{name='Obock', id=13801}
+Airport{name='Oberpfaffenhofen', id=13802}
+Airport{name='Obihiro', id=13803}
+Airport{name='Aubenas', id=13804}
+Airport{name='Oakland', id=13805}
+Airport{name='Kobuk', id=13806}
+Airport{name='Ocean City', id=13808}
+Airport{name='Ocala', id=13809}
+Airport{name='Nacogdoches', id=13810}
+Airport{name='Oceanic', id=13811}
+Airport{name='Ocho Rios', id=13812}
+Airport{name='Oceanside', id=13813}
+Airport{name='Washington', id=13814}
+Airport{name='Ouadda', id=13815}
+Airport{name='Cordoba', id=13816}
+Airport{name='Oodnadatta', id=13817}
+Airport{name='Odense', id=13818}
+Airport{name='Oakland', id=13819}
+Airport{name='Odessa', id=13820}
+Airport{name='Oak Harbor', id=13821}
+Airport{name='Oecusse', id=13822}
+Airport{name='Oernskoeldsvik', id=13823}
+Airport{name='Omaha', id=13824}
+Airport{name='Norfolk', id=13825}
+Airport{name='Ofu', id=13826}
+Airport{name='Ogallala', id=13827}
+Airport{name='Orangeburg', id=13828}
+Airport{name='Ogden', id=13829}
+Airport{name='Kahului', id=13830}
+Airport{name='Yonaguni', id=13831}
+Airport{name='Ogdensburg', id=13832}
+Airport{name='Washington Court House', id=13833}
+Airport{name='Bellefontaine', id=13834}
+Airport{name='Chillicothe', id=13835}
+Airport{name='Marysville', id=13836}
+Airport{name='Cincinnati', id=13837}
+Airport{name='Ravenna', id=13838}
+Airport{name='Kent', id=13839}
+Airport{name='Ohakea', id=13840}
+Airport{name='Northeast Cape', id=13841}
+Airport{name='Ohrid', id=13842}
+Airport{name='Oshakati', id=13843}
+Airport{name='Wyk Auf Fohr', id=13844}
+Airport{name='Norwich', id=13845}
+Airport{name='Oshima Islands', id=13846}
+Airport{name='Oita', id=13847}
+Airport{name='Olathe', id=13848}
+Airport{name='Okinawa', id=13850}
+Airport{name='Oklahoma City', id=13851}
+Airport{name='Sapporo', id=13852}
+Airport{name='Okayama', id=13853}
+Airport{name='Kokomo/Logansport/Peru', id=13854}
+Airport{name='Okondja', id=13855}
+Airport{name='Tokyo', id=13856}
+Airport{name='Yorke Island', id=13857}
+Airport{name='Oakey', id=13858}
+Airport{name='Orland', id=13859}
+Airport{name='Olbia', id=13860}
+Airport{name='Olean', id=13861}
+Airport{name='Wolf Point', id=13862}
+Airport{name='Old Harbor', id=13863}
+Airport{name='Olafsvik', id=13864}
+Airport{name='Olympia', id=13865}
+Airport{name='Olomouc', id=13866}
+Airport{name='Olympic Dam', id=13867}
+Airport{name='Nogales', id=13868}
+Airport{name='Columbus', id=13869}
+Airport{name='Olive Branch', id=13870}
+Airport{name='Omaha', id=13871}
+Airport{name='Omboue', id=13872}
+Airport{name='Nome', id=13873}
+Airport{name='Urmieh', id=13874}
+Airport{name='Omak', id=13876}
+Airport{name='Omkalai', id=13877}
+Airport{name='Mostar', id=13878}
+Airport{name='Oradea', id=13879}
+Airport{name='Omsk', id=13880}
+Airport{name='Winona', id=13881}
+Airport{name='Ondangwa', id=13882}
+Airport{name='Mornington Island', id=13883}
+Airport{name='Oneonta', id=13884}
+Airport{name='Odate Noshiro', id=13885}
+Airport{name='O'Neill', id=13886}
+Airport{name='Socorro', id=13887}
+Airport{name='Onion Bay', id=13888}
+Airport{name='Ontario', id=13889}
+Airport{name='Newport', id=13890}
+Airport{name='Ontario', id=13891}
+Airport{name='Colon', id=13892}
+Airport{name='Cobol', id=13893}
+Airport{name='Toksook', id=13894}
+Airport{name='Gold Coast', id=13895}
+Airport{name='Cooma', id=13896}
+Airport{name='Miami', id=13898}
+Airport{name='Ophir', id=13899}
+Airport{name='Porto', id=13900}
+Airport{name='McDonald Lake', id=13901}
+Airport{name='Bible Camp', id=13902}
+Airport{name='Cinder River Lodge', id=13903}
+Airport{name='Lemesurier Island', id=13905}
+Airport{name='Tracy Arm', id=13906}
+Airport{name='Vrems', id=13908}
+Airport{name='Akolik', id=13909}
+Airport{name='Mels', id=13910}
+Airport{name='Meshik', id=13911}
+Airport{name='Telaquana Lake', id=13912}
+Airport{name='Chelatna Lake Lodge', id=13913}
+Airport{name='Pumice', id=13914}
+Airport{name='Port Alsworth', id=13915}
+Airport{name='Twin Lakes', id=13916}
+Airport{name='Sandy', id=13917}
+Airport{name='Waterkloof', id=13919}
+Airport{name='Shirleyville', id=13920}
+Airport{name='Doug Carney Strip', id=13921}
+Airport{name='Shisholik', id=13922}
+Airport{name='Sivinuvik', id=13923}
+Airport{name='American Creek', id=13924}
+Airport{name='Grants Pass', id=13925}
+Airport{name='Gleneden', id=13926}
+Airport{name='Florence', id=13927}
+Airport{name='Orebro', id=13928}
+Airport{name='Orocue', id=13929}
+Airport{name='Chicago', id=13930}
+Airport{name='Norfolk', id=13931}
+Airport{name='Paramaribo', id=13932}
+Airport{name='Worcester', id=13933}
+Airport{name='Port Lions', id=13934}
+Airport{name='Cork', id=13935}
+Airport{name='Orlando', id=13936}
+Airport{name='Oran', id=13937}
+Airport{name='Orapa', id=13939}
+Airport{name='Northway', id=13940}
+Airport{name='Oruro', id=13941}
+Airport{name='Noorvik', id=13942}
+Airport{name='Paris', id=13943}
+Airport{name='Orange Walk', id=13944}
+Airport{name='Osaka', id=13945}
+Airport{name='Osage Beach', id=13946}
+Airport{name='Oscoda', id=13947}
+Airport{name='Ostersund', id=13948}
+Airport{name='Oshkosh', id=13949}
+Airport{name='Osijek', id=13950}
+Airport{name='Oskarshamn', id=13951}
+Airport{name='Oslo', id=13952}
+Airport{name='Mosul', id=13953}
+Airport{name='Osan', id=13954}
+Airport{name='Slupsk', id=13955}
+Airport{name='Ostrava', id=13956}
+Airport{name='Ostend', id=13957}
+Airport{name='Columbus', id=13958}
+Airport{name='Kosciusko', id=13959}
+Airport{name='Namsos', id=13960}
+Airport{name='Koszalin', id=13961}
+Airport{name='Contadora', id=13962}
+Airport{name='Worthington', id=13963}
+Airport{name='North Bend/Coos Bay', id=13964}
+Airport{name='Ottumwa', id=13965}
+Airport{name='Bucharest', id=13966}
+Airport{name='Coto 47', id=13967}
+Airport{name='Anacortes', id=13968}
+Airport{name='Otu', id=13969}
+Airport{name='Kotzebue', id=13970}
+Airport{name='Ouagadougou', id=13971}
+Airport{name='Oujda', id=13972}
+Airport{name='Ouesso', id=13973}
+Airport{name='Oudtshoorn', id=13974}
+Airport{name='Oulu', id=13975}
+Airport{name='Norman', id=13976}
+Airport{name='Batouri', id=13977}
+Airport{name='Bekily', id=13978}
+Airport{name='Novosibirsk', id=13979}
+Airport{name='Asturias', id=13980}
+Airport{name='Oroville', id=13981}
+Airport{name='Owatonna', id=13982}
+Airport{name='Owensboro', id=13983}
+Airport{name='Norwood', id=13984}
+Airport{name='Bissau', id=13986}
+Airport{name='Waterbury', id=13987}
+Airport{name='Oxnard/Ventura', id=13988}
+Airport{name='Knoxville', id=13989}
+Airport{name='Goya', id=13990}
+Airport{name='Oyem', id=13991}
+Airport{name='Oiapoque', id=13992}
+Airport{name='Tres Arroyos', id=13993}
+Airport{name='Yosemite National Park', id=13994}
+Airport{name='Ozona', id=13995}
+Airport{name='Ozamis City', id=13996}
+Airport{name='Zaporozhye', id=13997}
+Airport{name='Moron', id=13998}
+Airport{name='Ozark', id=13999}
+Airport{name='Montrose', id=14000}
+Airport{name='Bedford', id=14001}
+Airport{name='Pa-An', id=14002}
+Airport{name='Paderborn', id=14003}
+Airport{name='Everett', id=14004}
+Airport{name='Pagadian', id=14005}
+Airport{name='Paducah', id=14006}
+Airport{name='Hanapepe', id=14007}
+Airport{name='Panama City', id=14009}
+Airport{name='Pattani', id=14010}
+Airport{name='Palo Alto', id=14011}
+Airport{name='Port-au-Prince', id=14012}
+Airport{name='Palmer', id=14013}
+Airport{name='Paris', id=14014}
+Airport{name='Paros', id=14015}
+Airport{name='Patna', id=14016}
+Airport{name='Paulo Alfonso', id=14017}
+Airport{name='Port-de-Paix', id=14018}
+Airport{name='Pamol', id=14019}
+Airport{name='Poza Rica', id=14020}
+Airport{name='Point Barrow', id=14021}
+Airport{name='Puebla', id=14022}
+Airport{name='Porbandar', id=14023}
+Airport{name='Pine Bluff', id=14024}
+Airport{name='Plattsburgh', id=14025}
+Airport{name='Paro', id=14026}
+Airport{name='West Palm Beach/Palm Beach', id=14027}
+Airport{name='Pack Creek', id=14028}
+Airport{name='Puerto Cabello', id=14029}
+Airport{name='Zanderij', id=14030}
+Airport{name='Porto Amboim', id=14031}
+Airport{name='Paraburdoo', id=14032}
+Airport{name='Puerto Barrios', id=14033}
+Airport{name='Pikeville', id=14034}
+Airport{name='Plettenberg Bay', id=14036}
+Airport{name='Portage Creek', id=14037}
+Airport{name='Puerto Rico', id=14038}
+Airport{name='Prairie Du Chien', id=14039}
+Airport{name='Painter Creek', id=14040}
+Airport{name='Paso Caballos', id=14041}
+Airport{name='Porcupine Creek', id=14042}
+Airport{name='Pucallpa', id=14043}
+Airport{name='Princeton', id=14044}
+Airport{name='Puerto Inirida', id=14045}
+Airport{name='Pedro Bay', id=14046}
+Airport{name='Mueo', id=14047}
+Airport{name='Padang', id=14048}
+Airport{name='Atlanta', id=14050}
+Airport{name='Ponta Delgada', id=14051}
+Airport{name='Maldonado', id=14052}
+Airport{name='Piedras Negras', id=14053}
+Airport{name='Pendleton', id=14054}
+Airport{name='Paysandu', id=14055}
+Airport{name='Plovdiv', id=14056}
+Airport{name='Portland', id=14057}
+Airport{name='Pedernales', id=14058}
+Airport{name='Las Malvinas', id=14059}
+Airport{name='Puerto Jose', id=14060}
+Airport{name='Penneshaw', id=14061}
+Airport{name='Pelican', id=14062}
+Airport{name='Perm', id=14063}
+Airport{name='Perugia', id=14064}
+Airport{name='Pereira', id=14065}
+Airport{name='Beijing', id=14066}
+Airport{name='Puerto Maldonado', id=14067}
+Airport{name='Bayan Lepas', id=14068}
+Airport{name='Progreso', id=14069}
+Airport{name='Pecos City', id=14070}
+Airport{name='Perth', id=14071}
+Airport{name='Pelotas', id=14072}
+Airport{name='Puerto Lempira', id=14073}
+Airport{name='Peshawar', id=14074}
+Airport{name='Paf Warren', id=14075}
+Airport{name='Passo Fundo', id=14076}
+Airport{name='Port Frederick', id=14077}
+Airport{name='Panama City', id=14078}
+Airport{name='Pafos', id=14079}
+Airport{name='Ilebo', id=14080}
+Airport{name='Page', id=14081}
+Airport{name='Punta Gorda', id=14082}
+Airport{name='Perpignan', id=14083}
+Airport{name='Pantnagar', id=14084}
+Airport{name='Chitato', id=14085}
+Airport{name='Pangkalpinang', id=14086}
+Airport{name='Pascagoula', id=14087}
+Airport{name='Port Graham', id=14088}
+Airport{name='Pagosa Springs', id=14089}
+Airport{name='Peach Springs', id=14091}
+Airport{name='Greenville', id=14092}
+Airport{name='Phan Rang', id=14093}
+Airport{name='Parnaiba', id=14094}
+Airport{name='Port Harcourt', id=14095}
+Airport{name='New Philadelphia', id=14096}
+Airport{name='Port Hedland', id=14097}
+Airport{name='Newport News/Williamsburg', id=14098}
+Airport{name='Pinheiro', id=14099}
+Airport{name='Philadelphia', id=14100}
+Airport{name='Port Huron', id=14101}
+Airport{name='Point Hope', id=14102}
+Airport{name='Pacific Harbour', id=14103}
+Airport{name='Phitsanulok', id=14104}
+Airport{name='Paris', id=14105}
+Airport{name='Phalaborwa', id=14106}
+Airport{name='Phoenix', id=14107}
+Airport{name='Peoria', id=14108}
+Airport{name='Hattiesburg/Laurel', id=14109}
+Airport{name='Pine Cay', id=14110}
+Airport{name='Nassau/Paradise Island', id=14111}
+Airport{name='St. Petersburg', id=14112}
+Airport{name='Pocatello', id=14113}
+Airport{name='Fairbanks', id=14114}
+Airport{name='Glasgow/Prestwick', id=14115}
+Airport{name='Pine Mountain', id=14116}
+Airport{name='Parintins', id=14117}
+Airport{name='Pisco', id=14118}
+Airport{name='Pilot Point', id=14119}
+Airport{name='Pierre', id=14120}
+Airport{name='Poitiers', id=14121}
+Airport{name='Pittsburgh', id=14122}
+Airport{name='Piura', id=14123}
+Airport{name='Pico Island', id=14124}
+Airport{name='Point Lay', id=14125}
+Airport{name='Payson', id=14126}
+Airport{name='Panjgur', id=14127}
+Airport{name='Puerto Jimenez', id=14128}
+Airport{name='Port San Juan', id=14129}
+Airport{name='Napaskiak', id=14130}
+Airport{name='Parkersburg', id=14131}
+Airport{name='Petropavlovsk-Kamchatsky', id=14132}
+Airport{name='Park Rapids', id=14133}
+Airport{name='Parkes', id=14134}
+Airport{name='Porto-Kheli', id=14135}
+Airport{name='Pakokku', id=14136}
+Airport{name='Pokhara', id=14138}
+Airport{name='Pekanbaru', id=14139}
+Airport{name='Selebi-Phikwe', id=14140}
+Airport{name='Pakse', id=14141}
+Airport{name='Planadas', id=14142}
+Airport{name='Plattsburgh', id=14143}
+Airport{name='Planeta Rica', id=14144}
+Airport{name='Plymouth', id=14145}
+Airport{name='Point Lookout', id=14147}
+Airport{name='Ponta Pelada', id=14148}
+Airport{name='Palembang', id=14149}
+Airport{name='Pellston', id=14150}
+Airport{name='Port Lincoln', id=14151}
+Airport{name='Palanga', id=14152}
+Airport{name='Providenciales', id=14153}
+Airport{name='Plato', id=14154}
+Airport{name='Belo Horizonte', id=14155}
+Airport{name='Palu', id=14156}
+Airport{name='Plymouth', id=14157}
+Airport{name='Port Elizabeth', id=14158}
+Airport{name='Pemba Island', id=14159}
+Airport{name='Pembina', id=14160}
+Airport{name='Puerto Montt', id=14161}
+Airport{name='Palmdale', id=14162}
+Airport{name='Parma', id=14163}
+Airport{name='Ponta Pora', id=14164}
+Airport{name='Portsmouth', id=14165}
+Airport{name='Palma Mallorca', id=14166}
+Airport{name='Port Moller', id=14167}
+Airport{name='Palermo', id=14168}
+Airport{name='Pimaga', id=14169}
+Airport{name='Perito Moreno', id=14170}
+Airport{name='Palmerston', id=14171}
+Airport{name='Palmyra', id=14172}
+Airport{name='Paimiut', id=14173}
+Airport{name='Porlamar', id=14174}
+Airport{name='Palmas', id=14175}
+Airport{name='El Tehuelche', id=14176}
+Airport{name='Palmar', id=14177}
+Airport{name='Pamplona', id=14178}
+Airport{name='Porto Nacional', id=14179}
+Airport{name='Ponca City', id=14180}
+Airport{name='Punta Gorda', id=14181}
+Airport{name='Philadelphia', id=14182}
+Airport{name='Peterson's Point', id=14183}
+Airport{name='Paranagua', id=14184}
+Airport{name='Phnom Penh', id=14185}
+Airport{name='Pohnpei', id=14186}
+Airport{name='Pontianak', id=14187}
+Airport{name='Pantelleria', id=14188}
+Airport{name='Pinotepa', id=14189}
+Airport{name='Popondetta', id=14190}
+Airport{name='Pune', id=14191}
+Airport{name='Pointe Noire', id=14192}
+Airport{name='Pensacola', id=14193}
+Airport{name='Sherman-Denison', id=14194}
+Airport{name='Petrolina', id=14195}
+Airport{name='Porto Alegre', id=14196}
+Airport{name='Fayetteville', id=14197}
+Airport{name='La Verne', id=14198}
+Airport{name='Port Frederick', id=14199}
+Airport{name='Fort Polk', id=14200}
+Airport{name='Poplar Bluff', id=14201}
+Airport{name='Port Gentil', id=14202}
+Airport{name='Pocahontas', id=14203}
+Airport{name='Potosi', id=14204}
+Airport{name='Pemba', id=14205}
+Airport{name='Port Moresby', id=14206}
+Airport{name='Puerto Plata', id=14207}
+Airport{name='Polk Inlet', id=14208}
+Airport{name='Pori', id=14209}
+Airport{name='Port of Spain', id=14210}
+Airport{name='Port Antonio', id=14211}
+Airport{name='Poughkeepsie', id=14212}
+Airport{name='Portoroz', id=14213}
+Airport{name='Pontoise', id=14214}
+Airport{name='Powell', id=14215}
+Airport{name='Poznan', id=14216}
+Airport{name='Pres. Prudente', id=14217}
+Airport{name='Prospect Creek', id=14218}
+Airport{name='Humacao', id=14219}
+Airport{name='Puerto Penasco', id=14220}
+Airport{name='Parsons', id=14221}
+Airport{name='Pago Pago', id=14222}
+Airport{name='Pompano Beach', id=14223}
+Airport{name='Popayan', id=14224}
+Airport{name='Powell Point', id=14225}
+Airport{name='Proserpine', id=14226}
+Airport{name='Puerto Princesa', id=14227}
+Airport{name='Papeete', id=14228}
+Airport{name='Port Protection', id=14229}
+Airport{name='Puerto Paez', id=14230}
+Airport{name='Presque Isle/Houlton', id=14231}
+Airport{name='Palenque', id=14232}
+Airport{name='Port Macquarie', id=14233}
+Airport{name='Pilot Station', id=14234}
+Airport{name='Parana', id=14235}
+Airport{name='Paso Robles', id=14236}
+Airport{name='Prescott', id=14237}
+Airport{name='Pine Ridge', id=14238}
+Airport{name='Prague', id=14239}
+Airport{name='Praslin', id=14240}
+Airport{name='Capri', id=14241}
+Airport{name='Pristina', id=14243}
+Airport{name='Point Retreat', id=14244}
+Airport{name='Pyay', id=14245}
+Airport{name='Prerov', id=14246}
+Airport{name='Paris', id=14247}
+Airport{name='Pretoria', id=14248}
+Airport{name='Prineville', id=14249}
+Airport{name='Pisa', id=14250}
+Airport{name='Philipsburg', id=14251}
+Airport{name='Pasco/Kennewick/Richland', id=14252}
+Airport{name='Port Said', id=14253}
+Airport{name='Ponce', id=14254}
+Airport{name='Pittsfield', id=14255}
+Airport{name='Petersburg', id=14256}
+Airport{name='Pasni', id=14257}
+Airport{name='Dublin', id=14258}
+Airport{name='Portsmouth', id=14259}
+Airport{name='Palestine', id=14260}
+Airport{name='Pasto', id=14261}
+Airport{name='Palm Springs', id=14262}
+Airport{name='Pescara', id=14263}
+Airport{name='Posadas', id=14264}
+Airport{name='Palacios', id=14265}
+Airport{name='Stanley', id=14266}
+Airport{name='Puerto Suarez', id=14267}
+Airport{name='Port Alsworth', id=14268}
+Airport{name='Port Alice', id=14269}
+Airport{name='Port Alexander', id=14270}
+Airport{name='Malolo Lailai', id=14271}
+Airport{name='Polokwane', id=14272}
+Airport{name='Port Heiden', id=14273}
+Airport{name='Portland', id=14274}
+Airport{name='Pontiac', id=14275}
+Airport{name='Port Armstrong', id=14276}
+Airport{name='Patterson', id=14277}
+Airport{name='Pointe A Pitre', id=14278}
+Airport{name='Pleasant Harbour', id=14279}
+Airport{name='Pittsburg', id=14280}
+Airport{name='Pratt', id=14281}
+Airport{name='Platinum', id=14282}
+Airport{name='Porterville', id=14283}
+Airport{name='Pottstown', id=14284}
+Airport{name='Pitalito', id=14285}
+Airport{name='Panama City', id=14286}
+Airport{name='Pastaza', id=14287}
+Airport{name='Pueblo', id=14288}
+Airport{name='Price', id=14289}
+Airport{name='Puerto Deseado', id=14290}
+Airport{name='Pau', id=14291}
+Airport{name='Port Augusta', id=14292}
+Airport{name='Punta Cana', id=14293}
+Airport{name='Pukarua', id=14294}
+Airport{name='Poulsbo', id=14295}
+Airport{name='Prudhoe Bay', id=14296}
+Airport{name='Punta Arenas', id=14297}
+Airport{name='Puerto Rico', id=14298}
+Airport{name='Busan', id=14299}
+Airport{name='Puttaparthi', id=14300}
+Airport{name='Puerto Asis', id=14301}
+Airport{name='Poum', id=14302}
+Airport{name='Pullman', id=14303}
+Airport{name='Pula', id=14304}
+Airport{name='Puerto Cabezas', id=14305}
+Airport{name='Provincetown', id=14306}
+Airport{name='Providence', id=14307}
+Airport{name='Placerville', id=14308}
+Airport{name='Shanghai', id=14309}
+Airport{name='Porto Velho', id=14310}
+Airport{name='Preveza', id=14311}
+Airport{name='Puerto Vallarta', id=14312}
+Airport{name='Provideniya', id=14313}
+Airport{name='Provo', id=14314}
+Airport{name='Plainview', id=14315}
+Airport{name='Pope Vanoy', id=14316}
+Airport{name='Painesville', id=14317}
+Airport{name='Oklahoma City', id=14318}
+Airport{name='Pevek', id=14319}
+Airport{name='Chicago', id=14320}
+Airport{name='Portland', id=14321}
+Airport{name='Big Port Walter', id=14322}
+Airport{name='Bremerton', id=14323}
+Airport{name='Puerto Escondido', id=14324}
+Airport{name='Porto Santo', id=14325}
+Airport{name='Pleiku', id=14326}
+Airport{name='Port Ashton', id=14327}
+Airport{name='Jeypore', id=14328}
+Airport{name='Puerto Ayacucho', id=14329}
+Airport{name='Polyarnyj', id=14330}
+Airport{name='Perry Island', id=14331}
+Airport{name='Plymouth', id=14332}
+Airport{name='Pyrgos', id=14333}
+Airport{name='Paz de Ariporo', id=14334}
+Airport{name='Pietermaritzburg', id=14335}
+Airport{name='Penzance', id=14336}
+Airport{name='Puerto Ordaz', id=14337}
+Airport{name='Port Sudan', id=14338}
+Airport{name='Piestany', id=14339}
+Airport{name='Jackpot', id=14341}
+Airport{name='Alcantara', id=14343}
+Airport{name='Globe', id=14344}
+Airport{name='Port Clinton', id=14345}
+Airport{name='Kelleys Island', id=14346}
+Airport{name='Lyndonville', id=14347}
+Airport{name='Houston', id=14348}
+Airport{name='Marina del Ray', id=14352}
+Airport{name='Bella Coola', id=14355}
+Airport{name='Lathrop Wells', id=14358}
+Airport{name='Green River', id=14359}
+Airport{name='Put-In-Bay', id=14360}
+Airport{name='Middle Bass Island', id=14361}
+Airport{name='Indian Creek', id=14365}
+Airport{name='Abilene', id=14366}
+Airport{name='North Bass Island', id=14367}
+Airport{name='Mont Laurier', id=14368}
+Airport{name='Culpeper', id=14371}
+Airport{name='Chah Bahar', id=14373}
+Airport{name='Levelland', id=14375}
+Airport{name='Crane Island', id=14377}
+Airport{name='Martinsville', id=14378}
+Airport{name='Dracena', id=14379}
+Airport{name='Dammam', id=14380}
+Airport{name='Emerald Bay', id=14383}
+Airport{name='Boufarik', id=14384}
+Airport{name='Avalon', id=14386}
+Airport{name='Houghton', id=14387}
+Airport{name='Houston', id=14388}
+Airport{name='Houston', id=14391}
+Airport{name='Isle Royale Park', id=14392}
+Airport{name='Jubail', id=14393}
+Airport{name='Kona Village', id=14395}
+Airport{name='Kennesaw', id=14397}
+Airport{name='Houston', id=14399}
+Airport{name='Mansfield', id=14400}
+Airport{name='Rio Negrinho', id=14403}
+Airport{name='Orange', id=14406}
+Airport{name='Singapore', id=14408}
+Airport{name='Houston', id=14409}
+Airport{name='Pittsfield', id=14410}
+Airport{name='Keyes Point', id=14412}
+Airport{name='Nimiuk Point', id=14413}
+Airport{name='Boston', id=14414}
+Airport{name='Sealing Point', id=14415}
+Airport{name='Westminster', id=14417}
+Airport{name='Stevensville', id=14420}
+Airport{name='Bonners Ferry', id=14422}
+Airport{name='Shingletown', id=14423}
+Airport{name='Woodlake', id=14424}
+Airport{name='Grass Valley', id=14427}
+Airport{name='Peachtree City', id=14430}
+Airport{name='Window Rock', id=14431}
+Airport{name='Lupin', id=14432}
+Airport{name='Healdsburg', id=14434}
+Airport{name='San Marcos', id=14435}
+Airport{name='Redondo Beach', id=14438}
+Airport{name='Queretaro', id=14440}
+Airport{name='Southbridge', id=14441}
+Airport{name='Paonia', id=14444}
+Airport{name='Rabaul', id=14446}
+Airport{name='Racine', id=14447}
+Airport{name='Tortola', id=14448}
+Airport{name='Arar', id=14449}
+Airport{name='Rafha', id=14450}
+Airport{name='Praia', id=14451}
+Airport{name='Rajkot', id=14452}
+Airport{name='Marrakech', id=14453}
+Airport{name='Riverside', id=14454}
+Airport{name='Ravenna', id=14455}
+Airport{name='Ribeirao Preto', id=14456}
+Airport{name='Rapid City', id=14457}
+Airport{name='Avarua', id=14458}
+Airport{name='Rasht', id=14459}
+Airport{name='Raduzhnyi', id=14460}
+Airport{name='Red Bank', id=14461}
+Airport{name='Rawala Kot', id=14462}
+Airport{name='Rabat', id=14463}
+Airport{name='Ugashik', id=14464}
+Airport{name='Dallas/Fort Worth', id=14465}
+Airport{name='Big Bear City', id=14466}
+Airport{name='Roseburg', id=14467}
+Airport{name='Brooks Lodge', id=14468}
+Airport{name='Red Bluff', id=14469}
+Airport{name='Fort Jefferson', id=14470}
+Airport{name='Robore', id=14471}
+Airport{name='Rio Branco', id=14472}
+Airport{name='Ruby', id=14474}
+Airport{name='Rapid City', id=14475}
+Airport{name='Richards Bay', id=14476}
+Airport{name='Roche Harbor', id=14477}
+Airport{name='Riohacha', id=14478}
+Airport{name='Richmond', id=14479}
+Airport{name='Rochefort', id=14480}
+Airport{name='Reconquista', id=14481}
+Airport{name='Reed City', id=14482}
+Airport{name='Rio Curato', id=14483}
+Airport{name='Rockhampton Downs', id=14484}
+Airport{name='Red Dog', id=14485}
+Airport{name='Redencao', id=14486}
+Airport{name='Redding', id=14487}
+Airport{name='Reading', id=14488}
+Airport{name='Bend/Redmond', id=14489}
+Airport{name='Red River', id=14490}
+Airport{name='Richard-Toll', id=14491}
+Airport{name='Raleigh/Durham', id=14492}
+Airport{name='Red Devil', id=14493}
+Airport{name='Rodez', id=14494}
+Airport{name='Redlands', id=14495}
+Airport{name='Recife', id=14496}
+Airport{name='Reedsville', id=14497}
+Airport{name='Lubbock', id=14498}
+Airport{name='Reggio Calabria', id=14499}
+Airport{name='Rehoboth', id=14500}
+Airport{name='Reykjavik', id=14501}
+Airport{name='Trelew', id=14502}
+Airport{name='Orenburg', id=14504}
+Airport{name='Siem Reap', id=14505}
+Airport{name='Retalhuleu', id=14506}
+Airport{name='Resistencia', id=14507}
+Airport{name='Rost', id=14508}
+Airport{name='Reus', id=14509}
+Airport{name='Reynosa', id=14510}
+Airport{name='Reyes', id=14511}
+Airport{name='Rockford', id=14512}
+Airport{name='Raiatea', id=14513}
+Airport{name='Rio Grande', id=14514}
+Airport{name='Tuamoto Islands', id=14515}
+Airport{name='Rio Gallegos', id=14516}
+Airport{name='Yangon', id=14517}
+Airport{name='Rengat', id=14518}
+Airport{name='Reims', id=14519}
+Airport{name='Rhinelander', id=14520}
+Airport{name='Rhodes', id=14521}
+Airport{name='Santa Maria', id=14522}
+Airport{name='Riberalta', id=14523}
+Airport{name='Richmond', id=14524}
+Airport{name='Richmond', id=14525}
+Airport{name='Rice Lake', id=14526}
+Airport{name='Richfield', id=14527}
+Airport{name='Rio Grande', id=14528}
+Airport{name='Rioja', id=14529}
+Airport{name='Rifle', id=14530}
+Airport{name='Rio de Janeiro', id=14531}
+Airport{name='Riverside', id=14532}
+Airport{name='Riverside', id=14533}
+Airport{name='Riverton/Lander', id=14534}
+Airport{name='Riga', id=14535}
+Airport{name='Riyan Mukalla', id=14536}
+Airport{name='Rijeka', id=14537}
+Airport{name='Logrono', id=14538}
+Airport{name='Rockland', id=14539}
+Airport{name='Copenhagen', id=14540}
+Airport{name='Rockport', id=14541}
+Airport{name='Poteau', id=14542}
+Airport{name='Rock Springs', id=14543}
+Airport{name='Ras Al Khaimah', id=14544}
+Airport{name='Reykjavik', id=14545}
+Airport{name='Rockwood', id=14546}
+Airport{name='Rolla', id=14547}
+Airport{name='Richland', id=14548}
+Airport{name='Rostock-Laage', id=14549}
+Airport{name='Arlit', id=14550}
+Airport{name='Bornite/Ruby Creek', id=14551}
+Airport{name='Roma', id=14552}
+Airport{name='Rome', id=14553}
+Airport{name='Rome', id=14554}
+Airport{name='Rimini', id=14555}
+Airport{name='Colombo', id=14556}
+Airport{name='Stafford', id=14557}
+Airport{name='Ormoc', id=14558}
+Airport{name='Rampart', id=14559}
+Airport{name='Taichung', id=14560}
+Airport{name='Ramstein', id=14561}
+Airport{name='Rimatara', id=14562}
+Airport{name='Ronneby', id=14563}
+Airport{name='McMinnville', id=14564}
+Airport{name='San Antonio', id=14565}
+Airport{name='Roanne', id=14566}
+Airport{name='Rangely', id=14567}
+Airport{name='Corn Island', id=14568}
+Airport{name='Ronne', id=14569}
+Airport{name='Reno', id=14570}
+Airport{name='Rennes', id=14571}
+Airport{name='Renton', id=14572}
+Airport{name='Ranau', id=14573}
+Airport{name='Roanoke', id=14574}
+Airport{name='Monrovia', id=14575}
+Airport{name='Rochester', id=14576}
+Airport{name='Rogers', id=14577}
+Airport{name='Rockhampton', id=14578}
+Airport{name='Roosevelt', id=14579}
+Airport{name='Rome', id=14580}
+Airport{name='Rondonopolis', id=14581}
+Airport{name='Rota', id=14582}
+Airport{name='Koror', id=14583}
+Airport{name='Rosario', id=14584}
+Airport{name='Rotorua', id=14585}
+Airport{name='Russe', id=14586}
+Airport{name='Rostov', id=14587}
+Airport{name='Roswell', id=14588}
+Airport{name='Roseau', id=14589}
+Airport{name='Rosh-Pina', id=14590}
+Airport{name='Raipur', id=14591}
+Airport{name='Roundup', id=14592}
+Airport{name='Lone Pine', id=14593}
+Airport{name='Atomic City', id=14594}
+Airport{name='Harlowton', id=14595}
+Airport{name='Mendota', id=14596}
+Airport{name='Prosser', id=14597}
+Airport{name='Lincolnton', id=14598}
+Airport{name='Covington', id=14599}
+Airport{name='Perkasie', id=14600}
+Airport{name='Nixon Fork Mine', id=14601}
+Airport{name='Jafr', id=14602}
+Airport{name='China Lake', id=14603}
+Airport{name='Lowell', id=14604}
+Airport{name='Sterling', id=14605}
+Airport{name='Cave Junction', id=14606}
+Airport{name='Seneca', id=14607}
+Airport{name='Lovington', id=14608}
+Airport{name='Woodland', id=14609}
+Airport{name='Harbor Springs', id=14610}
+Airport{name='Springwater', id=14611}
+Airport{name='Lubbock', id=14612}
+Airport{name='Wasco', id=14613}
+Airport{name='Salt Lake City', id=14614}
+Airport{name='Parowan', id=14615}
+Airport{name='Burlington', id=14616}
+Airport{name='Comanche', id=14617}
+Airport{name='Mary Esther', id=14618}
+Airport{name='Rodrigues Island', id=14620}
+Airport{name='Rourkela', id=14621}
+Airport{name='Roros', id=14622}
+Airport{name='Warroad', id=14623}
+Airport{name='Santa Rosa', id=14624}
+Airport{name='Skulte', id=14625}
+Airport{name='Rock Sound', id=14626}
+Airport{name='Russian Mission', id=14627}
+Airport{name='Rosario', id=14628}
+Airport{name='Russell', id=14629}
+Airport{name='Ruston', id=14630}
+Airport{name='Raspberry Strait', id=14631}
+Airport{name='Roseires', id=14632}
+Airport{name='Rochester', id=14633}
+Airport{name='Yosu', id=14634}
+Airport{name='Fort Myers', id=14635}
+Airport{name='Rotuma', id=14636}
+Airport{name='Roatan Island', id=14637}
+Airport{name='Marguerite Bay', id=14638}
+Airport{name='Rotterdam', id=14639}
+Airport{name='Raton', id=14640}
+Airport{name='Colton', id=14641}
+Airport{name='Rottnest Island', id=14642}
+Airport{name='Keperveyem', id=14643}
+Airport{name='Ramenskoye', id=14644}
+Airport{name='Riyadh', id=14645}
+Airport{name='Ruidoso', id=14646}
+Airport{name='Reunion Island', id=14647}
+Airport{name='Rutland', id=14648}
+Airport{name='Rubelsanto', id=14649}
+Airport{name='Farafangana', id=14651}
+Airport{name='Rovaniemi', id=14652}
+Airport{name='Tulsa', id=14653}
+Airport{name='Rivera', id=14654}
+Airport{name='Rowan Bay', id=14655}
+Airport{name='Rocky Mount', id=14656}
+Airport{name='Rawlins', id=14657}
+Airport{name='Rodman Bay', id=14658}
+Airport{name='Roxas City', id=14659}
+Airport{name='Greeley', id=14660}
+Airport{name='Moss', id=14661}
+Airport{name='Rahim Yar Khan', id=14662}
+Airport{name='Santa Cruz', id=14663}
+Airport{name='Rzeszow', id=14664}
+Airport{name='Ramsar', id=14665}
+Airport{name='Sawan', id=14666}
+Airport{name='Roanoke Rapids', id=14668}
+Airport{name='Kalispell', id=14669}
+Airport{name='Saratoga', id=14670}
+Airport{name='Saba', id=14671}
+Airport{name='Sacramento', id=14672}
+Airport{name='Safford', id=14673}
+Airport{name='Santa Fe', id=14674}
+Airport{name='Sagwon', id=14675}
+Airport{name='Sana'a', id=14676}
+Airport{name='San Salvador', id=14677}
+Airport{name='Salamo', id=14678}
+Airport{name='San Diego', id=14679}
+Airport{name='Sao Paulo', id=14680}
+Airport{name='San Pedro Sula', id=14681}
+Airport{name='San Andros', id=14682}
+Airport{name='San Antonio', id=14683}
+Airport{name='Sabu', id=14684}
+Airport{name='Savannah', id=14685}
+Airport{name='Istanbul', id=14686}
+Airport{name='Sambu', id=14687}
+Airport{name='Sienna', id=14688}
+Airport{name='Santa Barbara', id=14689}
+Airport{name='Selbang', id=14690}
+Airport{name='San Bernardino', id=14691}
+Airport{name='Saint Barthelemy', id=14692}
+Airport{name='St. Brieuc', id=14693}
+Airport{name='Santa Ana', id=14694}
+Airport{name='Sheboygan', id=14695}
+Airport{name='South Bend', id=14696}
+Airport{name='Salina', id=14697}
+Airport{name='San Luis Obispo', id=14698}
+Airport{name='Steamboat Springs', id=14699}
+Airport{name='San Bernardino', id=14700}
+Airport{name='Springbok', id=14701}
+Airport{name='South Boston', id=14702}
+Airport{name='Sibu', id=14703}
+Airport{name='Salisbury', id=14704}
+Airport{name='Sibiu', id=14705}
+Airport{name='Beaufort', id=14706}
+Airport{name='Winnsboro', id=14707}
+Airport{name='Conway', id=14708}
+Airport{name='Deadhorse', id=14709}
+Airport{name='State College', id=14711}
+Airport{name='Phoenix', id=14712}
+Airport{name='Schenectady', id=14713}
+Airport{name='San Cristobal', id=14714}
+Airport{name='Smith Cove', id=14715}
+Airport{name='Stockton', id=14716}
+Airport{name='Santiago', id=14717}
+Airport{name='Scammon Bay', id=14718}
+Airport{name='Saarbrucken', id=14719}
+Airport{name='Aktau', id=14720}
+Airport{name='Santiago de Compostela', id=14721}
+Airport{name='Santiago', id=14722}
+Airport{name='Suceava', id=14723}
+Airport{name='Salina Cruz', id=14724}
+Airport{name='San Cristobal', id=14725}
+Airport{name='Onida', id=14726}
+Airport{name='Baghdad', id=14727}
+Airport{name='Lubango', id=14728}
+Airport{name='Santiago del Estero', id=14729}
+Airport{name='Louisville', id=14730}
+Airport{name='Santa Rosa de Copan', id=14732}
+Airport{name='Sendai', id=14733}
+Airport{name='Sandakan', id=14734}
+Airport{name='Sundsvall', id=14735}
+Airport{name='San Diego', id=14736}
+Airport{name='Anda', id=14737}
+Airport{name='Sandpoint', id=14738}
+Airport{name='Santo Domingo', id=14739}
+Airport{name='Santander', id=14740}
+Airport{name='Saidu Sharif', id=14741}
+Airport{name='Rio de Janeiro', id=14742}
+Airport{name='Tel Aviv', id=14743}
+Airport{name='Sedona', id=14744}
+Airport{name='Sidney', id=14745}
+Airport{name='Solleftea', id=14746}
+Airport{name='Seattle', id=14747}
+Airport{name='Sebha', id=14748}
+Airport{name='San Diego', id=14749}
+Airport{name='Sebring', id=14750}
+Airport{name='Selinsgrove', id=14751}
+Airport{name='Seoul', id=14752}
+Airport{name='Selma', id=14753}
+Airport{name='Southend-On-Sea', id=14754}
+Airport{name='Sungai Pakning', id=14755}
+Airport{name='Seymour', id=14756}
+Airport{name='Selma', id=14757}
+Airport{name='Selibaby', id=14758}
+Airport{name='Mahe Islands', id=14759}
+Airport{name='Sfax', id=14760}
+Airport{name='Sanford', id=14761}
+Airport{name='Saint Francois', id=14762}
+Airport{name='San Fernando', id=14763}
+Airport{name='Spokane', id=14764}
+Airport{name='Grand Case', id=14765}
+Airport{name='San Felipe', id=14766}
+Airport{name='Sondre Stromfjord', id=14767}
+Airport{name='Sao Filipe', id=14768}
+Airport{name='Sanford', id=14769}
+Airport{name='Santa Fe', id=14770}
+Airport{name='San Francisco', id=14771}
+Airport{name='Surfers Paradise', id=14772}
+Airport{name='Sanliurfa', id=14773}
+Airport{name='Subic Bay', id=14774}
+Airport{name='Skelleftea', id=14775}
+Airport{name='Safia', id=14776}
+Airport{name='Santa Fe', id=14777}
+Airport{name='Smithfield', id=14778}
+Airport{name='Singaua', id=14779}
+Airport{name='Surgut', id=14780}
+Airport{name='Sonderborg', id=14781}
+Airport{name='Siegen', id=14782}
+Airport{name='Springfield', id=14783}
+Airport{name='Simanggang', id=14784}
+Airport{name='Springfield', id=14785}
+Airport{name='Sagarai', id=14786}
+Airport{name='San Ignacio', id=14788}
+Airport{name='Ho Chi Minh City', id=14789}
+Airport{name='St. George', id=14790}
+Airport{name='Shay Gap', id=14791}
+Airport{name='Sugar Land', id=14792}
+Airport{name='Stuttgart', id=14793}
+Airport{name='St. George', id=14794}
+Airport{name='Saginaw Bay', id=14795}
+Airport{name='Songea', id=14796}
+Airport{name='Skagway', id=14797}
+Airport{name='Singora', id=14798}
+Airport{name='Shanghai', id=14799}
+Airport{name='Nakashibetsu', id=14800}
+Airport{name='Shire Indasilase', id=14801}
+Airport{name='Staunton', id=14802}
+Airport{name='Shenyang', id=14803}
+Airport{name='Shungnak', id=14804}
+Airport{name='Shishmaref', id=14805}
+Airport{name='Shimojishima', id=14806}
+Airport{name='Sharjah', id=14807}
+Airport{name='Shillong', id=14808}
+Airport{name='Nanki Shirahama', id=14809}
+Airport{name='Shelton', id=14810}
+Airport{name='Sokcho', id=14811}
+Airport{name='Sheridan', id=14812}
+Airport{name='Smith Point', id=14813}
+Airport{name='Shreveport', id=14814}
+Airport{name='Sharurah', id=14815}
+Airport{name='Shageluk', id=14816}
+Airport{name='Xi'an', id=14817}
+Airport{name='Sal Island', id=14818}
+Airport{name='San Juan', id=14819}
+Airport{name='Silgadi Doti', id=14820}
+Airport{name='Sidi Ifni', id=14821}
+Airport{name='Sikeston', id=14822}
+Airport{name='Simbai', id=14823}
+Airport{name='Singapore', id=14824}
+Airport{name='Smithton', id=14825}
+Airport{name='Simferopol', id=14826}
+Airport{name='Sishen', id=14827}
+Airport{name='Sitka', id=14828}
+Airport{name='Siuna', id=14829}
+Airport{name='Montague', id=14830}
+Airport{name='San Jose', id=14831}
+Airport{name='San Jose del Cabo', id=14832}
+Airport{name='St. John', id=14833}
+Airport{name='San Jose', id=14834}
+Airport{name='Sarajevo', id=14835}
+Airport{name='Sao Jose Dos Campos', id=14836}
+Airport{name='St. Johns', id=14837}
+Airport{name='San Jose', id=14838}
+Airport{name='Sao Jose Do Rio Preto', id=14839}
+Airport{name='Sesheke', id=14840}
+Airport{name='San Jose', id=14841}
+Airport{name='San Angelo', id=14842}
+Airport{name='San Juan', id=14843}
+Airport{name='San Javier', id=14844}
+Airport{name='Shijiazhuang', id=14845}
+Airport{name='Seinajoki', id=14846}
+Airport{name='Sao Jorge Island', id=14847}
+Airport{name='Spokane', id=14848}
+Airport{name='St. Kitts', id=14849}
+Airport{name='Suki', id=14850}
+Airport{name='Samarkand', id=14851}
+Airport{name='Skien', id=14852}
+Airport{name='San Antonio', id=14853}
+Airport{name='Thessaloniki', id=14854}
+Airport{name='Sitkinak', id=14855}
+Airport{name='Shaktoolik', id=14856}
+Airport{name='Isle of Skye', id=14857}
+Airport{name='Stokmarknes', id=14858}
+Airport{name='Sokoto', id=14859}
+Airport{name='Skopje', id=14860}
+Airport{name='Skrydstrup', id=14861}
+Airport{name='Skiros', id=14862}
+Airport{name='Skwentna', id=14863}
+Airport{name='Saransk', id=14864}
+Airport{name='Sandusky', id=14865}
+Airport{name='Sukkur', id=14866}
+Airport{name='Salta', id=14867}
+Airport{name='Storm Lake', id=14868}
+Airport{name='Salt Lake City', id=14869}
+Airport{name='Sliac', id=14870}
+Airport{name='Salem', id=14871}
+Airport{name='Sola', id=14872}
+Airport{name='Solwezi', id=14873}
+Airport{name='Chandler', id=14874}
+Airport{name='Saranac Lake/Lake Placid', id=14875}
+Airport{name='Salalah', id=14876}
+Airport{name='Salina', id=14877}
+Airport{name='Salem', id=14878}
+Airport{name='San Luis Potosi', id=14879}
+Airport{name='Sleetmute', id=14880}
+Airport{name='Sulphur Springs', id=14881}
+Airport{name='Silistra', id=14882}
+Airport{name='Salida', id=14883}
+Airport{name='St. Lucia', id=14884}
+Airport{name='Shimla', id=14885}
+Airport{name='Saltillo', id=14886}
+Airport{name='Salt Cay', id=14887}
+Airport{name='Sao Luiz', id=14888}
+Airport{name='Santa Maria', id=14889}
+Airport{name='Cerro El Sombrero', id=14890}
+Airport{name='Santa Maria', id=14891}
+Airport{name='Somerset', id=14892}
+Airport{name='Sacramento', id=14893}
+Airport{name='Samos', id=14894}
+Airport{name='St. Michael', id=14895}
+Airport{name='Stella Maris', id=14896}
+Airport{name='Salmon', id=14897}
+Airport{name='Santa Monica', id=14898}
+Airport{name='Somerville', id=14899}
+Airport{name='Santa Marta', id=14900}
+Airport{name='St. Marie', id=14901}
+Airport{name='Stone Mountain', id=14902}
+Airport{name='Sheep Mountain', id=14903}
+Airport{name='St. Moritz', id=14904}
+Airport{name='Santa Maria', id=14905}
+Airport{name='Simenti', id=14906}
+Airport{name='Stoelmanseiland', id=14907}
+Airport{name='Santa Ana', id=14908}
+Airport{name='Snake Bay', id=14909}
+Airport{name='Salinas', id=14910}
+Airport{name='Sao Nicolau', id=14911}
+Airport{name='San Felipe', id=14912}
+Airport{name='San Ignacio de Velasco', id=14913}
+Airport{name='Greenville/Sinoe', id=14914}
+Airport{name='Snyder', id=14915}
+Airport{name='Shawnee', id=14916}
+Airport{name='San Ignacio de Moxos', id=14917}
+Airport{name='Shannon', id=14918}
+Airport{name='St. Paul', id=14919}
+Airport{name='San Quintin', id=14920}
+Airport{name='St. Nazaire', id=14921}
+Airport{name='Salinas/Monterey', id=14922}
+Airport{name='Las Cruces', id=14923}
+Airport{name='Santa Clara', id=14924}
+Airport{name='Santa Elena', id=14925}
+Airport{name='Thandwe', id=14926}
+Airport{name='Sidney', id=14927}
+Airport{name='Solo City', id=14928}
+Airport{name='Sofia', id=14929}
+Airport{name='Sogndal', id=14930}
+Airport{name='South Molle Island', id=14931}
+Airport{name='Sorkjosen', id=14932}
+Airport{name='Semonkong', id=14933}
+Airport{name='Solomon', id=14934}
+Airport{name='San Tome', id=14935}
+Airport{name='Espiritu Santo', id=14936}
+Airport{name='Pinehurst/Southern Pines', id=14938}
+Airport{name='Sorong', id=14939}
+Airport{name='Southampton', id=14941}
+Airport{name='Seldovia', id=14942}
+Airport{name='Show Low', id=14943}
+Airport{name='Spartanburg', id=14944}
+Airport{name='Charlotte Amalie', id=14945}
+Airport{name='Santa Cruz de la Palma', id=14946}
+Airport{name='Saidpur', id=14947}
+Airport{name='Sepulot', id=14948}
+Airport{name='Spearfish', id=14949}
+Airport{name='Tampa', id=14950}
+Airport{name='Sopu', id=14951}
+Airport{name='Springfield', id=14952}
+Airport{name='Sapporo', id=14953}
+Airport{name='Spangdahlem', id=14954}
+Airport{name='Saipan', id=14955}
+Airport{name='Menongue', id=14957}
+Airport{name='San Pedro', id=14958}
+Airport{name='San Pedro', id=14959}
+Airport{name='Wichita Falls', id=14960}
+Airport{name='Split', id=14961}
+Airport{name='Spencer', id=14962}
+Airport{name='San Pedro', id=14963}
+Airport{name='Springdale', id=14964}
+Airport{name='Santa Ynez', id=14965}
+Airport{name='Sterling/Rockfalls', id=14966}
+Airport{name='San Carlos', id=14967}
+Airport{name='Sanana', id=14968}
+Airport{name='Storuman', id=14969}
+Airport{name='Siauliai', id=14970}
+Airport{name='Soroako', id=14971}
+Airport{name='Sequim', id=14972}
+Airport{name='Santa Rosa', id=14973}
+Airport{name='Santa Rosa', id=14974}
+Airport{name='Searcy', id=14975}
+Airport{name='Sucre', id=14976}
+Airport{name='Novato', id=14977}
+Airport{name='Semarang', id=14978}
+Airport{name='Sarh', id=14979}
+Airport{name='Samarinda', id=14980}
+Airport{name='San Borja', id=14981}
+Airport{name='Santa Rosalia', id=14982}
+Airport{name='Strahan', id=14983}
+Airport{name='Santana Ramos', id=14984}
+Airport{name='Stord', id=14985}
+Airport{name='Sarasota/Bradenton', id=14986}
+Airport{name='Stony River', id=14987}
+Airport{name='Salisbury', id=14988}
+Airport{name='Sert', id=14989}
+Airport{name='Santa Cruz', id=14990}
+Airport{name='Salvador', id=14991}
+Airport{name='Christiansted', id=14992}
+Airport{name='Sumter', id=14993}
+Airport{name='Malabo', id=14994}
+Airport{name='Sharm El Sheikh', id=14995}
+Airport{name='Brunswick', id=14996}
+Airport{name='Sandnessjoen', id=14997}
+Airport{name='Santa Rosalia', id=14998}
+Airport{name='Sault Ste. Marie', id=14999}
+Airport{name='Seoul', id=15000}
+Airport{name='Siassi', id=15001}
+Airport{name='Santa Teresita', id=15002}
+Airport{name='Stuart Island', id=15003}
+Airport{name='Samsun', id=15004}
+Airport{name='Mbanza Congo', id=15005}
+Airport{name='Stauning', id=15006}
+Airport{name='Santa Barbara', id=15007}
+Airport{name='St. Cloud', id=15008}
+Airport{name='Santo Domingo', id=15009}
+Airport{name='Stevens Point', id=15010}
+Airport{name='Starkville', id=15011}
+Airport{name='St. George Island', id=15012}
+Airport{name='Santiago', id=15013}
+Airport{name='St. Joseph', id=15014}
+Airport{name='Sterling', id=15015}
+Airport{name='St. Louis', id=15016}
+Airport{name='Santarem', id=15017}
+Airport{name='London', id=15018}
+Airport{name='Stockholm', id=15019}
+Airport{name='Minneapolis/St. Paul', id=15020}
+Airport{name='St. Marys', id=15021}
+Airport{name='Stuttgart', id=15022}
+Airport{name='Santa Rosa', id=15023}
+Airport{name='Charlotte Amalie', id=15024}
+Airport{name='Stavropol', id=15026}
+Airport{name='Christiansted', id=15027}
+Airport{name='Salto', id=15028}
+Airport{name='Santa Terezinha', id=15029}
+Airport{name='Stuart', id=15030}
+Airport{name='Surabaya', id=15031}
+Airport{name='Sundance', id=15032}
+Airport{name='Sturgeon Bay', id=15033}
+Airport{name='Lamezia Terme', id=15034}
+Airport{name='Surigao', id=15035}
+Airport{name='Sukhumi', id=15036}
+Airport{name='Satu Mare', id=15037}
+Airport{name='Sui', id=15039}
+Airport{name='Sumter', id=15040}
+Airport{name='Sun Valley/Hailey/Ketchum', id=15041}
+Airport{name='Sunriver', id=15042}
+Airport{name='St. Louis', id=15043}
+Airport{name='Sumbawanga', id=15044}
+Airport{name='Fairfield', id=15045}
+Airport{name='Suva', id=15046}
+Airport{name='Superior', id=15047}
+Airport{name='Sioux City', id=15048}
+Airport{name='Savoonga', id=15049}
+Airport{name='Sambava', id=15050}
+Airport{name='Silver City/Hurley', id=15051}
+Airport{name='St. Vincent', id=15052}
+Airport{name='Stavanger', id=15053}
+Airport{name='Statesville', id=15054}
+Airport{name='Svolvaer', id=15055}
+Airport{name='Savonlinna', id=15056}
+Airport{name='Savannah', id=15057}
+Airport{name='Moscow', id=15058}
+Airport{name='Kuito', id=15059}
+Airport{name='Seville', id=15060}
+Airport{name='Stevens Village', id=15061}
+Airport{name='Savusavu', id=15062}
+Airport{name='Sparrevohn', id=15063}
+Airport{name='Ekaterinburg', id=15064}
+Airport{name='San Antonio', id=15065}
+Airport{name='Shantou', id=15066}
+Airport{name='Shaw River', id=15067}
+Airport{name='Stawell', id=15068}
+Airport{name='Seward', id=15069}
+Airport{name='Newburgh/Poughkeepsie', id=15070}
+Airport{name='Milan', id=15072}
+Airport{name='Spanish Wells', id=15073}
+Airport{name='Stillwater', id=15074}
+Airport{name='Sumbawa', id=15075}
+Airport{name='Swansea', id=15076}
+Airport{name='Suwon', id=15077}
+Airport{name='Sweetwater', id=15078}
+Airport{name='Strasbourg', id=15079}
+Airport{name='Sale', id=15080}
+Airport{name='Berlin', id=15081}
+Airport{name='Senanga', id=15082}
+Airport{name='Sligo', id=15083}
+Airport{name='Philipsburg', id=15084}
+Airport{name='Sheldon Point', id=15085}
+Airport{name='Soldotna', id=15086}
+Airport{name='Srinagar', id=15087}
+Airport{name='Soddu', id=15088}
+Airport{name='Sidney', id=15089}
+Airport{name='Shemya', id=15090}
+Airport{name='Seal Bay', id=15091}
+Airport{name='Sydney', id=15092}
+Airport{name='Shelbyville/Tullahoma', id=15093}
+Airport{name='Stanton', id=15094}
+Airport{name='Shonai', id=15095}
+Airport{name='Syracuse', id=15096}
+Airport{name='Saint-Yan', id=15097}
+Airport{name='Sanya', id=15098}
+Airport{name='Stornoway', id=15099}
+Airport{name='Shiraz', id=15100}
+Airport{name='Soyo', id=15101}
+Airport{name='Kuala Lumpur', id=15102}
+Airport{name='Santa Cruz', id=15103}
+Airport{name='Sheffield', id=15104}
+Airport{name='Samsun', id=15105}
+Airport{name='Salzburg', id=15106}
+Airport{name='Skukuza', id=15107}
+Airport{name='Knob Noster', id=15108}
+Airport{name='Szombathely', id=15109}
+Airport{name='Santa Paula', id=15110}
+Airport{name='San Cristobal', id=15111}
+Airport{name='Schwerin', id=15112}
+Airport{name='Shenzhen', id=15113}
+Airport{name='Szczecin', id=15114}
+Airport{name='Tobago', id=15115}
+Airport{name='Tacloban', id=15116}
+Airport{name='Trinidad', id=15117}
+Airport{name='Taegu', id=15118}
+Airport{name='Oran', id=15119}
+Airport{name='Tagbilaran', id=15120}
+Airport{name='Tanna Island', id=15121}
+Airport{name='Taiz', id=15122}
+Airport{name='Takamatsu', id=15123}
+Airport{name='Tanana', id=15124}
+Airport{name='Tampico', id=15125}
+Airport{name='Qingdao', id=15127}
+Airport{name='Tapachula', id=15128}
+Airport{name='Taranto', id=15129}
+Airport{name='Tashkent', id=15130}
+Airport{name='Poprad-Tatry', id=15131}
+Airport{name='Tau', id=15132}
+Airport{name='Taliabu', id=15133}
+Airport{name='Tuy Hoa', id=15134}
+Airport{name='Tabiteuea', id=15135}
+Airport{name='New Bight', id=15136}
+Airport{name='Tableland', id=15137}
+Airport{name='Fort Leonard Wood', id=15138}
+Airport{name='Tabora', id=15139}
+Airport{name='Tumbes', id=15140}
+Airport{name='Statesboro', id=15141}
+Airport{name='Tbilisi', id=15142}
+Airport{name='Tabatinga', id=15143}
+Airport{name='Tonga Tapu', id=15144}
+Airport{name='Tabriz', id=15145}
+Airport{name='Tennant Creek', id=15146}
+Airport{name='Treasure Cay', id=15147}
+Airport{name='Tucumcari', id=15148}
+Airport{name='Tulcea', id=15149}
+Airport{name='Tocoa', id=15150}
+Airport{name='Tchibanga', id=15151}
+Airport{name='Tenerife', id=15152}
+Airport{name='Tuscaloosa', id=15153}
+Airport{name='Tacoma', id=15154}
+Airport{name='Tehuacan', id=15155}
+Airport{name='Tumaco', id=15156}
+Airport{name='Taba', id=15157}
+Airport{name='Tacna', id=15158}
+Airport{name='Truth Or Consequences', id=15159}
+Airport{name='Takotna', id=15160}
+Airport{name='Trinidad', id=15161}
+Airport{name='Trinidad', id=15162}
+Airport{name='Roxboro', id=15163}
+Airport{name='Amarillo', id=15164}
+Airport{name='Toledo', id=15165}
+Airport{name='Tela', id=15166}
+Airport{name='Teterboro', id=15167}
+Airport{name='Thisted', id=15168}
+Airport{name='Tetlin', id=15170}
+Airport{name='Tatitlek', id=15171}
+Airport{name='Teptep', id=15173}
+Airport{name='Lajes', id=15174}
+Airport{name='Tete', id=15175}
+Airport{name='Te Anau', id=15176}
+Airport{name='Telluride', id=15177}
+Airport{name='Tezpur', id=15178}
+Airport{name='Tefe', id=15179}
+Airport{name='Tufi', id=15180}
+Airport{name='Tenerife', id=15181}
+Airport{name='Tarbes/Lourdes/Pyrenees', id=15182}
+Airport{name='Tenerife', id=15183}
+Airport{name='Podgorica', id=15184}
+Airport{name='Tuskegee', id=15185}
+Airport{name='Kuala Trengganu', id=15186}
+Airport{name='Tongoa', id=15187}
+Airport{name='Tingo Maria', id=15188}
+Airport{name='Targu Mures', id=15189}
+Airport{name='Touggourt', id=15190}
+Airport{name='Tanga', id=15191}
+Airport{name='Tegucigalpa', id=15192}
+Airport{name='Tuxtla Gutierrez', id=15194}
+Airport{name='Tullahoma', id=15195}
+Airport{name='Teresina', id=15196}
+Airport{name='Berlin', id=15197}
+Airport{name='Biloela', id=15198}
+Airport{name='Trollhattan', id=15199}
+Airport{name='Thermopolis', id=15200}
+Airport{name='Tehran', id=15201}
+Airport{name='Thule', id=15202}
+Airport{name='York', id=15203}
+Airport{name='Tahoua', id=15204}
+Airport{name='Tirana', id=15205}
+Airport{name='Turiacu', id=15206}
+Airport{name='Tippi', id=15207}
+Airport{name='Taif', id=15208}
+Airport{name='Tikehau', id=15209}
+Airport{name='Tijuana', id=15210}
+Airport{name='Oklahoma City', id=15211}
+Airport{name='Tembagapura', id=15212}
+Airport{name='Tindouf', id=15213}
+Airport{name='Tripoli', id=15214}
+Airport{name='Tinian', id=15215}
+Airport{name='Tirupati', id=15216}
+Airport{name='Thursday Island', id=15217}
+Airport{name='Timaru', id=15218}
+Airport{name='Tivat', id=15219}
+Airport{name='Tacoma', id=15220}
+Airport{name='Titusville', id=15221}
+Airport{name='Tidjikja', id=15222}
+Airport{name='Tari', id=15223}
+Airport{name='Tarija', id=15224}
+Airport{name='Trujillo', id=15225}
+Airport{name='Tyumen', id=15226}
+Airport{name='Ankara', id=15227}
+Airport{name='Talkeetna', id=15228}
+Airport{name='Tiko', id=15229}
+Airport{name='Takoradi', id=15230}
+Airport{name='Tenakee', id=15231}
+Airport{name='Truckee', id=15232}
+Airport{name='Bandar Lampung', id=15233}
+Airport{name='Takhli', id=15234}
+Airport{name='Tokeen', id=15235}
+Airport{name='Tok', id=15236}
+Airport{name='Chuuk', id=15237}
+Airport{name='Taku Lodge', id=15238}
+Airport{name='Tikal', id=15239}
+Airport{name='Kigoma', id=15240}
+Airport{name='Thakurgaon', id=15241}
+Airport{name='Tokushima', id=15242}
+Airport{name='Tak', id=15243}
+Airport{name='Turku', id=15244}
+Airport{name='Teller', id=15245}
+Airport{name='Toluca', id=15246}
+Airport{name='Tulear', id=15247}
+Airport{name='Telida', id=15248}
+Airport{name='Tallahassee', id=15249}
+Airport{name='Tatalina', id=15250}
+Airport{name='Tallinn', id=15252}
+Airport{name='Tlemcen', id=15253}
+Airport{name='Toulon/Hyeres', id=15254}
+Airport{name='Tulare', id=15255}
+Airport{name='Toulouse', id=15256}
+Airport{name='Tuluksak', id=15257}
+Airport{name='Tel Aviv', id=15258}
+Airport{name='Tifton', id=15259}
+Airport{name='Miami', id=15260}
+Airport{name='Timbedra', id=15261}
+Airport{name='Tumlingtar', id=15262}
+Airport{name='Tamale', id=15263}
+Airport{name='Tamatave', id=15264}
+Airport{name='Tampere', id=15265}
+Airport{name='Tamanrasset', id=15266}
+Airport{name='Sao Tome Island', id=15267}
+Airport{name='Trombetas', id=15268}
+Airport{name='Tamworth', id=15269}
+Airport{name='Lebanon', id=15270}
+Airport{name='Sparta', id=15271}
+Airport{name='Lewisburg', id=15272}
+Airport{name='Pulaski', id=15273}
+Airport{name='Lexington', id=15274}
+Airport{name='Dyersburg', id=15275}
+Airport{name='Winchester', id=15276}
+Airport{name='Jinan', id=15277}
+Airport{name='Tin City', id=15278}
+Airport{name='Tanegashima', id=15279}
+Airport{name='Tangier', id=15280}
+Airport{name='Tandjungpinang', id=15281}
+Airport{name='Tununak', id=15282}
+Airport{name='Tainan', id=15283}
+Airport{name='Twentynine Palms', id=15284}
+Airport{name='Antananarivo', id=15285}
+Airport{name='Miami', id=15286}
+Airport{name='Newton', id=15287}
+Airport{name='Stung Treng', id=15288}
+Airport{name='Torrance', id=15289}
+Airport{name='Tobruk', id=15290}
+Airport{name='Tozeur', id=15292}
+Airport{name='Togiak', id=15293}
+Airport{name='Madrid', id=15294}
+Airport{name='Toledo', id=15295}
+Airport{name='Tombouctou', id=15296}
+Airport{name='Topeka', id=15297}
+Airport{name='Tocopilla', id=15298}
+Airport{name='Torrington', id=15299}
+Airport{name='Tromso', id=15300}
+Airport{name='Touho', id=15301}
+Airport{name='Tortola', id=15302}
+Airport{name='Toyama', id=15303}
+Airport{name='Tampa', id=15304}
+Airport{name='Topeka', id=15305}
+Airport{name='Taipei', id=15306}
+Airport{name='Tampa', id=15307}
+Airport{name='Tonopah', id=15308}
+Airport{name='Tapini', id=15309}
+Airport{name='Temple', id=15310}
+Airport{name='Tarapoto', id=15312}
+Airport{name='Tepic', id=15313}
+Airport{name='Tom Price', id=15314}
+Airport{name='Trapani/Marsala', id=15315}
+Airport{name='Turbo', id=15316}
+Airport{name='Torreon', id=15317}
+Airport{name='Trondheim', id=15318}
+Airport{name='Tiree Island', id=15319}
+Airport{name='Sandefjord', id=15320}
+Airport{name='Tauranga', id=15321}
+Airport{name='Trona', id=15322}
+Airport{name='Bristol/Johnson City/Kingsport', id=15323}
+Airport{name='Tarakan', id=15324}
+Airport{name='Thermal', id=15325}
+Airport{name='Turin', id=15326}
+Airport{name='Taree', id=15327}
+Airport{name='Trincomalee', id=15328}
+Airport{name='Trieste', id=15329}
+Airport{name='Trujillo', id=15331}
+Airport{name='Trivandrum', id=15332}
+Airport{name='Tarawa', id=15333}
+Airport{name='Trichinopoly', id=15334}
+Airport{name='Taipei', id=15335}
+Airport{name='Tsumeb', id=15336}
+Airport{name='Astana', id=15337}
+Airport{name='Venice', id=15338}
+Airport{name='Tanacross', id=15339}
+Airport{name='Tshikapa', id=15340}
+Airport{name='Tsushima', id=15341}
+Airport{name='Taos', id=15342}
+Airport{name='Tianjin', id=15343}
+Airport{name='Tehachapi', id=15344}
+Airport{name='Timisoara', id=15345}
+Airport{name='New York', id=15346}
+Airport{name='Townsville', id=15348}
+Airport{name='Tortoli', id=15349}
+Airport{name='Taltal', id=15350}
+Airport{name='Troutdale', id=15351}
+Airport{name='Tartagal', id=15352}
+Airport{name='Thumrait', id=15353}
+Airport{name='Tottori', id=15354}
+Airport{name='Turtle Island', id=15355}
+Airport{name='Trenton', id=15356}
+Airport{name='Tsaratanana', id=15358}
+Airport{name='Taitung', id=15359}
+Airport{name='Tetuan', id=15360}
+Airport{name='Tulcan', id=15361}
+Airport{name='Tubuai Island', id=15362}
+Airport{name='Tucuman', id=15363}
+Airport{name='Tambacounda', id=15364}
+Airport{name='Tours', id=15365}
+Airport{name='Tuguegarao', id=15366}
+Airport{name='Tullahoma', id=15367}
+Airport{name='Turaif', id=15368}
+Airport{name='Turbat', id=15369}
+Airport{name='Tulsa', id=15370}
+Airport{name='Tumut', id=15371}
+Airport{name='Tunis', id=15372}
+Airport{name='Taupo', id=15373}
+Airport{name='Tupelo', id=15374}
+Airport{name='Tucurui', id=15375}
+Airport{name='Tucson', id=15376}
+Airport{name='Tauta', id=15377}
+Airport{name='Tabuk', id=15378}
+Airport{name='Morafenobe', id=15379}
+Airport{name='Traverse City', id=15380}
+Airport{name='Thief River Falls', id=15381}
+Airport{name='Thomasville', id=15382}
+Airport{name='Lake Tahoe', id=15383}
+Airport{name='Taveuni', id=15384}
+Airport{name='Twin Hills', id=15385}
+Airport{name='Toowoomba', id=15386}
+Airport{name='Port Townsend', id=15387}
+Airport{name='Taylor', id=15388}
+Airport{name='Twin Falls', id=15389}
+Airport{name='Two Harbors', id=15390}
+Airport{name='Tawau', id=15392}
+Airport{name='Mesquite', id=15393}
+Airport{name='Denver City', id=15394}
+Airport{name='Port Isabel', id=15395}
+Airport{name='Ballinger', id=15396}
+Airport{name='Cleburne', id=15397}
+Airport{name='Horseshoe Bay', id=15398}
+Airport{name='Post', id=15399}
+Airport{name='Taichung', id=15400}
+Airport{name='Texarkana', id=15401}
+Airport{name='Berlin', id=15402}
+Airport{name='Tunxi', id=15403}
+Airport{name='Tabou', id=15404}
+Airport{name='Tibooburra', id=15405}
+Airport{name='Tyonek', id=15406}
+Airport{name='Talara', id=15408}
+Airport{name='Taiyuan', id=15409}
+Airport{name='Tokyo', id=15410}
+Airport{name='Tyler', id=15411}
+Airport{name='Knoxville', id=15412}
+Airport{name='Taylor', id=15413}
+Airport{name='Belize City', id=15414}
+Airport{name='Maya Beach', id=15415}
+Airport{name='Tuzla', id=15416}
+Airport{name='Congo Town', id=15417}
+Airport{name='Trabzon', id=15418}
+Airport{name='Adana', id=15419}
+Airport{name='Ua Huka', id=15420}
+Airport{name='Narsarsuaq', id=15421}
+Airport{name='Guam', id=15422}
+Airport{name='San Juan', id=15423}
+Airport{name='Samburu', id=15424}
+Airport{name='Uaxactun', id=15425}
+Airport{name='Uberaba', id=15426}
+Airport{name='Chatham', id=15427}
+Airport{name='Ube', id=15428}
+Airport{name='Ubon Ratchathani', id=15429}
+Airport{name='Columbus', id=15430}
+Airport{name='Utica/Rome', id=15431}
+Airport{name='Union City', id=15433}
+Airport{name='Bermuda Dunes', id=15434}
+Airport{name='Darlington', id=15435}
+Airport{name='Uberlandia', id=15436}
+Airport{name='Udaipur', id=15437}
+Airport{name='Quelimane', id=15438}
+Airport{name='Kumejima', id=15439}
+Airport{name='Waukesha', id=15440}
+Airport{name='Quetta', id=15441}
+Airport{name='Ufa', id=15442}
+Airport{name='Ugashik', id=15443}
+Airport{name='Pilot Point', id=15444}
+Airport{name='Urgench', id=15445}
+Airport{name='Uganik', id=15446}
+Airport{name='Waukegan', id=15447}
+Airport{name='Ugashik', id=15448}
+Airport{name='Uherske Hradiste', id=15449}
+Airport{name='Upper Heyford', id=15450}
+Airport{name='Quibdo', id=15451}
+Airport{name='Qui Nhon', id=15452}
+Airport{name='Utila Island', id=15453}
+Airport{name='Quincy', id=15454}
+Airport{name='Quito', id=15455}
+Airport{name='Quimper', id=15456}
+Airport{name='Kobe Honshu Island', id=15457}
+Airport{name='Ukiah', id=15458}
+Airport{name='San Julian', id=15459}
+Airport{name='Santiago', id=15460}
+Airport{name='Ulithi', id=15461}
+Airport{name='New Ulm', id=15462}
+Airport{name='Ulan Bator', id=15463}
+Airport{name='Tulua', id=15464}
+Airport{name='Ulysses', id=15465}
+Airport{name='Ulyanovsk', id=15466}
+Airport{name='Umnak', id=15467}
+Airport{name='Uummannaq', id=15468}
+Airport{name='Umea', id=15469}
+Airport{name='Summit', id=15470}
+Airport{name='Woomera', id=15471}
+Airport{name='Umiat', id=15472}
+Airport{name='Umuarama', id=15473}
+Airport{name='Konduz', id=15475}
+Airport{name='Kiunga', id=15476}
+Airport{name='Union Island', id=15477}
+Airport{name='Unalakleet', id=15478}
+Airport{name='Umnak', id=15479}
+Airport{name='Unst', id=15480}
+Airport{name='Oxford', id=15481}
+Airport{name='Ujung Pandang', id=15482}
+Airport{name='Uruapan', id=15483}
+Airport{name='Upolo Point', id=15484}
+Airport{name='Queens', id=15485}
+Airport{name='Uralsk', id=15486}
+Airport{name='Urubupunga', id=15487}
+Airport{name='Urumqi', id=15488}
+Airport{name='Uruguaiana', id=15489}
+Airport{name='Boos', id=15490}
+Airport{name='Surat Thani', id=15491}
+Airport{name='Gurayat', id=15492}
+Airport{name='Ushuaia', id=15493}
+Airport{name='Usibelli', id=15494}
+Airport{name='Koh Samui', id=15495}
+Airport{name='Ulsan', id=15496}
+Airport{name='St. Augustine', id=15497}
+Airport{name='Heber', id=15498}
+Airport{name='Muttaburra', id=15499}
+Airport{name='Udon Thani', id=15500}
+Airport{name='Utirik', id=15501}
+Airport{name='Tunica', id=15502}
+Airport{name='Upington', id=15503}
+Airport{name='Utopia', id=15504}
+Airport{name='Utapao', id=15505}
+Airport{name='Mthatha', id=15506}
+Airport{name='Queenstown', id=15507}
+Airport{name='Kuparuk', id=15508}
+Airport{name='Yuzhno-Sakhalinsk', id=15509}
+Airport{name='Manumu', id=15510}
+Airport{name='Uvalde', id=15511}
+Airport{name='Ouvea', id=15512}
+Airport{name='St. Lucia', id=15513}
+Airport{name='Kharja', id=15514}
+Airport{name='Lik Camp', id=15515}
+Airport{name='Fassberg', id=15516}
+Airport{name='Hawley', id=15517}
+Airport{name='Chowchilla', id=15518}
+Airport{name='Faulkton', id=15519}
+Airport{name='St. Anthony', id=15520}
+Airport{name='Dutch John', id=15521}
+Airport{name='Kiev', id=15522}
+Airport{name='Calder Bay', id=15523}
+Airport{name='Richmond', id=15524}
+Airport{name='Petaluma', id=15525}
+Airport{name='Chariot', id=15526}
+Airport{name='47-Mile Mine', id=15527}
+Airport{name='Prestonsburg', id=15528}
+Airport{name='Fitchburg', id=15529}
+Airport{name='Bay St. Louis', id=15530}
+Airport{name='Gilze-Rijen', id=15531}
+Airport{name='Monument Valley', id=15532}
+Airport{name='Cimarron', id=15533}
+Airport{name='Lorain/Elyria', id=15534}
+Airport{name='Cheboygan', id=15535}
+Airport{name='Enterprise', id=15536}
+Airport{name='Cookeville', id=15537}
+Airport{name='Hot Springs', id=15538}
+Airport{name='Circle', id=15539}
+Airport{name='Garrison', id=15540}
+Airport{name='Melilla', id=15541}
+Airport{name='Nyala', id=15543}
+Airport{name='Curuzu Cuatia', id=15544}
+Airport{name='Emporia', id=15545}
+Airport{name='Chesapeake', id=15546}
+Airport{name='Marion/Wytheville', id=15547}
+Airport{name='Leesburg', id=15548}
+Airport{name='Vaasa', id=15549}
+Airport{name='Valdosta', id=15550}
+Airport{name='Valence', id=15552}
+Airport{name='Vanimo', id=15553}
+Airport{name='Chevak', id=15554}
+Airport{name='Van', id=15555}
+Airport{name='Suavanao', id=15556}
+Airport{name='Varna', id=15557}
+Airport{name='Sivas', id=15558}
+Airport{name='Vava'u', id=15559}
+Airport{name='Lompoc', id=15561}
+Airport{name='Brescia', id=15562}
+Airport{name='Visby', id=15563}
+Airport{name='Can Tho', id=15564}
+Airport{name='View Cove', id=15565}
+Airport{name='Venice', id=15566}
+Airport{name='Sao Paulo', id=15567}
+Airport{name='Carora', id=15568}
+Airport{name='Victoria', id=15569}
+Airport{name='Victorville', id=15570}
+Airport{name='Ovda', id=15571}
+Airport{name='Vitoria Da Conquista', id=15572}
+Airport{name='Valverde', id=15573}
+Airport{name='Vidalia', id=15574}
+Airport{name='Viedma', id=15575}
+Airport{name='Valle de la Pascua', id=15576}
+Airport{name='Villa Dolores', id=15577}
+Airport{name='Vadso', id=15578}
+Airport{name='Valdez', id=15579}
+Airport{name='Venetie', id=15581}
+Airport{name='Vernal', id=15582}
+Airport{name='Versailles', id=15583}
+Airport{name='Veracruz', id=15584}
+Airport{name='Vestmannaeyjar', id=15585}
+Airport{name='Victoria Falls', id=15586}
+Airport{name='Vijayawada', id=15587}
+Airport{name='Vigo', id=15588}
+Airport{name='Las Vegas', id=15589}
+Airport{name='Vilhelmina', id=15590}
+Airport{name='Vichy', id=15591}
+Airport{name='Vicenza', id=15593}
+Airport{name='Vidin', id=15594}
+Airport{name='Vienna', id=15595}
+Airport{name='El Vigia', id=15596}
+Airport{name='Vichy', id=15597}
+Airport{name='Virgin Gorda', id=15598}
+Airport{name='Kavik River', id=15599}
+Airport{name='Dakhla', id=15600}
+Airport{name='Visalia', id=15601}
+Airport{name='Vitoria', id=15602}
+Airport{name='Vitoria', id=15603}
+Airport{name='Moscow', id=15604}
+Airport{name='Vicksburg', id=15605}
+Airport{name='Valencia', id=15606}
+Airport{name='Valdosta', id=15607}
+Airport{name='Port Vila', id=15608}
+Airport{name='Valladolid', id=15609}
+Airport{name='Valencia', id=15610}
+Airport{name='Vallenar', id=15612}
+Airport{name='Valera', id=15613}
+Airport{name='Villa Mercedes', id=15614}
+Airport{name='Venice', id=15615}
+Airport{name='Vilnius', id=15616}
+Airport{name='Varanasi', id=15617}
+Airport{name='Van Nuys', id=15618}
+Airport{name='Volgograd', id=15619}
+Airport{name='Camp Douglas', id=15620}
+Airport{name='Volos', id=15621}
+Airport{name='Cartersville', id=15622}
+Airport{name='Ondjiva', id=15623}
+Airport{name='Valparaiso', id=15624}
+Airport{name='Valparaiso', id=15625}
+Airport{name='Vieques', id=15626}
+Airport{name='Varadero', id=15627}
+Airport{name='Vero Beach', id=15628}
+Airport{name='Virac', id=15629}
+Airport{name='Varkaus', id=15630}
+Airport{name='Verona', id=15631}
+Airport{name='Villahermosa', id=15632}
+Airport{name='Viseu', id=15633}
+Airport{name='Springfield', id=15634}
+Airport{name='Vasteras', id=15635}
+Airport{name='Vientiane', id=15636}
+Airport{name='Valentine', id=15637}
+Airport{name='Visakhapatnam', id=15638}
+Airport{name='Albemarle', id=15639}
+Airport{name='Vancouver', id=15640}
+Airport{name='Valledupar', id=15641}
+Airport{name='Villavicencio', id=15642}
+Airport{name='Santa Cruz', id=15643}
+Airport{name='Vastervik', id=15644}
+Airport{name='Vladivostok', id=15645}
+Airport{name='Headland', id=15646}
+Airport{name='Myrtle Creek', id=15647}
+Airport{name='Gallatin', id=15648}
+Airport{name='Hanford', id=15649}
+Airport{name='Chelan', id=15650}
+Airport{name='Custer', id=15651}
+Airport{name='Garibaldi', id=15652}
+Airport{name='Midland/Odessa', id=15653}
+Airport{name='California City', id=15654}
+Airport{name='Cameron', id=15655}
+Airport{name='Saratoga Springs', id=15656}
+Airport{name='Bemidji', id=15657}
+Airport{name='Weed', id=15658}
+Airport{name='Parker', id=15659}
+Airport{name='Arlington', id=15660}
+Airport{name='Bernard', id=15661}
+Airport{name='Lodi', id=15662}
+Airport{name='Independence', id=15663}
+Airport{name='Wichita', id=15664}
+Airport{name='Americus', id=15665}
+Airport{name='Deer Lodge', id=15668}
+Airport{name='Hondo', id=15669}
+Airport{name='Landsberg Am Lech', id=15670}
+Airport{name='Granite Creek Mine', id=15671}
+Airport{name='Sao Vicente', id=15672}
+Airport{name='Vaxjo', id=15673}
+Airport{name='Vryheid', id=15674}
+Airport{name='Peru', id=15675}
+Airport{name='Marvel Creek Mine', id=15676}
+Airport{name='Mitrofania', id=15677}
+Airport{name='Mush Bay', id=15678}
+Airport{name='Campbell Lagoon', id=15679}
+Airport{name='Frazer Lake', id=15680}
+Airport{name='Afognak Straits', id=15681}
+Airport{name='Moffet Bay', id=15682}
+Airport{name='Mineola', id=15683}
+Airport{name='Brundidge', id=15684}
+Airport{name='Payette', id=15685}
+Airport{name='Los Alamitos', id=15687}
+Airport{name='Jensens Strip', id=15688}
+Airport{name='Wildman Creek', id=15689}
+Airport{name='Stepovak', id=15690}
+Airport{name='Puale Bay', id=15692}
+Airport{name='Katmai Bay', id=15693}
+Airport{name='Kashvik Bay', id=15694}
+Airport{name='Cinder Mountain', id=15695}
+Airport{name='Hagemeister Island', id=15696}
+Airport{name='Cape Peirce', id=15697}
+Airport{name='Cape Greig', id=15698}
+Airport{name='Kasba Lake', id=15699}
+Airport{name='Katmai Lodge', id=15700}
+Airport{name='South St. Paul', id=15701}
+Airport{name='Mansfield', id=15703}
+Airport{name='Burlington', id=15704}
+Airport{name='Medical Lake', id=15705}
+Airport{name='Winthrop', id=15706}
+Airport{name='Stehekin', id=15707}
+Airport{name='Chelan', id=15708}
+Airport{name='Wales', id=15709}
+Airport{name='Wabag', id=15710}
+Airport{name='Andriamena', id=15711}
+Airport{name='Wanganui', id=15712}
+Airport{name='Chincoteague', id=15713}
+Airport{name='Warsaw', id=15714}
+Airport{name='Washington', id=15715}
+Airport{name='Waterford', id=15716}
+Airport{name='Wave Hill', id=15717}
+Airport{name='Warsaw', id=15718}
+Airport{name='Wahai', id=15720}
+Airport{name='Stebbins', id=15721}
+Airport{name='Commerce/Montebello', id=15722}
+Airport{name='Wapenamanda', id=15723}
+Airport{name='Woburn', id=15724}
+Airport{name='Beaver', id=15725}
+Airport{name='Big Rapids', id=15726}
+Airport{name='Bennettsville', id=15727}
+Airport{name='Downtown', id=15728}
+Airport{name='Castro', id=15729}
+Airport{name='Whalers Cove Lodge', id=15730}
+Airport{name='Chandalar', id=15731}
+Airport{name='Wide Bay', id=15732}
+Airport{name='Enid', id=15734}
+Airport{name='Windhoek', id=15735}
+Airport{name='Eastsound', id=15736}
+Airport{name='Winder', id=15737}
+Airport{name='Dashuipo', id=15738}
+Airport{name='Weipa', id=15739}
+Airport{name='Welkom', id=15740}
+Airport{name='Ketchikan', id=15741}
+Airport{name='Wagga Wagga', id=15744}
+Airport{name='Walgett', id=15745}
+Airport{name='Bahia Tortugas', id=15746}
+Airport{name='Isle Baltra', id=15747}
+Airport{name='Winchester', id=15749}
+Airport{name='Waingapu', id=15750}
+Airport{name='Frenchville', id=15751}
+Airport{name='Hyder', id=15754}
+Airport{name='Whakatane', id=15755}
+Airport{name='Franz Josef', id=15756}
+Airport{name='Eagle', id=15758}
+Airport{name='Wharton', id=15759}
+Airport{name='Black River Falls', id=15760}
+Airport{name='Phillips', id=15761}
+Airport{name='Wilbur', id=15762}
+Airport{name='Wick', id=15763}
+Airport{name='Nairobi', id=15766}
+Airport{name='Winton', id=15767}
+Airport{name='Woja', id=15768}
+Airport{name='Lancaster', id=15769}
+Airport{name='Wanaka', id=15772}
+Airport{name='Wakkanai', id=15773}
+Airport{name='Aleknagik', id=15774}
+Airport{name='Waikoloa Village', id=15775}
+Airport{name='Hwange', id=15776}
+Airport{name='Wakunai', id=15777}
+Airport{name='Walker's Cay', id=15778}
+Airport{name='Philadelphia', id=15779}
+Airport{name='Labouchere Bay', id=15781}
+Airport{name='Winfield', id=15782}
+Airport{name='Wellington', id=15783}
+Airport{name='Walaha', id=15784}
+Airport{name='Selawik', id=15785}
+Airport{name='Waltham', id=15786}
+Airport{name='Wallis Island', id=15787}
+Airport{name='Willows', id=15789}
+Airport{name='Warrnambool', id=15790}
+Airport{name='Winnemucca', id=15791}
+Airport{name='Mountain Home', id=15792}
+Airport{name='Meyers Chuck', id=15793}
+Airport{name='White Mountain', id=15794}
+Airport{name='Mananara', id=15795}
+Airport{name='Napakiak', id=15798}
+Airport{name='Wunnumin Lake', id=15799}
+Airport{name='Naga', id=15800}
+Airport{name='Windorah', id=15801}
+Airport{name='Nawab Shah', id=15802}
+Airport{name='Wenzhou', id=15804}
+Airport{name='Wood River', id=15805}
+Airport{name='Willow', id=15807}
+Airport{name='Wipim', id=15810}
+Airport{name='Puerto Williams', id=15812}
+Airport{name='Ovid', id=15813}
+Airport{name='Mandan', id=15814}
+Airport{name='Hamilton', id=15815}
+Airport{name='Tulelake', id=15816}
+Airport{name='Dinsmore', id=15817}
+Airport{name='Rigby', id=15818}
+Airport{name='Hesperia', id=15819}
+Airport{name='Dorris', id=15820}
+Airport{name='Connell', id=15821}
+Airport{name='Peard Bay', id=15822}
+Airport{name='Townsend', id=15823}
+Airport{name='Bluff', id=15824}
+Airport{name='Lake Charles', id=15825}
+Airport{name='Campbellsville', id=15826}
+Airport{name='Rosamond', id=15827}
+Airport{name='Oceano', id=15828}
+Airport{name='Fairburn', id=15829}
+Airport{name='Naknek', id=15830}
+Airport{name='Poplar', id=15831}
+Airport{name='Bridger', id=15832}
+Airport{name='Portales', id=15833}
+Airport{name='David River', id=15835}
+Airport{name='Kiavak', id=15836}
+Airport{name='Port Wakefield', id=15837}
+Airport{name='Chignik Lake', id=15838}
+Airport{name='Macon', id=15839}
+Airport{name='Whangarei', id=15840}
+Airport{name='Wrangell', id=15841}
+Airport{name='Fort Dix', id=15842}
+Airport{name='Worland', id=15843}
+Airport{name='Wroclaw', id=15845}
+Airport{name='Steamboat Bay', id=15846}
+Airport{name='Washington', id=15847}
+Airport{name='Shirley', id=15848}
+Airport{name='Wasilla', id=15849}
+Airport{name='San Juan', id=15850}
+Airport{name='Wiseman', id=15852}
+Airport{name='South Naknek', id=15853}
+Airport{name='Waspam', id=15854}
+Airport{name='Westerly', id=15855}
+Airport{name='Westsound', id=15856}
+Airport{name='Shute Harbour/Whitsunday', id=15857}
+Airport{name='Westport', id=15858}
+Airport{name='New York', id=15859}
+Airport{name='West End', id=15860}
+Airport{name='Noatak', id=15861}
+Airport{name='Tuntutuliak', id=15862}
+Airport{name='Waddington', id=15863}
+Airport{name='Whiteriver', id=15864}
+Airport{name='Tsiroanomandidy', id=15865}
+Airport{name='Whittier', id=15866}
+Airport{name='Wau', id=15867}
+Airport{name='Wuhan', id=15868}
+Airport{name='Duchesne', id=15869}
+Airport{name='Ocean Shores', id=15870}
+Airport{name='Wau', id=15871}
+Airport{name='Wuxi', id=15872}
+Airport{name='Charleston', id=15873}
+Airport{name='Falls Church', id=15874}
+Airport{name='Walvis Bay', id=15875}
+Airport{name='Watsonville', id=15877}
+Airport{name='Manakara', id=15878}
+Airport{name='Augusta/Waterville', id=15879}
+Airport{name='Wasilla', id=15881}
+Airport{name='Cape May', id=15882}
+Airport{name='Wewak', id=15883}
+Airport{name='Whale Pass', id=15885}
+Airport{name='Woodward', id=15886}
+Airport{name='Newtok', id=15887}
+Airport{name='Pinedale', id=15892}
+Airport{name='Whyalla', id=15893}
+Airport{name='Yes Bay', id=15894}
+Airport{name='Yengema', id=15895}
+Airport{name='Wyndham', id=15896}
+Airport{name='West Yellowstone', id=15897}
+Airport{name='Nassau', id=15899}
+Airport{name='Alamos', id=15900}
+Airport{name='Chapeco', id=15901}
+Airport{name='Bearskin Lake', id=15902}
+Airport{name='Brockville', id=15903}
+Airport{name='Christmas Island', id=15904}
+Airport{name='Cluff Lake', id=15905}
+Airport{name='Chalons-En-Champagne', id=15906}
+Airport{name='Lake Geneva', id=15907}
+Airport{name='Xichang', id=15908}
+Airport{name='Xi'an', id=15910}
+Airport{name='St. Louis', id=15913}
+Airport{name='Lemwerder', id=15914}
+Airport{name='Madison', id=15915}
+Airport{name='Manihi', id=15916}
+Airport{name='Xiamen', id=15917}
+Airport{name='Marmande', id=15918}
+Airport{name='Fayetteville', id=15919}
+Airport{name='Quang Ngai', id=15920}
+Airport{name='Xining', id=15921}
+Airport{name='Comayagua', id=15923}
+Airport{name='Al Bakr', id=15924}
+Airport{name='Quepos', id=15925}
+Airport{name='Richmond', id=15926}
+Airport{name='Reston', id=15927}
+Airport{name='Jerez de la Frontera', id=15928}
+Airport{name='South Caicos', id=15929}
+Airport{name='Tonopah', id=15930}
+Airport{name='Leonardtown', id=15931}
+Airport{name='Seletar', id=15932}
+Airport{name='Xuzhou', id=15933}
+Airport{name='Granite Point', id=15934}
+Airport{name='Yantarni Bay', id=15936}
+Airport{name='Emmen', id=15937}
+Airport{name='Copalis', id=15938}
+Airport{name='Jerome', id=15939}
+Airport{name='Aztec', id=15941}
+Airport{name='Dexter', id=15943}
+Airport{name='Port Orchard', id=15944}
+Airport{name='Blackfoot', id=15945}
+Airport{name='Riyadh', id=15946}
+Airport{name='Jupiter', id=15947}
+Airport{name='Kimball', id=15948}
+Airport{name='Al Kharj', id=15949}
+Airport{name='Iwakuni', id=15950}
+Airport{name='Oliktok', id=15952}
+Airport{name='Nushagak Bay', id=15953}
+Airport{name='Marion', id=15954}
+Airport{name='Driggs', id=15956}
+Airport{name='Woodford', id=15961}
+Airport{name='Clarendon', id=15963}
+Airport{name='Lakewood', id=15964}
+Airport{name='Cambridge', id=15966}
+Airport{name='Doha', id=15968}
+Airport{name='Willits', id=15971}
+Airport{name='Hurricane', id=15972}
+Airport{name='Lakeport', id=15973}
+Airport{name='Mariposa', id=15975}
+Airport{name='Creswell', id=15976}
+Airport{name='Polson', id=15977}
+Airport{name='Ashland', id=15978}
+Airport{name='Decatur', id=15979}
+Airport{name='Lake City', id=15980}
+Airport{name='Mena', id=15981}
+Airport{name='Fortuna', id=15982}
+Airport{name='Zuni Pueblo', id=15983}
+Airport{name='Yandina', id=15984}
+Airport{name='Anahim Lake', id=15986}
+Airport{name='Cat Lake', id=15987}
+Airport{name='Asbestos Hill', id=15988}
+Airport{name='Fort Frances', id=15989}
+Airport{name='La Grande 4', id=15990}
+Airport{name='Yakutat', id=15991}
+Airport{name='Sault Ste. Marie', id=15992}
+Airport{name='Yaounde', id=15993}
+Airport{name='Yap', id=15994}
+Airport{name='Attawapiskat', id=15995}
+Airport{name='Kattiniq', id=15996}
+Airport{name='Miners Bay', id=15997}
+Airport{name='St. Anthony', id=15998}
+Airport{name='Tofino', id=15999}
+Airport{name='Banff', id=16000}
+Airport{name='Kugaaruk', id=16001}
+Airport{name='Baie Comeau', id=16002}
+Airport{name='Uranium City', id=16003}
+Airport{name='Saguenay', id=16004}
+Airport{name='Baie Johan Beetz', id=16005}
+Airport{name='Baker Lake', id=16006}
+Airport{name='Campbell River', id=16007}
+Airport{name='Bronson Creek', id=16008}
+Airport{name='Brandon', id=16009}
+Airport{name='Opapimiskan Lake', id=16010}
+Airport{name='Brochet', id=16011}
+Airport{name='Berens River', id=16012}
+Airport{name='Blanc Sablon', id=16013}
+Airport{name='Cambridge Bay', id=16014}
+Airport{name='Cornwall', id=16015}
+Airport{name='Nanaimo', id=16016}
+Airport{name='Cortes Bay', id=16017}
+Airport{name='Castlegar/Nelson/Trail', id=16018}
+Airport{name='Miramichi', id=16019}
+Airport{name='Cape Saint James', id=16020}
+Airport{name='Colville Lake', id=16021}
+Airport{name='Charlo', id=16022}
+Airport{name='St. Catharines', id=16023}
+Airport{name='Cochrane', id=16024}
+Airport{name='Kugluktuk/Coppermine', id=16025}
+Airport{name='Cross Lake', id=16026}
+Airport{name='Chesterfield Inlet', id=16027}
+Airport{name='Clyde River', id=16028}
+Airport{name='Dawson City', id=16029}
+Airport{name='Burwash Landings', id=16030}
+Airport{name='Deer Lake', id=16031}
+Airport{name='Dease Lake', id=16032}
+Airport{name='Dauphin', id=16033}
+Airport{name='Nain', id=16034}
+Airport{name='Dawson Creek', id=16035}
+Airport{name='Desolation Sound', id=16036}
+Airport{name='Riviere-Du-Loup', id=16038}
+Airport{name='Edmonton', id=16039}
+Airport{name='Yecheon', id=16040}
+Airport{name='Edmonton', id=16041}
+Airport{name='Edmonton', id=16042}
+Airport{name='Arviat', id=16043}
+Airport{name='Elliot Lake', id=16044}
+Airport{name='Manitowaning', id=16045}
+Airport{name='Yeovilton', id=16046}
+Airport{name='Fort Severn', id=16047}
+Airport{name='Eureka', id=16048}
+Airport{name='Inuvik', id=16049}
+Airport{name='Iqaluit', id=16050}
+Airport{name='Fredericton', id=16051}
+Airport{name='Flin Flon', id=16052}
+Airport{name='Fort Resolution', id=16053}
+Airport{name='Fort Simpson', id=16054}
+Airport{name='Gagnon', id=16055}
+Airport{name='Gillies Bay', id=16056}
+Airport{name='Gorge Harbor', id=16057}
+Airport{name='Ganges Harbor', id=16058}
+Airport{name='Fort Good Hope', id=16059}
+Airport{name='Yonago', id=16060}
+Airport{name='Kingston', id=16061}
+Airport{name='La Grande', id=16062}
+Airport{name='Greenway Sound', id=16063}
+Airport{name='Gaspe', id=16064}
+Airport{name='Geraldton', id=16065}
+Airport{name='Iles de la Madeleine', id=16066}
+Airport{name='Igloolik', id=16067}
+Airport{name='Havre St. Pierre', id=16068}
+Airport{name='Kuujjuarapik', id=16069}
+Airport{name='Gillam', id=16070}
+Airport{name='Grise Fiord', id=16072}
+Airport{name='Port Hope Simpson', id=16073}
+Airport{name='Dryden', id=16074}
+Airport{name='Hearst', id=16075}
+Airport{name='Campbell River', id=16076}
+Airport{name='Holman Island', id=16077}
+Airport{name='Hamilton', id=16078}
+Airport{name='Hornepayne', id=16079}
+Airport{name='Harrington Harbour', id=16080}
+Airport{name='Sechelt', id=16081}
+Airport{name='Haines Junction', id=16082}
+Airport{name='Montreal', id=16083}
+Airport{name='Hay River', id=16084}
+Airport{name='Halifax', id=16085}
+Airport{name='Atikokan', id=16086}
+Airport{name='Pakuashipi', id=16087}
+Airport{name='Big Bay Marina', id=16088}
+Airport{name='Yichang', id=16089}
+Airport{name='Pond Inlet', id=16090}
+Airport{name='Detroit', id=16091}
+Airport{name='Island Lake', id=16092}
+Airport{name='Yiwu', id=16093}
+Airport{name='Johnny Mountain', id=16094}
+Airport{name='Stephenville', id=16095}
+Airport{name='Kamloops', id=16096}
+Airport{name='Kitchener', id=16097}
+Airport{name='Kangirsuk', id=16098}
+Airport{name='ru.bmstu.iu9.lab2.Key Lake', id=16099}
+Airport{name='Schefferville', id=16100}
+Airport{name='Yakima', id=16101}
+Airport{name='Yankton', id=16102}
+Airport{name='Yakutsk', id=16103}
+Airport{name='Fort George', id=16104}
+Airport{name='Kirkland Lake', id=16105}
+Airport{name='Toronto', id=16106}
+Airport{name='Kimmirut/Lake Harbour', id=16107}
+Airport{name='Chapleau', id=16108}
+Airport{name='Lansdowne House', id=16109}
+Airport{name='Lloydminster', id=16110}
+Airport{name='Mingan', id=16111}
+Airport{name='La Tuque', id=16112}
+Airport{name='Leaf Rapids', id=16113}
+Airport{name='Alert', id=16114}
+Airport{name='Kelowna', id=16115}
+Airport{name='Mayo', id=16116}
+Airport{name='Merritt', id=16117}
+Airport{name='Matane', id=16118}
+Airport{name='Mary's Harbour', id=16119}
+Airport{name='Murray Bay', id=16120}
+Airport{name='Fort McMurray', id=16121}
+Airport{name='Moosonee', id=16122}
+Airport{name='Port McNeill', id=16123}
+Airport{name='Montreal', id=16124}
+Airport{name='Yurimaguas', id=16125}
+Airport{name='Chibougamau', id=16126}
+Airport{name='Manicouagan', id=16127}
+Airport{name='Montreal', id=16128}
+Airport{name='Natashquan', id=16129}
+Airport{name='Yenbo', id=16130}
+Airport{name='Gatineau', id=16131}
+Airport{name='Norway House', id=16132}
+Airport{name='Youngstown/Warren', id=16133}
+Airport{name='Hudson's Hope', id=16134}
+Airport{name='Yanji', id=16135}
+Airport{name='Nootka Sound', id=16136}
+Airport{name='Points North Landing', id=16137}
+Airport{name='Matagami', id=16138}
+Airport{name='Yantai', id=16139}
+Airport{name='Yangyang', id=16140}
+Airport{name='Old Crow', id=16141}
+Airport{name='Cold Lake', id=16142}
+Airport{name='Ogoki', id=16143}
+Airport{name='High Level', id=16144}
+Airport{name='Yola', id=16145}
+Airport{name='Oshawa', id=16146}
+Airport{name='Rainbow Lake', id=16147}
+Airport{name='Ottawa', id=16149}
+Airport{name='Rea Point', id=16150}
+Airport{name='Prince Albert', id=16151}
+Airport{name='Peace River', id=16152}
+Airport{name='Pickle Lake', id=16153}
+Airport{name='Port Menier', id=16154}
+Airport{name='Peawanuck', id=16155}
+Airport{name='Peterborough', id=16156}
+Airport{name='Digby Island', id=16157}
+Airport{name='Port Hawkesbury', id=16158}
+Airport{name='Powell River', id=16159}
+Airport{name='Povungnituk', id=16160}
+Airport{name='Fort Chipewyan', id=16161}
+Airport{name='Muskoka', id=16162}
+Airport{name='Quebec', id=16163}
+Airport{name='The Pas', id=16164}
+Airport{name='Red Deer', id=16165}
+Airport{name='Windsor', id=16166}
+Airport{name='Watson Lake', id=16167}
+Airport{name='Yarmouth', id=16168}
+Airport{name='Kenora', id=16169}
+Airport{name='Lethbridge', id=16170}
+Airport{name='Moncton', id=16171}
+Airport{name='Comox', id=16172}
+Airport{name='Regina', id=16173}
+Airport{name='Thunder Bay', id=16174}
+Airport{name='Grande Prairie', id=16175}
+Airport{name='Yorkton', id=16176}
+Airport{name='North Battleford', id=16177}
+Airport{name='Gander', id=16178}
+Airport{name='Sydney', id=16179}
+Airport{name='Quesnel', id=16180}
+Airport{name='Resolute Bay', id=16181}
+Airport{name='Chicoutimi', id=16182}
+Airport{name='Dean River', id=16183}
+Airport{name='Roberval', id=16184}
+Airport{name='Red Lake', id=16185}
+Airport{name='Trois Rivieres', id=16186}
+Airport{name='Rankin Inlet', id=16187}
+Airport{name='Sudbury', id=16188}
+Airport{name='Sherbrooke', id=16189}
+Airport{name='Stony Rapids', id=16190}
+Airport{name='Saint John', id=16191}
+Airport{name='St. Leonard', id=16192}
+Airport{name='Fort Smith', id=16193}
+Airport{name='Salmon Arm', id=16194}
+Airport{name='Marathon', id=16195}
+Airport{name='Nanisivik', id=16196}
+Airport{name='St. Theresa Point', id=16197}
+Airport{name='Summerside', id=16198}
+Airport{name='Saglek', id=16199}
+Airport{name='Pembroke', id=16201}
+Airport{name='Cape Dorset', id=16202}
+Airport{name='Alma', id=16203}
+Airport{name='Sullivan Bay', id=16204}
+Airport{name='Thompson', id=16205}
+Airport{name='Terrace Bay', id=16206}
+Airport{name='Big Trout Lake', id=16207}
+Airport{name='La Macaza', id=16208}
+Airport{name='Riviere-au-Tonnerre', id=16209}
+Airport{name='Toronto', id=16210}
+Airport{name='Tofino', id=16211}
+Airport{name='Tasiujuaq', id=16212}
+Airport{name='Trenton', id=16213}
+Airport{name='Timmins', id=16214}
+Airport{name='Toronto', id=16215}
+Airport{name='Tuktoyaktuk', id=16216}
+Airport{name='Montreal', id=16217}
+Airport{name='Yuma', id=16218}
+Airport{name='Repulse Bay', id=16219}
+Airport{name='Hall Beach', id=16220}
+Airport{name='Rouyn-Noranda', id=16221}
+Airport{name='Moroni', id=16222}
+Airport{name='Bonaventure', id=16223}
+Airport{name='Lac La Ronge', id=16224}
+Airport{name='Cape Dyer', id=16225}
+Airport{name='Val d'Or', id=16226}
+Airport{name='Fort Chimo', id=16227}
+Airport{name='Norman Wells', id=16228}
+Airport{name='Vancouver', id=16229}
+Airport{name='Buffalo Narrows', id=16230}
+Airport{name='Kangiqsujuaq', id=16231}
+Airport{name='Winnipeg', id=16232}
+Airport{name='Victoria', id=16233}
+Airport{name='Deline', id=16234}
+Airport{name='Wabush', id=16235}
+Airport{name='Williams Lake', id=16236}
+Airport{name='Chute-Des-Passes', id=16237}
+Airport{name='White River', id=16238}
+Airport{name='Wrigley', id=16239}
+Airport{name='Cranbrook', id=16240}
+Airport{name='Edmonton', id=16241}
+Airport{name='Saskatoon', id=16242}
+Airport{name='Medicine Hat', id=16243}
+Airport{name='Fort St. John', id=16244}
+Airport{name='Rimouski', id=16245}
+Airport{name='Sioux Lookout', id=16246}
+Airport{name='Pangnirtung', id=16247}
+Airport{name='Beaver Creek', id=16248}
+Airport{name='Earlton', id=16249}
+Airport{name='Prince George', id=16250}
+Airport{name='Terrace', id=16251}
+Airport{name='London', id=16252}
+Airport{name='Abbotsford', id=16253}
+Airport{name='Whitehorse', id=16254}
+Airport{name='Wawa', id=16255}
+Airport{name='North Bay', id=16256}
+Airport{name='Calgary', id=16257}
+Airport{name='Smithers', id=16258}
+Airport{name='Fort Nelson', id=16259}
+Airport{name='Penticton', id=16260}
+Airport{name='Charlottetown', id=16261}
+Airport{name='Taloyoak', id=16262}
+Airport{name='Victoria', id=16263}
+Airport{name='Lynn Lake', id=16264}
+Airport{name='Swift Current', id=16265}
+Airport{name='Churchill', id=16266}
+Airport{name='Goose Bay', id=16267}
+Airport{name='St. John's', id=16268}
+Airport{name='Kapuskasing', id=16269}
+Airport{name='Mont Joli', id=16270}
+Airport{name='Toronto', id=16271}
+Airport{name='Gore Bay', id=16272}
+Airport{name='Yellowknife', id=16273}
+Airport{name='Slave Lake', id=16274}
+Airport{name='Sandspit', id=16275}
+Airport{name='Sarnia', id=16276}
+Airport{name='Coral Harbour', id=16277}
+Airport{name='Port Hardy', id=16278}
+Airport{name='Sept-Iles', id=16279}
+Airport{name='Alice Arm', id=16280}
+Airport{name='Zadar', id=16281}
+Airport{name='Zagreb', id=16282}
+Airport{name='Zahedan', id=16283}
+Airport{name='Valdivia', id=16284}
+Airport{name='Zamboanga', id=16285}
+Airport{name='Zaragoza', id=16286}
+Airport{name='Bathurst', id=16288}
+Airport{name='Biloela', id=16289}
+Airport{name='Bromont', id=16290}
+Airport{name='Bowen', id=16291}
+Airport{name='Branson', id=16292}
+Airport{name='Zacatecas', id=16293}
+Airport{name='Temuco', id=16294}
+Airport{name='Bella Bella', id=16295}
+Airport{name='Faro', id=16296}
+Airport{name='Fort McPherson', id=16297}
+Airport{name='Fort Norman', id=16298}
+Airport{name='Grand Forks', id=16299}
+Airport{name='Ngoma', id=16300}
+Airport{name='Gethsemani', id=16301}
+Airport{name='Zhanjiang', id=16302}
+Airport{name='Ziguinchor', id=16303}
+Airport{name='Ixtapa/Zihuatanejo', id=16304}
+Airport{name='Kasaba Bay', id=16305}
+Airport{name='Manzanillo', id=16306}
+Airport{name='La Tabatiere', id=16307}
+Airport{name='Sena Madureira', id=16308}
+Airport{name='Masset', id=16309}
+Airport{name='Nanaimo', id=16310}
+Airport{name='Nyac', id=16311}
+Airport{name='Zinder', id=16312}
+Airport{name='Newman', id=16313}
+Airport{name='Ingolstadt', id=16314}
+Airport{name='Zanzibar', id=16315}
+Airport{name='Ocean Falls', id=16316}
+Airport{name='Osorno', id=16318}
+Airport{name='Sachigo Lake', id=16319}
+Airport{name='Queenstown', id=16320}
+Airport{name='Zurich', id=16321}
+Airport{name='San Salvador', id=16322}
+Airport{name='Sligo', id=16323}
+Airport{name='Sassandra', id=16324}
+Airport{name='Stewart', id=16325}
+Airport{name='Prince Rupert', id=16326}
+Airport{name='Zakinthos', id=16327}
+Airport{name='Tahsis', id=16328}
+Airport{name='Zhuhai', id=16329}
+Airport{name='Churchill Falls', id=16330}
+Airport{name='Miandrivazo', id=16331}
+Airport{name='Savannakhet', id=16332}
+Airport{name='Wollaston Lake', id=16333}
+Airport{name='Rota', id=16334}
+Airport{name='Albuquerque', id=16335}
+Airport{name='Gasquet', id=16336}
+Airport{name='San Isidro', id=16337}
+Airport{name='Sculthorpe', id=16338}
+Airport{name='Illinois Creek', id=16339}
+Airport{name='Chomondely Sound', id=16340}
+Airport{name='Coal Bay', id=16341}
+Airport{name='Happy Harbour', id=16342}
+Airport{name='Lancaster Cove', id=16343}
+Airport{name='Reid Cove', id=16344}
+Airport{name='Saltery Cove', id=16345}
+Airport{name='Clover Bay', id=16346}
+Airport{name='El Capitan', id=16347}
+Airport{name='Salmon Bay Lake', id=16348}
+Airport{name='Cloverdale', id=16352}
+Airport{name='North Kingstown', id=16353}
+Airport{name='Nappanee', id=16354}
+Airport{name='Paradise', id=16355}
+Airport{name='Kennewick', id=16356}
+Airport{name='Delta', id=16357}
+Airport{name='Waterville', id=16358}
+Airport{name='Sylhet', id=16359}
+Airport{name='Mzuzu', id=16360}
+Airport{name='Zanesville', id=16361}
+Airport{name='Fernandina Beach', id=16363}
+Airport{name='Panama City', id=16364}
+Airport{name='Ad-Dabbah', id=16385}
+Airport{name='Aua Island', id=16386}
+Airport{name='Abakan', id=16387}
+Airport{name='Barretos', id=16388}
+Airport{name='Badana', id=16389}
+Airport{name='Beluga', id=16390}
+Airport{name='McCord', id=16392}
+Airport{name='Papua New Guinea', id=16393}
+Airport{name='Marinduque', id=16394}
+Airport{name='Nellie Juan', id=16396}
+Airport{name='Bacolod', id=16398}
+Airport{name='Sanandaj', id=16399}
+Airport{name='Swindon', id=16400}
+Airport{name='Tinak', id=16401}
+Airport{name='Pulau Tioman', id=16402}
+Airport{name='Copiapo', id=16403}
+Airport{name='South Naknek', id=16404}
+Airport{name='Nanchang', id=16405}
+Airport{name='Bagabag', id=16406}
+Airport{name='Cornelio Procopio', id=16407}
+Airport{name='Tokyo', id=16408}
+Airport{name='Marquette', id=16409}
+Airport{name='Montserrat', id=16410}
+Airport{name='Luxi', id=16411}
+Airport{name='Slaton', id=16412}
+Airport{name='Nevsehir', id=16413}
+Airport{name='Picayune', id=16414}
+Airport{name='Haikou', id=16415}
+Airport{name='Hangzhou', id=16416}
+Airport{name='Tuxtla Gutierrez', id=16417}
+Airport{name='Mandalay', id=16418}
+Airport{name='Sewanee', id=16419}
+Airport{name='Amendola', id=16420}
+Airport{name='Athens', id=16421}
+Airport{name='Gulf Shores', id=16422}
+Airport{name='Andalusia/Opp', id=16423}
+Airport{name='Frankfort', id=16424}
+Airport{name='Potsdam', id=16425}
+Airport{name='Ada', id=16426}
+Airport{name='Tuxekan Island', id=16427}
+Airport{name='Marble Canyon', id=16428}
+Airport{name='Middlebury', id=16429}
+Airport{name='Zhezkazgan', id=16430}
+Airport{name='Aberdeen', id=16431}
+Airport{name='Koroba', id=16432}
+Airport{name='Ingolstadt', id=16433}
+Airport{name='Leon', id=16434}
+Airport{name='Loeriesfontein', id=16435}
+Airport{name='Mae Sot', id=16436}
+Airport{name='Oslo', id=16437}
+Airport{name='Lima', id=16438}
+Airport{name='Ulan-Ude', id=16439}
+Airport{name='Austin', id=16440}
+Airport{name='Plainville', id=16441}
+Airport{name='Millbrook', id=16442}
+Airport{name='Cabo San Lucas', id=16443}
+Airport{name='Swidwin', id=16444}
+Airport{name='Driggs', id=16445}
+Airport{name='Masterton', id=16446}
+Airport{name='Sulaymaniyah', id=16447}
+Airport{name='Forres', id=16448}
+Airport{name='Paragould', id=16449}
+Airport{name='Derby', id=16450}
+Airport{name='Salome', id=16451}
+Airport{name='Saratov', id=16452}
+Airport{name='Gregory', id=16453}
+Airport{name='Hamilton', id=16454}
+Airport{name='Demopolis', id=16455}
+Airport{name='Jebel Ali', id=16456}
+Airport{name='Chatham Kent', id=16457}
+Airport{name='El Palomar', id=16458}
+Airport{name='Fremont', id=16459}
+Airport{name='Barcelos', id=16460}
+Airport{name='Lashkar Gah', id=16461}
+Airport{name='Muan', id=16462}
+Airport{name='Michellville', id=16463}
+Airport{name='Navoi', id=16464}
+Airport{name='Weipa', id=16465}
+Airport{name='Villavicencio', id=16466}
+Airport{name='Changchun', id=16467}
+Airport{name='Philadelphia', id=16468}
+Airport{name='Wadena', id=16469}
+Airport{name='Bluffton', id=16470}
+Airport{name='Sialkot', id=16471}
+Airport{name='Independence Creek', id=16472}
+Airport{name='Wichita', id=16473}
+Airport{name='Jefferson', id=16474}
+Airport{name='Durban', id=16475}
+Airport{name='Hyderabad', id=16476}
+Airport{name='Queretaro', id=16477}
+Airport{name='Lebel-sur-Quevillon', id=16478}
+Airport{name='Montague', id=16479}
+Airport{name='Daqing Shi', id=16480}
+Airport{name='Bayankhongor', id=16481}
+Airport{name='Albert', id=16482}
+Airport{name='Khanty-Mansiysk', id=16483}
+Airport{name='Zanjan', id=16484}
+Airport{name='Mamitupo', id=16485}
+Airport{name='Greenwood', id=16486}
+Airport{name='Taunton', id=16487}
+Airport{name='Sampit', id=16488}
+Airport{name='Seward Peninsula', id=16489}
+Airport{name='Bear Fish Camp', id=16490}
+Airport{name='Princeton', id=16491}
+Airport{name='Tubarao', id=16492}
+Airport{name='Jiangsu', id=16493}
+Airport{name='Thablotin', id=16494}
+Airport{name='Simsbury', id=16495}
+Airport{name='Logan', id=16496}
+Airport{name='Fairhope', id=16497}
+Airport{name='Skaneateles', id=16498}
+Airport{name='Johnstown', id=16499}
+Airport{name='Red Wing', id=16500}
+Airport{name='Madison', id=16501}
+Airport{name='Oxford', id=16502}
+Airport{name='Islesboro', id=16503}
+Airport{name='Honesdale', id=16504}
+Airport{name='Fairbanks', id=16505}
+Airport{name='Ekati', id=16506}
+Airport{name='Cheongju', id=16507}
+Airport{name='Squaw Lake', id=16508}
+Airport{name='Sevierville', id=16509}
+Airport{name='Beaufort', id=16510}
+Airport{name='Indianapolis', id=16511}
+Airport{name='Mattituck', id=16512}
+Airport{name='Colomac', id=16513}
+Airport{name='Tabubil', id=16514}
+Airport{name='Brewster', id=16515}
+Airport{name='Moscow', id=16516}
+Airport{name='Chemehuevi Valley', id=16517}
+Airport{name='Centralia', id=16518}
+Airport{name='Carlisle', id=16519}
+Airport{name='Middletown', id=16520}
+Airport{name='Big Piney', id=16521}
+Airport{name='Londolovit', id=16522}
+Airport{name='Parry Sound', id=16523}
+Airport{name='Petersburg', id=16524}
+Airport{name='West Chester', id=16525}
+Airport{name='Marshfield', id=16526}
+Airport{name='Monroeville', id=16527}
+Airport{name='Richmond', id=16528}
+Airport{name='Vinh City', id=16529}
+Airport{name='Paraparaumu', id=16530}
+Airport{name='Abu Dhabi', id=16531}
+Airport{name='Medina', id=16532}
+Airport{name='Santo Domingo', id=16533}
+Airport{name='Clewiston', id=16534}
+Airport{name='Tambor', id=16535}
+Airport{name='Troy', id=16536}
+Airport{name='Notchitoches', id=16537}
+Airport{name='Clinton', id=16538}
+Airport{name='Indianapolis', id=16539}
+Airport{name='Belfast', id=16540}
+Airport{name='Okeechobee', id=16541}
+Airport{name='Walterboro', id=16542}
+Airport{name='Northampton', id=16543}
+Airport{name='Simberi Island', id=16544}
+Airport{name='Telegraph Harbour', id=16545}
+Airport{name='Collingwood', id=16546}
+Airport{name='Pella', id=16547}
+Airport{name='Hampton', id=16548}
+Airport{name='Winters', id=16549}
+Airport{name='Tebepahwa', id=16550}
+Airport{name='Memmingen', id=16551}
+Airport{name='Burlington', id=16552}
+Airport{name='Oxford', id=16553}
+Airport{name='Ganja', id=16554}
+Airport{name='Midlothian/Waxahachie', id=16555}
+Airport{name='Nordholz', id=16556}
+Airport{name='Dwyer', id=16557}
+Airport{name='Hammond', id=16558}
+Airport{name='Shindand', id=16559}
+Airport{name='Bend', id=16560}
+Airport{name='Springerville', id=16561}
+Airport{name='Hindon', id=16562}
+Airport{name='Osceola', id=16563}
+Airport{name='Marsa Alam', id=16564}
+Airport{name='Uribia', id=16565}
+Airport{name='Jean', id=16566}
+Airport{name='Akun', id=16567}
+Airport{name='Ocean City', id=16568}
+Airport{name='Hornell', id=16569}
+Airport{name='Whistler', id=16570}
+Airport{name='Penn Yan', id=16571}
+Airport{name='Searchlight', id=16572}
+Airport{name='Broken Bow', id=16573}
+Airport{name='Bogue', id=16574}
+Airport{name='Salamanca', id=16575}
+Airport{name='Chingola', id=16576}
+Airport{name='Moncks Corner', id=16577}
+Airport{name='Al Najaf', id=16578}
+Airport{name='Hatay', id=16579}
+Airport{name='Qugruc', id=16580}
+Airport{name='Gold King 2', id=16581}
+Airport{name='Thomson', id=16582}
+Airport{name='Summerville', id=16583}
+Airport{name='Rampart', id=16584}
+Airport{name='Sussex', id=16585}
+Airport{name='Komo', id=16586}
+Airport{name='St Stephen', id=16587}
+Airport{name='West Dover', id=16588}
+Airport{name='Hallock', id=16589}
+Airport{name='Monbetsu', id=16590}
+Airport{name='Saga', id=16591}
+Airport{name='Liwa', id=16592}
+Airport{name='Hefei', id=16593}
+Airport{name='Willimantic', id=16594}
+Airport{name='Kemerovo', id=16595}
+Airport{name='Turkmenbashi', id=16596}
+Airport{name='Sion', id=16597}
+Airport{name='Tracy', id=16598}
+Airport{name='Bedwell Harbour', id=16599}
+Airport{name='Berry Island', id=16600}
+Airport{name='Bliss Landing', id=16601}
+Airport{name='Cordero Lodge', id=16602}
+Airport{name='Deer Harbor', id=16603}
+Airport{name='Dent Island ', id=16604}
+Airport{name='Egmont', id=16605}
+Airport{name='Galiano Island', id=16606}
+Airport{name='Hanson Island', id=16607}
+Airport{name='Mansons Landing', id=16608}
+Airport{name='Mink Island', id=16609}
+Airport{name='Nimmo Bay', id=16610}
+Airport{name='Pender Harbour', id=16611}
+Airport{name='Princess Lousia Inlet', id=16612}
+Airport{name='Quadra Island', id=16613}
+Airport{name='Refuge Cove', id=16614}
+Airport{name='Rendezvous Islands', id=16615}
+Airport{name='Shawl Bay', id=16616}
+Airport{name='Shoal Bay', id=16617}
+Airport{name='Sointula', id=16618}
+Airport{name='Sonora Island', id=16619}
+Airport{name='Steep Island', id=16620}
+Airport{name='Zips', id=16621}
+Airport{name='Mont de Marsan', id=16622}
+Airport{name='Cascais', id=16623}
+Airport{name='Warren', id=16624}
+Airport{name='Lumberton', id=16625}
+Airport{name='Doro', id=16626}
+Airport{name='Bethel', id=16627}
+Airport{name='Ehpriam', id=16628}
+Airport{name='Dalcahue', id=16629}
+Airport{name='Tolstoi Bay', id=16630}
+Airport{name='Mardin', id=16631}
+Airport{name='San Carlos', id=16632}
+Airport{name='Bethel2', id=16633}
+Airport{name='Quincy', id=16634}
+Airport{name='Belen', id=16635}
+Airport{name='Lusanga', id=16636}
+Airport{name='Itaituba', id=16637}
+Airport{name='Sarmellek', id=16638}
+Airport{name='Gila Bend', id=16639}
+Airport{name='Rockingham', id=16640}
+Airport{name='Hua Hin', id=16641}
+Airport{name='Cranfield', id=16642}
+Airport{name='Pittsburgh1', id=16643}
+Airport{name='New Milford', id=16644}
+Airport{name='Seosan', id=16645}
+Airport{name='Oxford', id=16646}
+Airport{name='Fitiuta Village', id=16647}
+Airport{name='Naypyitaw', id=16648}
+Airport{name='Baker Island', id=16649}
+Airport{name='Blind Channel', id=16650}
+Airport{name='Camp Orkila Eastsound', id=16651}
+Airport{name='Minstrel Island', id=16652}
+Airport{name='Port Harvey', id=16653}
+Airport{name='Shaw Island', id=16654}
+Airport{name='Simoom Sound', id=16655}
+Airport{name='Danielson', id=16656}
+Airport{name='Ruwaished', id=16657}
+Airport{name='Gainesville', id=16658}
+Airport{name='Wichita Falls', id=16659}
+Airport{name='Gambella', id=16660}
+Airport{name='York', id=16661}
+Airport{name='Naknek-1', id=16662}
+Airport{name='Jeffersonville', id=16663}
+Airport{name='Um Almelh', id=16664}
+Airport{name='Brady', id=16665}
+Airport{name='Dover-Cheswold', id=16666}
+Airport{name='Tamarindo', id=16667}
+Airport{name='Deadhorse1', id=16668}
+Airport{name='Jasper', id=16669}
+Airport{name='Bradenburg', id=16670}
+Airport{name='Paloich', id=16671}
+Airport{name='Toughkenamon', id=16672}
+Airport{name='Canton', id=16673}
+Airport{name='Astrakhan ', id=16674}
+Airport{name='Quarzazate', id=16675}
+Airport{name='Sirnak', id=16676}
+Airport{name='Gahcho', id=16677}
+Airport{name='Los Angeles', id=16678}
+Airport{name='Marfa', id=16679}
+Airport{name='Canandaigua', id=16680}
+Airport{name='East Haddam', id=16681}
+Airport{name='Gettysburg', id=16682}
+Airport{name='Dowagiac', id=16683}
+Airport{name='Collegeville', id=16684}
+Airport{name='Campia Turzii', id=16685}
+Airport{name='Wajir', id=16686}
+Airport{name='Ban Me Thout', id=16687}
