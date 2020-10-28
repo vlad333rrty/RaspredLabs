@@ -8,6 +8,7 @@ import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 
 import java.util.Collections;
+import java.util.stream.Collectors;
 
 public class Main {
     private static final String RESULT_FILE_NAME="result";
@@ -24,6 +25,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        flightsRDD.collect(Collections)
+        flightsRDD.collect(Collectors.groupingBy())
     }
 }
