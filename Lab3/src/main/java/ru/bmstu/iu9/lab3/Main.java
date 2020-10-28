@@ -33,7 +33,7 @@ public class Main {
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
-        
+        JavaPairRDD<Tuple2<Airport,Airport>,>
 
         airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
