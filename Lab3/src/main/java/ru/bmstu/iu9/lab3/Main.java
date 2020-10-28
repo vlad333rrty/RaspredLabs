@@ -19,7 +19,7 @@ public class Main {
 
     private static final int IS_CANCELLED=19;
     private static final int DELAY_TIME=18;
-    
+    private static final int AIRPORT_ID=14;
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
