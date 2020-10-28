@@ -5,6 +5,7 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import ru.bmstu.iu9.lab3.core.Airport;
+import ru.bmstu.iu9.lab3.core.Flight;
 import scala.Tuple2;
 
 import java.util.Arrays;
@@ -25,6 +26,7 @@ public class Main {
         JavaRDD<Airport> airportsRdd=airports.map(s->s.split(DELIMITER)).filter(s->s.length>2)
                 .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
 
-        airportsRdd.saveAsTextFile(RESULT_FILE_NAME);
+        JavaRDD<Flight> flightsRdd=flights.map(s->s.split(DELIMITER))
+                .map(s->new Flight())
     }
 }

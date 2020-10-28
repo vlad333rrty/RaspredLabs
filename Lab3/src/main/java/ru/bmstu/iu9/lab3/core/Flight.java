@@ -36,4 +36,14 @@ public class Flight implements Serializable {
     public double getDelay() {
         return delay;
     }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "origin=" + origin +
+                ", destination=" + destination +
+                ", isCancelled=" + isCancelled +
+                ", delay=" + delay +
+                '}';
+    }
 }
