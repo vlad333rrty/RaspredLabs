@@ -21,6 +21,6 @@ public class Main {
         JavaPairRDD<String,String> air=airports.map(s->
                 new String[]{s.substring(0,s.indexOf(',')),s.substring(s.indexOf(','))})
                 .mapToPair(s->new Tuple2<>(s[0],s[1]));
-        
+        air.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
