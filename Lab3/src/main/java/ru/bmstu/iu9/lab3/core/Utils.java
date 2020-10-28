@@ -18,9 +18,9 @@ public class Utils {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight();
                     }
-                    String delay=s[DELAY_TIME];
+                    String delay=s[DELAY_TIME].isEmpty() ? ZERO : s[DELAY_TIME];
                     return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]),
-                            Double.parseDouble(delay.isEmpty() ? ZERO : delay));
+                            Double.parseDouble(delay);
                 });
     }
 
