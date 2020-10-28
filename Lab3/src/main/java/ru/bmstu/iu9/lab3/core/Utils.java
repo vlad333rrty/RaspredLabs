@@ -17,7 +17,7 @@ public class Utils {
                     if (s[IS_CANCELLED].equals(ONE)){
                         return new Flight();
                     }
-                    return getAirportById(airportsRDD, s[ORIGIN_AIRPORT_ID]);
+                    return new Flight();
                 });
         return result;
     }
