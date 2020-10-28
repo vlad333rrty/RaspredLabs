@@ -10,6 +10,7 @@ import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 
 import java.util.Collections;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -27,6 +28,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        final Broadcast<Map<String>>
+        final Broadcast<Map<String,Airport>>
     }
 }
