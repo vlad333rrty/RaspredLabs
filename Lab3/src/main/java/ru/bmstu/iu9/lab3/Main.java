@@ -26,8 +26,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        JavaPairRDD<Integer,Iterable<Flight>> pair=flightsRDD.groupBy(Flight::getOriginId);
-
-        pair.saveAsTextFile(RESULT_FILE_NAME);
+        final 
     }
 }
