@@ -1,5 +1,6 @@
 package ru.bmstu.iu9.lab3.core;
 
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 
 import java.util.Arrays;
@@ -31,4 +32,6 @@ public class Utils {
         return airports.map(s->s.split(DELIMITER)).filter(s->s.length>2)
                 .map(s->new Airport(Integer.parseInt(s[0].substring(1,s[0].length()-1)),s[1].substring(1)));
     }
+
+    public static JavaPairRDD<String,Airport> get
 }

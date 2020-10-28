@@ -8,6 +8,7 @@ import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
+import scala.Tuple2;
 
 import java.util.Collections;
 import java.util.Map;
@@ -28,6 +29,8 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        final Broadcast<Map<String,Airport>> broadcast
+        JavaPairRDD<String,Airport> rdd=
+
+        final Broadcast<Map<String,Airport>> broadcast;
     }
 }
