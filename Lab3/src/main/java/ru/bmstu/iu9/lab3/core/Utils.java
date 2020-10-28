@@ -14,10 +14,10 @@ public class Utils {
     public static JavaRDD<Object> getFlightsRDD(JavaRDD<String> flights,JavaRDD<Airport> airportsRDD){
         JavaRDD<Object> result=flights.map(s->s.split(DELIMITER))
                 .map(s-> {
-                    if (s[IS_CANCELLED].equals(ONE)){
-                        return new Flight();
+                    if (!s[IS_CANCELLED].equals(ONE)){
+                        return getAirportById(airportsRDD,s[ORIGIN_AIRPORT_ID]);
                     }
-                    return new Flight();
+                    return new Object();
                 });
         return result;
     }
