@@ -36,6 +36,7 @@ public class Application {
 
     private class Data{
         private double maxDelay;
-        private double 
+        private double latePercent;
+        
     }
 }
