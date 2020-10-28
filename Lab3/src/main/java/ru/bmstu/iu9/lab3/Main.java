@@ -28,6 +28,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        final Broadcast<Map<String,Airport>>
+        final Broadcast<Map<String,Airport>> broadcast=
     }
 }
