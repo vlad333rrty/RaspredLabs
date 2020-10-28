@@ -18,6 +18,7 @@ public class Main {
     private static final String DELIMITER=",";
 
     private static final int IS_CANCELLED=19;
+    private static final int DELAY_TIME=18;
     
 
     public static void main(String[] args) {
