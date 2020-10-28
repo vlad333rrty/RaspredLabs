@@ -18,7 +18,7 @@ public class Main {
         SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
         JavaRDD<String> airports=sc.textFile(AIRPORTS_DATA_FILE_NAME;
-        JavaRDD<String> data=sc.textFile(args[1]);
+        JavaRDD<String> flights=sc.textFile(args[1]);
 
         JavaPairRDD<String,String> air=airports.map(s->
                 new String[]{s.substring(0,s.indexOf(',')),s.substring(s.indexOf(','))})
