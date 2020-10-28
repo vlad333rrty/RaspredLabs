@@ -27,5 +27,7 @@ public class Main {
 
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
+
+        final Broadcast<>
     }
 }
