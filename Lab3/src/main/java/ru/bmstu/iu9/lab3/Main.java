@@ -4,6 +4,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import ru.bmstu.iu9.lab3.core.Airport;
+import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 
 public class Main {
@@ -19,7 +20,8 @@ public class Main {
         JavaRDD<String> flights=sc.textFile(FLIGHTS_DATA_FILE_NAME);
 
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
+        JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights,airportsRDD);
 
-
+        flightsRDD.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
