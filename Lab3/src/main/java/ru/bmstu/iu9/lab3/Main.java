@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab3;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import ru.bmstu.iu9.lab3.core.Airport;
@@ -25,6 +26,8 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        flightsRDD.collect(Collectors.groupingBy(Flight::getOriginId))
+        JavaPairRDD<Integer,Iterable<Flight>> pair=flightsRDD.groupBy(Flight::getOriginId);
+
+        pair.saveAsTextFile(RESULT_FILE_NAME);
     }
 }
