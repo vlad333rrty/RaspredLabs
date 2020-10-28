@@ -7,6 +7,8 @@ import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 
+import java.util.Collections;
+
 public class Main {
     private static final String RESULT_FILE_NAME="result";
     private static final String APP_NAME="Lab3";
@@ -22,6 +24,6 @@ public class Main {
         JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        flightsRDD.collect()
+        flightsRDD.collect(Collections)
     }
 }
