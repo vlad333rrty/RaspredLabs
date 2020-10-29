@@ -58,7 +58,7 @@ public class Application {
                 }).map(data->{
                     Airport origin=broadcast.value().get(data._1._1);
                     Airport destination=broadcast.value().get(data._1._2);
-                    return new Tuple2(new Tuple2(origin,destination),data);
+                    return new Tuple2(new Tuple2(origin,destination),data._2);
                 }).saveAsTextFile(RESULT_FILE_NAME);
     }
 
