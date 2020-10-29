@@ -32,7 +32,7 @@ public class Application {
 
         flightsRDD.foreach(flight -> {
             Airport a=broadcast.value().get(flight.getOriginId());
-
+            
         });
 
     }
