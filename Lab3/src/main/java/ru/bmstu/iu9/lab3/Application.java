@@ -10,6 +10,7 @@ import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 import scala.Tuple2;
 
+import scala.Serializable;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -31,7 +32,7 @@ public class Application {
         JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
         JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence=Utils.getIdToFlightRDD(flightsRDD);
 
-//        final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
+        final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
         flightsCorrespondence.groupByKey()
                 .mapValues(f->{
@@ -54,10 +55,13 @@ public class Application {
                     double cancelledFlightsPercent=cancelledFlights/number*100;
                     Data data=new Data(maxDelay,lateFlightsPercent,cancelledFlightsPercent);
                     return data;
-                }).saveAsTextFile(RESULT_FILE_NAME);
+                }).map(data->{
+                    Airport origin=broadcast.value().get(data._1._1);
+                    Airport destination=broadcast.value().get(data._1._2)
+                })
     }
 
-    private class Data{
+    private class Data implements Serializable{
         private double maxDelay;
         private double lateFlightsPercent;
         private double cancelledFlightsPercent;
