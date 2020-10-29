@@ -63,7 +63,7 @@ public class Application {
     }
 
     private class Data implements Serializable{
-        private double maxDelay;
+        private final double maxDelay;
         private double lateFlightsPercent;
         private double cancelledFlightsPercent;
 
