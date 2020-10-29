@@ -32,9 +32,10 @@ public class Application {
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
+        flightsRDD.foreach(flight -> {
+            
+        });
 
-
-        airportsPair.saveAsTextFile(RESULT_FILE_NAME);
     }
 
     private class Data{

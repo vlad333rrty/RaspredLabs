@@ -20,10 +20,10 @@ public class Utils {
         return flights.map(s->s.split(DELIMITER))
                 .map(s-> {
                     if (s[IS_CANCELLED].equals(ONE)){
-                        return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]));
+                        return new Flight(s[ORIGIN_AIRPORT_ID],s[DESTINATION_AIRPORT_ID]);
                     }
                     String delay=s[DELAY_TIME].isEmpty() ? ZERO : s[DELAY_TIME];
-                    return new Flight(Integer.parseInt(s[ORIGIN_AIRPORT_ID]),Integer.parseInt(s[DESTINATION_AIRPORT_ID]),
+                    return new Flight(s[ORIGIN_AIRPORT_ID],s[DESTINATION_AIRPORT_ID],
                             Double.parseDouble(delay));
                 });
     }
