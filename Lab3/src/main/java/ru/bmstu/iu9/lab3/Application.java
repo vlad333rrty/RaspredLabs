@@ -8,7 +8,9 @@ import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
+import scala.Tuple2;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class Application {
@@ -27,9 +29,15 @@ public class Application {
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
         JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
+        JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence=Utils.getIdToFlightRDD(flightsRDD);
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
+        flightsCorrespondence.groupByKey()
+                .mapValues(f->{
+                    Iterator<Flight> it=f.iterator();
+                    double max
+                })
 
 
     }

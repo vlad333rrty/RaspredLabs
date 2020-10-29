@@ -50,5 +50,7 @@ public class Utils {
         return data.filter(s-> Arrays.stream(s.split(DELIMITER)).anyMatch(str->str.chars().anyMatch(Character::isDigit)));
     }
 
-    public static JavaPairRDD<>
+    public static JavaPairRDD<Tuple2<String,String>,Flight> getIdToFlightRDD(JavaRDD<Flight> flights){
+        return flights.mapToPair(f->new Tuple2<>(new Tuple2<>(f.getOriginId(),f.getDestinationId()),f));
+    }
 }
