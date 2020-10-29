@@ -30,10 +30,7 @@ public class Application {
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
-        flightsRDD.foreach(flight -> {
-            Airport a=broadcast.value().get(flight.getOriginId());
-            
-        });
+
 
     }
 

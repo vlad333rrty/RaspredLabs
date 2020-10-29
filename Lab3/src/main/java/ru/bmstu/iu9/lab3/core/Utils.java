@@ -49,4 +49,6 @@ public class Utils {
     public static JavaRDD<String> getPreparedData(JavaRDD<String> data){
         return data.filter(s-> Arrays.stream(s.split(DELIMITER)).anyMatch(str->str.chars().anyMatch(Character::isDigit)));
     }
+
+    public static JavaPairRDD<>
 }
