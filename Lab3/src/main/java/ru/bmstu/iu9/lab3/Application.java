@@ -57,8 +57,9 @@ public class Application {
                     return data;
                 }).map(data->{
                     Airport origin=broadcast.value().get(data._1._1);
-                    Airport destination=broadcast.value().get(data._1._2)
-                })
+                    Airport destination=broadcast.value().get(data._1._2);
+                    return new Tuple2(new Tuple2(origin,destination),data);
+                }).saveAsTextFile(RESULT_FILE_NAME);
     }
 
     private class Data implements Serializable{
