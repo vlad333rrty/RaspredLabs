@@ -31,7 +31,7 @@ public class Application {
         JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
         JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence=Utils.getIdToFlightRDD(flightsRDD);
 
-        final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
+//        final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 
         flightsCorrespondence.groupByKey()
                 .mapValues(f->{
