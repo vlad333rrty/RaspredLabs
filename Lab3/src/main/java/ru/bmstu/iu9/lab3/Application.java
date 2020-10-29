@@ -36,10 +36,25 @@ public class Application {
         flightsCorrespondence.groupByKey()
                 .mapValues(f->{
                     Iterator<Flight> it=f.iterator();
-                    double max
-                })
-
-
+                    double maxDelay=0;
+                    double lateFlights=0;
+                    double cancelledFlights=0;
+                    int number=0;
+                    while (it.hasNext()){
+                        number++;
+                        Flight flight=it.next();
+                        if (flight.isCancelled()){
+                            cancelledFlights++;
+                        }else if (flight.getDelay()>0){
+                            maxDelay=Math.max(maxDelay,flight.getDelay());
+                            lateFlights++;
+                        }
+                    }
+                    double lateFlightsPercent=lateFlights/number*100;
+                    double cancelledFlightsPercent=cancelledFlights/number*100;
+                    Data data=new Data(maxDelay,lateFlightsPercent,cancelledFlightsPercent);
+                    return data;
+                }).saveAsTextFile(RESULT_FILE_NAME);
     }
 
     private class Data{
