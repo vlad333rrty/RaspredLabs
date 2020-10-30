@@ -25,7 +25,6 @@ public class Application {
         JavaRDD<String> airports= Utils.getPreparedData(sc.textFile(AIRPORTS_DATA_FILE_NAME));
         JavaRDD<String> flights=Utils.getPreparedData(sc.textFile(FLIGHTS_DATA_FILE_NAME));
 
-        JavaRDD<Airport> airportsRDD= Utils.getAirportsRDD(airports);
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
         JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
