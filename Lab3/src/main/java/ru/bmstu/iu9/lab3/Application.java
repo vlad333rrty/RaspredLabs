@@ -62,25 +62,4 @@ public class Application {
                     return new Tuple2(new Tuple2(origin,destination),data._2);
                 }).saveAsTextFile(RESULT_FILE_NAME);
     }
-
-    private class Data implements Serializable{
-        private final double maxDelay;
-        private final double lateFlightsPercent;
-        private final double cancelledFlightsPercent;
-
-        public Data(double maxDelay, double lateFlightsPercent, double cancelledFlightsPercent) {
-            this.maxDelay = maxDelay;
-            this.lateFlightsPercent = lateFlightsPercent;
-            this.cancelledFlightsPercent = cancelledFlightsPercent;
-        }
-
-        @Override
-        public String toString() {
-            return "Data{" +
-                    "maxDelay=" + maxDelay +
-                    ", lateFlightsPercent=" + lateFlightsPercent +
-                    ", cancelledFlightsPercent=" + cancelledFlightsPercent +
-                    '}';
-        }
-    }
 }
