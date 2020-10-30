@@ -10,9 +10,6 @@ import ru.bmstu.iu9.lab3.core.Flight;
 import ru.bmstu.iu9.lab3.core.Utils;
 import scala.Tuple2;
 
-import scala.Serializable;
-import scala.Tuple3;
-
 import java.util.Iterator;
 import java.util.Map;
 
@@ -55,7 +52,7 @@ public class Application {
                     }
                     double lateFlightsPercent=lateFlights/number*100;
                     double cancelledFlightsPercent=cancelledFlights/number*100;
-                    return new Tuple3(maxDelay,lateFlightsPercent,cancelledFlightsPercent);
+                    return new Tuple2(maxDelay,lateFlightsPercent+cancelledFlightsPercent);
                 }).map(data->{
                     Airport origin=broadcast.value().get(data._1._1);
                     Airport destination=broadcast.value().get(data._1._2);
