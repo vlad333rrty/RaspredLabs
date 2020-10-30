@@ -47,7 +47,8 @@ public class Utils {
     }
 
     public static JavaRDD<String> getPreparedData(JavaRDD<String> data){
-        return data.filter(s-> Arrays.stream(s.split(DELIMITER)).anyMatch(str->str.chars().anyMatch(Character::isDigit)));
+        final String firstLine=data.first();
+        return data.filter(s->!s.equals(firstLine));
     }
 
     public static JavaPairRDD<Tuple2<String,String>,Flight> getIdToFlightRDD(JavaRDD<Flight> flights){
