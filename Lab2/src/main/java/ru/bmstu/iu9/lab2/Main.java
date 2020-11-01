@@ -26,10 +26,10 @@ public class Main {
 
             FileOutputFormat.setOutputPath(job,new Path(args[2]));
 
-            job.setGroupingComparatorClass(GroupComparator.class);
-            job.setPartitionerClass(AirportPartitioner.class);
-            job.setMapOutputKeyClass(Key.class);
-            job.setReducerClass(ResultReducer.class);
+            job.setGroupingComparatorClass(AirportIdComparator.class);
+            job.setPartitionerClass(FlightsPartitioner.class);
+            job.setMapOutputKeyClass(AirportId.class);
+            job.setReducerClass(DelayCounter.class);
 
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(Text.class);

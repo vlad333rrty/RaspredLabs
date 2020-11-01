@@ -3,11 +3,11 @@ package ru.bmstu.iu9.lab2.core;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import ru.bmstu.iu9.lab2.Key;
+import ru.bmstu.iu9.lab2.AirportId;
 
 import java.io.IOException;
 
-public class FlightsMapper extends Mapper<LongWritable,Text, Key, Text>{
+public class FlightsMapper extends Mapper<LongWritable,Text, AirportId, Text>{
     private static final int CANCELLED=19;
     private static final int DELAY_TIME=18;
     private static final int AIRPORT_ID=14;
@@ -23,7 +23,7 @@ public class FlightsMapper extends Mapper<LongWritable,Text, Key, Text>{
             if (!data[CANCELLED].equals(CANCEL_INDICATOR)){
                 int id=Integer.parseInt(data[AIRPORT_ID]);
                 String delay=data[DELAY_TIME];
-                context.write(new Key(id, Key.Type.FLIGHT_DATA),new Text(delay.isEmpty() ? NO_DELAY_TIME : delay));
+                context.write(new AirportId(id, AirportId.Type.FLIGHT),new Text(delay.isEmpty() ? NO_DELAY_TIME : delay));
             }
         }
     }

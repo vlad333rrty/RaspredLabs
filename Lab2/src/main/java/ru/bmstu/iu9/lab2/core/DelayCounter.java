@@ -3,14 +3,14 @@ package ru.bmstu.iu9.lab2.core;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import ru.bmstu.iu9.lab2.Key;
+import ru.bmstu.iu9.lab2.AirportId;
 
 import java.io.IOException;
 import java.util.Iterator;
 
-public class ResultReducer extends Reducer<Key, Text, IntWritable,Text> {
+public class DelayCounter extends Reducer<AirportId, Text, IntWritable,Text> {
     @Override
-    protected void reduce(Key key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+    protected void reduce(AirportId key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         Iterator<Text> it = values.iterator();
 
         double maxDelay = Double.MIN_VALUE;
@@ -28,7 +28,8 @@ public class ResultReducer extends Reducer<Key, Text, IntWritable,Text> {
 
         if (i > 0) {
             averageDelayTime /= i;
-            context.write(new IntWritable(key.getId()), new Text(String.format("%s %f %f %f", name, minDelay, maxDelay, averageDelayTime)));
+            context.write(new IntWritable(key.getId()),
+                    new Text(String.format("%s %f %f %f", name, minDelay, maxDelay, averageDelayTime)));
         }
     }
 }
