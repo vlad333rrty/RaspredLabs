@@ -30,16 +30,16 @@ public class Key implements WritableComparable {
     @Override
     public void write(DataOutput out) throws IOException {
         out.writeInt(id);
-        out.writeInt(type.equals(Type.AIRPORT) ? 1 : 0);
+        out.writeInt(type.equals(Type.AIRPORT_DATA) ? 1 : 0);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
         id = in.readInt();
-        type = (in.readInt() == 1 ? Type.AIRPORT : Type.DATA);
+        type = (in.readInt() == 1 ? Type.AIRPORT_DATA : Type.FLIGHT_DATA);
     }
 
     public enum Type {
-        AIRPORT, DATA
+        AIRPORT_DATA, FLIGHT_DATA
     }
 }

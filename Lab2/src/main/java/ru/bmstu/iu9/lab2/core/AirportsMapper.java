@@ -19,7 +19,7 @@ public class AirportsMapper extends Mapper<LongWritable, Text, Key,Text> {
                 .map(s->s.replace("\"","")).toArray(String[]::new);
         if (key.get() > 0) {
             int id = Integer.parseInt(data[AIRPORT_ID]);
-            context.write(new Key(id, Key.Type.AIRPORT), new Text(data[AIRPORT_NAME]));
+            context.write(new Key(id, Key.Type.AIRPORT_DATA), new Text(data[AIRPORT_NAME]));
         }
     }
 }

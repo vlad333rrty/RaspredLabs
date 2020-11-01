@@ -23,7 +23,7 @@ public class FlightsMapper extends Mapper<LongWritable,Text, Key, Text>{
             if (!data[CANCELLED].equals(CANCEL_INDICATOR)){
                 int id=Integer.parseInt(data[AIRPORT_ID]);
                 String delay=data[DELAY_TIME];
-                context.write(new Key(id, Key.Type.DATA),new Text(delay.isEmpty() ? NO_DELAY_TIME : delay));
+                context.write(new Key(id, Key.Type.FLIGHT_DATA),new Text(delay.isEmpty() ? NO_DELAY_TIME : delay));
             }
         }
     }
