@@ -1,12 +1,13 @@
 package ru.bmstu.iu9.lab2.core;
 
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 import ru.bmstu.iu9.lab2.Key;
 
-public class AirportPartitioner extends Partitioner{
+public class AirportPartitioner extends Partitioner<Key, Text> {
 
     @Override
-    public int getPartition(Object o, Object o2, int numPartitions) {
-        return ((Key)o).getId()%numPartitions;
+    public int getPartition(Key key, Text text, int numPartitions) {
+        return key.getId()%numPartitions;
     }
 }
