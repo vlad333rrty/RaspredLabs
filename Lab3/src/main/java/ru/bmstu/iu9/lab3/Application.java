@@ -27,7 +27,7 @@ public class Application {
 
         JavaRDD<Flight> flightsRDD=Utils.getFlightsRDD(flights);
 
-        JavaPairRDD<String,Airport> airportsPair=Utils.getPairRDD(airports);
+        JavaPairRDD<String,Airport> airportsPair=Utils.getIdToAirportRDD(airports);
         JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence=Utils.getIdToFlightRDD(flightsRDD);
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
