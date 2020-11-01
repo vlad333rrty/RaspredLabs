@@ -21,18 +21,6 @@ public class Key implements WritableComparable {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
-    }
-
     @Override
     public int compareTo(Object o) {
         Key k = (Key)o;
