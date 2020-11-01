@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import ru.bmstu.iu9.lab3.core.Airport;
 import ru.bmstu.iu9.lab3.core.Flight;
-import ru.bmstu.iu9.lab3.core.CSVParser;
+import ru.bmstu.iu9.lab3.core.FlightsCSVParser;
 import scala.Tuple2;
 
 import java.util.Iterator;
@@ -15,20 +15,24 @@ import java.util.Map;
 
 public class Application {
     private static final String RESULT_FILE_NAME="result";
-    private static final String APP_NAME="Lab3";
     private static final String AIRPORTS_DATA_FILE_NAME="airports.csv";
     private static final String FLIGHTS_DATA_FILE_NAME="flights.csv";
 
+    private SparkConf conf;
+
+    public Application(SparkConf conf){
+        this.conf=conf;
+    }
+
     public void run(){
-        SparkConf conf = new SparkConf().setAppName(APP_NAME);
         JavaSparkContext sc=new JavaSparkContext(conf);
-        JavaRDD<String> airports= CSVParser.getPreparedData(sc.textFile(AIRPORTS_DATA_FILE_NAME));
-        JavaRDD<String> flights= CSVParser.getPreparedData(sc.textFile(FLIGHTS_DATA_FILE_NAME));
+        JavaRDD<String> airports= FlightsCSVParser.getPreparedData(sc.textFile(AIRPORTS_DATA_FILE_NAME));
+        JavaRDD<String> flights= FlightsCSVParser.getPreparedData(sc.textFile(FLIGHTS_DATA_FILE_NAME));
 
-        JavaRDD<Flight> flightsRDD= CSVParser.getFlightsRDD(flights);
+        JavaRDD<Flight> flightsRDD= FlightsCSVParser.getFlightsRDD(flights);
 
-        JavaPairRDD<String,Airport> airportsPair= CSVParser.getIdToAirportRDD(airports);
-        JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence= CSVParser.getIdToFlightRDD(flightsRDD);
+        JavaPairRDD<String,Airport> airportsPair= FlightsCSVParser.getIdToAirportRDD(airports);
+        JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence= FlightsCSVParser.getIdToFlightRDD(flightsRDD);
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 

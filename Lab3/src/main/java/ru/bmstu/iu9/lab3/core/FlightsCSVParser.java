@@ -4,11 +4,13 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import scala.Tuple2;
 
-public final class CSVParser {
+public final class FlightsCSVParser {
     private static final int IS_CANCELLED=19;
     private static final int DELAY_TIME=18;
     private static final int DESTINATION_AIRPORT_ID=14;
     private static final int ORIGIN_AIRPORT_ID=11;
+    private static final int AIRPORT_ID=0;
+    private static final int AIRPORT_NAME=1;
 
     private static final String DELIMITER=",";
     private static final String CANCEL_INDICATOR ="1.00";
@@ -29,8 +31,8 @@ public final class CSVParser {
     public static JavaPairRDD<String,Airport> getIdToAirportRDD(JavaRDD<String> airports){
         return airports.map(s->s.split(DELIMITER))
                 .mapToPair(s->{
-                   String id=s[0].substring(1,s[0].length()-1);
-                   String name=s[1].substring(1);
+                   String id=s[AIRPORT_ID].replace("\"","");
+                   String name=s[AIRPORT_NAME].replace("\"","");
                    return new Tuple2<>(id,new Airport(Integer.parseInt(id),name));
                 });
     }
