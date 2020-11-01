@@ -4,25 +4,23 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import scala.Tuple2;
 
-import java.util.Arrays;
-
-public class Utils {
+public final class CSVParser {
     private static final int IS_CANCELLED=19;
     private static final int DELAY_TIME=18;
     private static final int DESTINATION_AIRPORT_ID=14;
     private static final int ORIGIN_AIRPORT_ID=11;
 
     private static final String DELIMITER=",";
-    private static final String CANCELL_INDICATOR="1.00";
-    private static final String ZERO="0.00";
+    private static final String CANCEL_INDICATOR ="1.00";
+    private static final String NO_DELAY_TIME ="0.00";
 
     public static JavaRDD<Flight> getFlightsRDD(JavaRDD<String> flights){
         return flights.map(s->s.split(DELIMITER))
                 .map(s-> {
-                    if (s[IS_CANCELLED].equals(CANCELL_INDICATOR)){
+                    if (s[IS_CANCELLED].equals(CANCEL_INDICATOR)){
                         return new Flight(s[ORIGIN_AIRPORT_ID],s[DESTINATION_AIRPORT_ID]);
                     }
-                    String delay=s[DELAY_TIME].isEmpty() ? ZERO : s[DELAY_TIME];
+                    String delay=s[DELAY_TIME].isEmpty() ? NO_DELAY_TIME : s[DELAY_TIME];
                     return new Flight(s[ORIGIN_AIRPORT_ID],s[DESTINATION_AIRPORT_ID],
                             Double.parseDouble(delay));
                 });
