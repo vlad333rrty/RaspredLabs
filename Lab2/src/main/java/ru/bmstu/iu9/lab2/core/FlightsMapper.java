@@ -7,7 +7,7 @@ import ru.bmstu.iu9.lab2.Key;
 
 import java.io.IOException;
 
-public class DataMapper extends Mapper<LongWritable,Text, Key, Text>{
+public class FlightsMapper extends Mapper<LongWritable,Text, Key, Text>{
     private static final int CANCELLED=19;
     private static final int DELAY_TIME=18;
     private static final int AIRPORT_ID=14;
