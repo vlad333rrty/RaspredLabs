@@ -20,9 +20,9 @@ public class Airport implements Serializable {
 
     @Override
     public String toString() {
-        return "Airport{" +
+        return "(" +
                 "name='" + name + '\'' +
                 ", id=" + id +
-                '}';
+                ')';
     }
 }
