@@ -1,8 +1,8 @@
+ru/bmstu/iu9/lab2/core/AirportIdComparator.class
 ru/bmstu/iu9/lab2/Main.class
-ru/bmstu/iu9/lab2/core/GroupComparator.class
-ru/bmstu/iu9/lab2/Key.class
+ru/bmstu/iu9/lab2/AirportId$Type.class
+ru/bmstu/iu9/lab2/core/FlightsPartitioner.class
+ru/bmstu/iu9/lab2/AirportId.class
+ru/bmstu/iu9/lab2/core/DelayCounter.class
 ru/bmstu/iu9/lab2/core/FlightsMapper.class
-ru/bmstu/iu9/lab2/Key$Type.class
 ru/bmstu/iu9/lab2/core/AirportsMapper.class
-ru/bmstu/iu9/lab2/core/AirportPartitioner.class
-ru/bmstu/iu9/lab2/core/ResultReducer.class
