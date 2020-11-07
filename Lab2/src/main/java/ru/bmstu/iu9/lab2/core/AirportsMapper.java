@@ -16,7 +16,7 @@ public class AirportsMapper extends Mapper<LongWritable, Text, AirportId,Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] data = Arrays.stream(value.toString().split(DELIMITER))
-                .map(s->s.replace("\"","")).toArray(String[]::new);
+                .map(Utils::removeQuotes).toArray(String[]::new);
         if (key.get() > 0) {
             int id = Integer.parseInt(data[AIRPORT_ID]);
             context.write(new AirportId(id, AirportId.Type.AIRPORT), new Text(data[AIRPORT_NAME]));
