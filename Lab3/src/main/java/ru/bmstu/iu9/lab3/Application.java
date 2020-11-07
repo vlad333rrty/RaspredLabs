@@ -26,13 +26,13 @@ public class Application {
 
     public void run(){
         JavaSparkContext sc=new JavaSparkContext(conf);
-        JavaRDD<String> airports= FlightsCSVParser.getPreparedData(sc.textFile(AIRPORTS_DATA_FILE_NAME));
-        JavaRDD<String> flights= FlightsCSVParser.getPreparedData(sc.textFile(FLIGHTS_DATA_FILE_NAME));
+        JavaRDD<String> airports= FlightsCSVParser.removeHeader(sc.textFile(AIRPORTS_DATA_FILE_NAME));
+        JavaRDD<String> flights= FlightsCSVParser.removeHeader(sc.textFile(FLIGHTS_DATA_FILE_NAME));
 
         JavaRDD<Flight> flightsRDD= FlightsCSVParser.getFlightsRDD(flights);
 
-        JavaPairRDD<String,Airport> airportsPair= FlightsCSVParser.getIdToAirportRDD(airports);
-        JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence= FlightsCSVParser.getIdToFlightRDD(flightsRDD);
+        JavaPairRDD<String,Airport> airportsPair= FlightsCSVParser.convertRawAirportData(airports);
+        JavaPairRDD<Tuple2<String,String>,Flight> flightsCorrespondence= FlightsCSVParser.convertFlightData(flightsRDD);
 
         final Broadcast<Map<String,Airport>> broadcast=sc.broadcast(airportsPair.collectAsMap());
 

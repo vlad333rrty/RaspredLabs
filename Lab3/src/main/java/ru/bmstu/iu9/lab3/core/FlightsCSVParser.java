@@ -28,7 +28,7 @@ public final class FlightsCSVParser {
                 });
     }
 
-    public static JavaPairRDD<String,Airport> getIdToAirportRDD(JavaRDD<String> airports){
+    public static JavaPairRDD<String,Airport> convertRawAirportData(JavaRDD<String> airports){
         return airports.map(s->s.split(DELIMITER))
                 .mapToPair(s->{
                    String id=Utils.removeQuotes(s[AIRPORT_ID]);
@@ -37,12 +37,12 @@ public final class FlightsCSVParser {
                 });
     }
 
-    public static JavaRDD<String> getPreparedData(JavaRDD<String> data){
+    public static JavaRDD<String> removeHeader(JavaRDD<String> data){
         final String firstLine=data.first();
         return data.filter(s->!s.equals(firstLine));
     }
 
-    public static JavaPairRDD<Tuple2<String,String>,Flight> getIdToFlightRDD(JavaRDD<Flight> flights){
+    public static JavaPairRDD<Tuple2<String,String>,Flight> convertFlightData(JavaRDD<Flight> flights){
         return flights.mapToPair(f->new Tuple2<>(new Tuple2<>(f.getOriginId(),f.getDestinationId()),f));
     }
 }
