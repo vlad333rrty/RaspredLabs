@@ -31,8 +31,8 @@ public final class FlightsCSVParser {
     public static JavaPairRDD<String,Airport> getIdToAirportRDD(JavaRDD<String> airports){
         return airports.map(s->s.split(DELIMITER))
                 .mapToPair(s->{
-                   String id=s[AIRPORT_ID].replace("\"","");
-                   String name=s[AIRPORT_NAME].replace("\"","");
+                   String id=Utils.removeQuotes(s[AIRPORT_ID]);
+                   String name=Utils.removeQuotes(s[AIRPORT_NAME]);
                    return new Tuple2<>(id,new Airport(Integer.parseInt(id),name));
                 });
     }
