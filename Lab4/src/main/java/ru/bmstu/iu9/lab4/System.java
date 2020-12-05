@@ -3,10 +3,11 @@ import akka.actor.ActorSystem;
 
 
 public class System {
-    private static final String ACTOR_NAME="routes";
+    private static final String SYSTEM_ACTOR_NAME ="routes";
+
 
     public System(){
-        ActorSystem system=ActorSystem.create(ACTOR_NAME);
+        ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
 
 
     }
