@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab4;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.actor.Props;
 
 
 public class System {
@@ -9,6 +10,6 @@ public class System {
     private ActorRef storeActor;
 
     public System(ActorSystem system){
-        storeActor=system.actorOf()
+        storeActor=system.actorOf(Props.apply())
     }
 }
