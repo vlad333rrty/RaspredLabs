@@ -10,6 +10,6 @@ public class System {
     private ActorRef storeActor;
 
     public System(ActorSystem system){
-        storeActor=system.actorOf(Props.apply())
+        storeActor=system.actorOf(Props.create())
     }
 }
