@@ -14,6 +14,6 @@ public class System {
 
     public System(){
         ActorSystem system=ActorSystem.create(ACTOR_NAME);
-        Http 
+        final Http http  
     }
 }
