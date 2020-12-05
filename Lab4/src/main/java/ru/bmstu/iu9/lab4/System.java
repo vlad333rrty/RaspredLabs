@@ -8,7 +8,7 @@ public class System {
 
     private ActorRef storeActor;
 
-    public System(){
-        storeActor=
+    public System(ActorSystem system){
+        storeActor=system.actorOf()
     }
 }
