@@ -16,6 +16,7 @@ public class System {
     public System(){
         ActorSystem system=ActorSystem.create(ACTOR_NAME);
         final Http http =Http.get(system);
-        final ActorMaterializer materializer=ActorMaterializer
+        final ActorMaterializer materializer=ActorMaterializer.create(system);
+        
     }
 }
