@@ -22,7 +22,7 @@ public class System {
         final Http http =Http.get(system);
         final ActorMaterializer materializer=ActorMaterializer.create(system);
 
-        Server server
+        ServerBinding 
 
         final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow;
 
