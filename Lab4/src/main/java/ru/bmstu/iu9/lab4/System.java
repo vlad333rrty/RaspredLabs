@@ -9,6 +9,7 @@ import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.Route;
 import akka.stream.ActorMaterializer;
+import akka.stream.Server;
 import akka.stream.javadsl.Flow;
 
 import static akka.http.javadsl.server.Directives.*;
@@ -21,6 +22,10 @@ public class System {
         final Http http =Http.get(system);
         final ActorMaterializer materializer=ActorMaterializer.create(system);
 
-        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow=
+        Server server=
+
+        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow;
+
+
     }
 }
