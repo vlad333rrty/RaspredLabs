@@ -19,6 +19,12 @@ public class Server {
         router=new Router(system);
         final Http http=Http.get(system);
 
+        System.in.read();
+
+        binding
+                .thenCompose(ServerBinding::unbind)
+                .thenAccept(unbound -> system.terminate());
+
     }
 
     public void run(){
