@@ -1,6 +1,10 @@
 package ru.bmstu.iu9.lab4;
 
-public class Request {
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+public class Request {
+    @JsonProperty
     private int packageId;
+
+    
 }
