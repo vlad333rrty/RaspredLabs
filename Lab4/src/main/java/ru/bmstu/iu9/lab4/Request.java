@@ -35,8 +35,24 @@ public class Request {
         return functionName;
     }
 
-    public ArrayList<String> getTests() {
-        return tests;
+    public ArrayList<Test> getTests() {
+        ArrayList<Test> testList=new ArrayList<>();
+        for (String s:tests){
+            
+        }
+        return testList;
     }
 
+    public class Test{
+        private static final String PASSED_VALUE="passed";
+        private static final String EXPECTED_VALUE="expected";
+
+        private int passedValue,expectedResult;
+
+        public Test(@JsonProperty(PASSED_VALUE) int passedValue,
+                    @JsonProperty(EXPECTED_VALUE) int expectedResult){
+            this.passedValue=passedValue;
+            this.expectedResult=expectedResult;
+        }
+    }
 }

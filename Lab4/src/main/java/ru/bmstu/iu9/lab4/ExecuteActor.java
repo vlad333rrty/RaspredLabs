@@ -14,9 +14,7 @@ public class ExecuteActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(Test.class,test -> {
-
-                })
+                .match()
                 .build();
     }
 
