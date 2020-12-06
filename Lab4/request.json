@@ -1,6 +1,7 @@
 {
   "package id": 1,
-  "function":"const sqr(x)=>{ return x*x;}",
+  "code":"const sqr(x)=>{ return x*x;}",
+  "function name": "sqr",
   "tests": {
     "test1": {
       "passed": 1,
