@@ -10,17 +10,18 @@ public class Request {
     private static final String JSON_FUNCTION_FIELD_NAME="function";
     private static final String JSON_TESTS="tests";
 
-    @JsonProperty(JSON_PACKAGE_ID_FIELD_NAME)
     private int packageId;
-    @JsonProperty(JSON_FUNCTION_FIELD_NAME)
     private String function;
-    @JsonProperty(JSON_TESTS)
     private ArrayList<String> tests;
 
     @JsonCreator
-    public Request(@JsonProperty int packageId,
-                   @JsonProperty String function,
-                   @JsonProperty ArrayList<String> tests){
-        
+    public Request(@JsonProperty(JSON_PACKAGE_ID_FIELD_NAME) int packageId,
+                   @JsonProperty(JSON_FUNCTION_FIELD_NAME) String function,
+                   @JsonProperty(JSON_TESTS) ArrayList<String> tests){
+        this.packageId=packageId;
+        this.function=function;
+        this.tests=tests;
     }
+
+    
 }
