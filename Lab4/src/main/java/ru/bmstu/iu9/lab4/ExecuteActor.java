@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
     private static final String ENGINE_NAME="nashron";
-    private static final String A="store";
+    private static final String STORAGE ="store";
 
     @Override
     public Receive createReceive() {
@@ -23,7 +23,7 @@ public class ExecuteActor extends AbstractActor {
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getPassedValue(),test.getExpectedResult()));
                     }
-                    getContext().actorSelection(A).tell(results, ActorRef.noSender());
+                    getContext().actorSelection(STORAGE).tell(results, ActorRef.noSender());
                 })
                 .build();
     }
