@@ -7,7 +7,7 @@ import akka.actor.ActorSystem;
 public class SystemActor extends AbstractActor {
     private static final String SYSTEM_ACTOR_NAME ="routes";
 
-    private ActorRef router;
+    private Router router;
 
     @Override
     public Receive createReceive() {
@@ -16,7 +16,7 @@ public class SystemActor extends AbstractActor {
 
     public SystemActor(){
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
-
+        router=new Router(system);
     }
 
     public void run(){
