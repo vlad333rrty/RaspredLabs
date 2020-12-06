@@ -25,9 +25,10 @@ public class ExecuteActor extends AbstractActor {
             ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
             engine.eval(code);
             Invocable invocable = (Invocable) engine;
-            invocable.invokeFunction(functionName,param)
+            invocable.invokeFunction(functionName,param);
         }catch (Exception e){
             System.out.println("Test failed");
         }
+
     }
 }
