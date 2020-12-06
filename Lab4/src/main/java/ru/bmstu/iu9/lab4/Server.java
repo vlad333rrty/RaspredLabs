@@ -17,6 +17,8 @@ import java.util.concurrent.CompletionStage;
 
 public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
+    private static final String HOST="localhost";
+    private static final int PORT=8080;
     private Router router;
 
     public Server() throws IOException {
@@ -26,8 +28,9 @@ public class Server {
         final Http http=Http.get(system);
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
-        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow, ConnectHttp.toHost("localhost", 8080),materializer)
-                .bind(router.createRoute());
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow,
+                ConnectHttp.toHost(HOST, PORT),materializer);
+
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
