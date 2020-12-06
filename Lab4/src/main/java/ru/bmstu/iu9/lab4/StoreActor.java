@@ -35,7 +35,7 @@ public class StoreActor extends AbstractActor {
                     }
                 })
                 .match(Integer.class,id -> {
-                    
+                    sender().tell();
                 })
                 .build();
     }
