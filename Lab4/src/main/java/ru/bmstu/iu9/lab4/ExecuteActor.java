@@ -5,6 +5,7 @@ import akka.japi.pf.ReceiveBuilder;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class ExecuteActor extends AbstractActor {
     private static final String ENGINE_NAME="nashron";
@@ -18,7 +19,7 @@ public class ExecuteActor extends AbstractActor {
                 .build();
     }
 
-    private void executeJSCode(String code){
+    private void executeJSCode(String code) throws ScriptException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         
