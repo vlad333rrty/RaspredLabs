@@ -20,10 +20,14 @@ public class ExecuteActor extends AbstractActor {
                 .build();
     }
 
-    private void executeJSCode(String code,String functionName,int param) throws ScriptException {
-        ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
-        engine.eval(code);
-        Invocable invocable = (Invocable) engine;
-        invocable.invokeFunction(functionName,param)
+    private TestResult executeJSCode(String code,String functionName,int param) {
+        try{
+            ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
+            engine.eval(code);
+            Invocable invocable = (Invocable) engine;
+            invocable.invokeFunction(functionName,param)
+        }catch (Exception e){
+            System.out.println("Test failed");
+        }
     }
 }
