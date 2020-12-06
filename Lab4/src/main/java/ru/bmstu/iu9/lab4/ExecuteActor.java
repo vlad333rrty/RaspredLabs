@@ -15,7 +15,7 @@ public class ExecuteActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Test.class,test -> {
-                    TestResult testResult=executeAndTestJSCode()
+                    
                 })
                 .build();
     }
