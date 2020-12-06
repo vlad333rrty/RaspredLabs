@@ -3,7 +3,6 @@ package ru.bmstu.iu9.lab4;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.ArrayList;
 
 public class Test {
     private static final String JSON_PACKAGE_ID_FIELD_NAME ="package id";
@@ -22,7 +21,8 @@ public class Test {
                 @JsonProperty(JSON_TESTS) int expected){
         this.packageId=packageId;
         this.function=function;
-        
+        this.passed=passed;
+        this.expected=expected;
     }
 
     public int getPackageId() {
@@ -33,7 +33,11 @@ public class Test {
         return function;
     }
 
-    public ArrayList<String> getTests() {
-        return tests;
+    public int getPassed() {
+        return passed;
+    }
+
+    public int getExpected() {
+        return expected;
     }
 }
