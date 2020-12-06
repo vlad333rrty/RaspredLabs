@@ -18,7 +18,7 @@ public class Server {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         router=new Router(system);
         final Http http=Http.get(system);
-        
+
     }
 
     public void run(){
