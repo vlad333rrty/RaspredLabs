@@ -24,6 +24,8 @@ public class Router{
     }
 
     public Route getRoute(){
-        return Directives.get()
+        return Directives.get(()->{
+            
+        });
     }
 }
