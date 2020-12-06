@@ -23,7 +23,7 @@ public class Server {
         router=new Router(system);
         final Http http=Http.get(system);
 
-        final CompletionStage<ServerBinding> binding = http.newServerAt("localhost", 8080).bind(router.createRoute());
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle("localhost", 8080).bind(router.createRoute());
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
