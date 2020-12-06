@@ -33,6 +33,10 @@ public class StoreActor extends AbstractActor {
                     for (TestResult result:resultsPackage.getResults()){
                         storeTestResult(resultsPackage.getPackageId(),result);
                     }
-                }).build();
+                })
+                .match(Integer.class,i -> {
+                    
+                })
+                .build();
     }
 }
