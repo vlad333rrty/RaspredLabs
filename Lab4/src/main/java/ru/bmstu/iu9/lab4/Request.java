@@ -37,10 +37,15 @@ public class Request {
         return functionName;
     }
 
+    public String getCode() {
+        return code;
+    }
+
     public ArrayList<Test> getTests() throws IOException {
         ArrayList<Test> testList=new ArrayList<>();
         for (String s:tests){
             Test test=new ObjectMapper().readerFor(Test.class).readValue(s);
+            testList.add(test);
         }
         return testList;
     }
@@ -55,6 +60,14 @@ public class Request {
                     @JsonProperty(EXPECTED_VALUE) int expectedResult){
             this.passedValue=passedValue;
             this.expectedResult=expectedResult;
+        }
+
+        public int getPassedValue() {
+            return passedValue;
+        }
+
+        public int getExpectedResult() {
+            return expectedResult;
         }
     }
 }
