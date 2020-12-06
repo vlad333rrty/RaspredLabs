@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Request {
@@ -36,10 +37,10 @@ public class Request {
         return functionName;
     }
 
-    public ArrayList<Test> getTests() {
+    public ArrayList<Test> getTests() throws IOException {
         ArrayList<Test> testList=new ArrayList<>();
         for (String s:tests){
-            Test test=new ObjectMapper().readerFor()
+            Test test=new ObjectMapper().readerFor(Test.class).readValue(s);
         }
         return testList;
     }
