@@ -5,12 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 
 public class Request {
-    private static final String JSON_PACKAGE_ID_FIELD="package id";
+    private static final String JSON_PACKAGE_ID_FIELD_NAME ="package id";
+    private static final String JSON_FUNCTION_FIELD_NAME="function";
+    private static final String JSON_TESTS="tests";
 
-    @JsonProperty
+    @JsonProperty(JSON_PACKAGE_ID_FIELD_NAME)
     private int packageId;
-    @JsonProperty
+    @JsonProperty(JSON_FUNCTION_FIELD_NAME)
     private String function;
-    @JsonProperty
+    @JsonProperty(JSON_TESTS)
     private ArrayList<String> tests;
 }
