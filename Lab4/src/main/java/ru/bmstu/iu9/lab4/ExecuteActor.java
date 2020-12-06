@@ -21,6 +21,7 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private TestResult executeJSCode(String code,String functionName,int param) {
+        TestResult testResult;
         try{
             ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
             engine.eval(code);

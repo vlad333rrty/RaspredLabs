@@ -1,2 +1,5 @@
-package ru.bmstu.iu9.lab4;public enum TestResultStatus {
+package ru.bmstu.iu9.lab4;
+
+public enum TestResultStatus {
+    SUCCEEDED,FAILED
 }
