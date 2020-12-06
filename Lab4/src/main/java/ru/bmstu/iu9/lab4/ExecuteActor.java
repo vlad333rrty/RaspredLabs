@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
     private static final String ENGINE_NAME="nashron";
-    private static final String 
+    private static final String A="";
 
     @Override
     public Receive createReceive() {
