@@ -27,6 +27,6 @@ public class StoreActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return ReceiveBuilder.create()
+        return ReceiveBuilder.create().match(Request.class)
     }
 }
