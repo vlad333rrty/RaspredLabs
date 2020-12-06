@@ -9,6 +9,7 @@ import akka.japi.pf.ReceiveBuilder;
 import akka.routing.RoundRobinPool;
 import scala.sys.Prop;
 
+import static akka.http.javadsl.server.Directives.*;
 
 public class Router{
     private static final String STORE_ACTOR_NAME = "store";
@@ -24,8 +25,8 @@ public class Router{
     }
 
     public Route getRoute(){
-        return Directives.get(()->{
-            
+        return get(()->{
+            parameter()
         });
     }
 }
