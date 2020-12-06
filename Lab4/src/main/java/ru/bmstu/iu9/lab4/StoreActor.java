@@ -7,5 +7,5 @@ import java.util.concurrent.ConcurrentHashMap;
 public class StoreActor {
     private final Map<Integer, List<TestResult>> IntToTest=new ConcurrentHashMap<>();
 
-    
+    public void storeTest()
 }
