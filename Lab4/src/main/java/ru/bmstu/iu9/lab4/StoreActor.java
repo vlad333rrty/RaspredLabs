@@ -1,11 +1,24 @@
 package ru.bmstu.iu9.lab4;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class StoreActor {
-    private final Map<Integer, List<TestResult>> IntToTest=new ConcurrentHashMap<>();
+    private final Map<Integer, List<TestResult>> packageIdToTest =new ConcurrentHashMap<>();
 
-    public void storeTest()
+    public void storeTestResult(int packageId,TestResult testResult){
+        if (packageIdToTest.containsKey(packageId)){
+            packageIdToTest.get(packageId).add(testResult);
+        }else{
+            List<TestResult> list=new ArrayList<>();
+            list.add(testResult);
+            packageIdToTest.put(packageId,list);
+        }
+    }
+
+    public List<TestResult> getTestResult(int packageId){
+        return packageIdToTest.get(packageId);
+    }
 }
