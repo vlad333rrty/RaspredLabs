@@ -20,6 +20,7 @@ public class ExecuteActor extends AbstractActor {
 
     private void executeJSCode(String code){
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
+        engine.eval(code);
         
     }
 }
