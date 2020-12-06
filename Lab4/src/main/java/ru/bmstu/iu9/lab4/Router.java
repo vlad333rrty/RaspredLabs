@@ -27,7 +27,9 @@ public class Router{
 
     public Route getRoute(){
         return get(()->{
-            parameter(GET_PARAMETER,)
+            parameter(GET_PARAMETER,id->{
+                
+            })
         });
     }
 }
