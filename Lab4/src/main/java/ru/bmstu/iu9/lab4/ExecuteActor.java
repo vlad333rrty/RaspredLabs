@@ -18,8 +18,10 @@ public class ExecuteActor extends AbstractActor {
                 .match(Request.class,request -> {
                     ArrayList<TestResult> results=new ArrayList<>();
                     for (Request.Test test:request.getTests()){
-                        
+                        results.add(getTestResult(request.getCode(),request.getFunctionName(),
+                                test.getPassedValue(),test.getExpectedResult()));
                     }
+                    getContext().actorSelection()
                 })
                 .build();
     }
