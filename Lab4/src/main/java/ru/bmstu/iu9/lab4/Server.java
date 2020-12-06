@@ -20,7 +20,7 @@ public class Server {
 
     public Server() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
-        ActorMaterializer materializer=
+        ActorMaterializer materializer=ActorMaterializer.create()
         router=new Router(system);
         final Http http=Http.get(system);
 
