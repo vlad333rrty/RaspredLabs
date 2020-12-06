@@ -15,4 +15,6 @@ public class Request {
     private String function;
     @JsonProperty(JSON_TESTS)
     private ArrayList<String> tests;
+
+    public Request()
 }
