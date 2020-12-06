@@ -4,6 +4,7 @@ import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
 
 import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 
 public class ExecuteActor extends AbstractActor {
 
@@ -17,6 +18,6 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private void executeJSCode(String code){
-        ScriptEngine engine = new
+        ScriptEngine engine = new ScriptEngineManager()
     }
 }
