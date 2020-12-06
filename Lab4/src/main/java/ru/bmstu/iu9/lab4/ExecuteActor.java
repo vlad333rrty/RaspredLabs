@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab4;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
 
 import javax.script.Invocable;
@@ -22,7 +23,7 @@ public class ExecuteActor extends AbstractActor {
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getPassedValue(),test.getExpectedResult()));
                     }
-                    getContext().actorSelection(A).tell();
+                    getContext().actorSelection(A).tell(results, ActorRef.noSender());
                 })
                 .build();
     }
