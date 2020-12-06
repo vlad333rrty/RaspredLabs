@@ -9,8 +9,12 @@ public class ExecuteActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Request.class,request -> {
-                    
+
                 })
                 .build();
+    }
+
+    private void executeJSCode(String code){
+        
     }
 }
