@@ -21,18 +21,18 @@ public class ExecuteActor extends AbstractActor {
                     ArrayList<TestResult> results=new ArrayList<>();
                     for (Request.Test test:request.getTests()){
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
-                                test.getPassedValue(),test.getExpectedResult()));
+                                test.getParams(),test.getExpectedResult()));
                     }
                     getContext().actorSelection(STORAGE).tell(new ResultsPackage(results,request.getPackageId()), ActorRef.noSender());
                 })
                 .build();
     }
 
-    private int executeJSCode(String code,String functionName,int param) throws ScriptException, NoSuchMethodException {
+    private int executeJSCode(String code,String functionName,ArrayList<Integer> params) throws ScriptException, NoSuchMethodException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         Invocable invocable = (Invocable) engine;
-        return (int) invocable.invokeFunction(functionName, param);
+        return (int) invocable.invokeFunction(functionName, params);
     }
 
     private TestResult getTestResult(int expectedResult,int result){
@@ -48,9 +48,9 @@ public class ExecuteActor extends AbstractActor {
         return new TestResult(status,description);
     }
 
-    private TestResult getTestResult(String code,String functionName,int param,int expectedResult){
+    private TestResult getTestResult(String code,String functionName,ArrayList<Integer> params,int expectedResult){
         try{
-            int result=executeJSCode(code,functionName,param);
+            int result=executeJSCode(code,functionName,params);
             return getTestResult(expectedResult,result);
         }catch (ScriptException | NoSuchMethodException e){
             return new TestResult(TestResultStatus.FAILED,String.format("An exception occurred while testing:%s",e.getLocalizedMessage()));

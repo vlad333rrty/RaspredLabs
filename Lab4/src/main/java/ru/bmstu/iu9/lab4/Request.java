@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Request {
-    private static final String JSON_PACKAGE_ID_FIELD_NAME ="package id";
-    private static final String JSON_CODE="code";
-    private static final String JSON_FUNCTION_FIELD_NAME="function name";
+    private static final String JSON_PACKAGE_ID_FIELD_NAME ="packageId";
+    private static final String JSON_CODE="jsCode";
+    private static final String JSON_FUNCTION_FIELD_NAME="functionName";
     private static final String JSON_TESTS="tests";
 
     private int packageId;
@@ -51,19 +51,20 @@ public class Request {
     }
 
     public class Test{
-        private static final String PASSED_VALUE="passed";
-        private static final String EXPECTED_VALUE="expected";
+        private static final String PARAMS ="params";
+        private static final String EXPECTED_RESULT ="expectedResult";
 
-        private int passedValue,expectedResult;
+        private int expectedResult;
+        private ArrayList<Integer> params;
 
-        public Test(@JsonProperty(PASSED_VALUE) int passedValue,
-                    @JsonProperty(EXPECTED_VALUE) int expectedResult){
-            this.passedValue=passedValue;
+        public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
+                    @JsonProperty(EXPECTED_RESULT) int expectedResult){
+            this.params=params;
             this.expectedResult=expectedResult;
         }
 
-        public int getPassedValue() {
-            return passedValue;
+        public ArrayList<Integer> getParams() {
+            return params;
         }
 
         public int getExpectedResult() {
