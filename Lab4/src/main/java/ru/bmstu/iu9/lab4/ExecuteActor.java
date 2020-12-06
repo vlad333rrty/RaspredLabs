@@ -20,7 +20,7 @@ public class ExecuteActor extends AbstractActor {
                 .build();
     }
 
-    private TestResult executeJSCode(String code,String functionName,int param) {
+    private TestResult executeJSCode(String code,String functionName,int param,int expectedResult) {
         TestResult testResult;
         try{
             ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
