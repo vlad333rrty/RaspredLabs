@@ -3,6 +3,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.japi.pf.ReceiveBuilder;
 
 
 public class Router extends AbstractActor {
@@ -19,6 +20,10 @@ public class Router extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return null;
+        return ReceiveBuilder.create()
+                .match(Request.class,request -> {
+                    
+                })
+                .build();
     }
 }
