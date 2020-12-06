@@ -4,6 +4,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.model.HttpRequest;
 import akka.stream.javadsl.Flow;
 
 public class Server {
@@ -14,7 +15,7 @@ public class Server {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         router=new Router(system);
         final Http http=Http.get(system);
-        final Flow
+        final Flow<HttpRequest>
     }
 
     public void run(){
