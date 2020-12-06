@@ -44,17 +44,19 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private int executeJSCode(String code,String functionName,int param) throws ScriptException, NoSuchMethodException {
-        TestResultStatus status;
-        String description;
-
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         Invocable invocable = (Invocable) engine;
         return (int) invocable.invokeFunction(functionName, param);
-
     }
 
-    private TestResult getTestResult(int expectedResult,int result){
-
+    private TestResult getTestResult(String code,String functionName,int param,int expectedResult,int result){
+        try {
+            int result=executeJSCode(code,functionName,param);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
     }
 }
