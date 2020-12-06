@@ -1,17 +1,17 @@
 package ru.bmstu.iu9.lab4;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ResultsPackage {
-    private ArrayList<TestResult> results;
+    private List<TestResult> results;
     private int packageId;
 
-    public ResultsPackage(ArrayList<TestResult> results, int packageId) {
+    public ResultsPackage(List<TestResult> results, int packageId) {
         this.results = results;
         this.packageId = packageId;
     }
 
-    public ArrayList<TestResult> getResults() {
+    public List<TestResult> getResults() {
         return results;
     }
 
