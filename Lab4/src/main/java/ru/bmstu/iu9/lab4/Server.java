@@ -12,7 +12,7 @@ public class Server {
     public Server(){
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         router=new Router(system);
-        final Http
+        final Http http=
     }
 
     public void run(){
