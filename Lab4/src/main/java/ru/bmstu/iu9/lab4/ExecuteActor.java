@@ -16,7 +16,7 @@ public class ExecuteActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(Request.class,request -> {
                     for (Request.Test test:request.getTests()){
-                        
+
                     }
                 })
                 .build();
