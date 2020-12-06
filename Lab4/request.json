@@ -1,5 +1,5 @@
 {
-  "packageId": 1,
+  "package id": 1,
   "function":"const sqr(x)=>{ return x*x;}",
   "tests": {
     "test1": {
