@@ -11,11 +11,13 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
+import java.io.IOException;
+
 public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
     private Router router;
 
-    public Server(){
+    public Server() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         router=new Router(system);
         final Http http=Http.get(system);
