@@ -4,6 +4,7 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
+import akka.routing.RoundRobinPool;
 
 
 public class Router extends AbstractActor {
@@ -15,7 +16,7 @@ public class Router extends AbstractActor {
 
     public Router(ActorSystem system){
         storeActor=system.actorOf(Props.create(StoreActor.class), STORE_ACTOR_NAME);
-        executeActor=system.actorOf(Props.create(ExecuteActor.class),EXECUTE_ACTOR_NAME);
+        executeActor=system.actorOf(new RoundRobinPool()Props.create(ExecuteActor.class),EXECUTE_ACTOR_NAME);
     }
 
     @Override
