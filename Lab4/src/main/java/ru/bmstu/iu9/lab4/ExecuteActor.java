@@ -7,6 +7,7 @@ import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
+import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
     private static final String ENGINE_NAME="nashron";
@@ -15,8 +16,9 @@ public class ExecuteActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Request.class,request -> {
+                    ArrayList<TestResult> results=new ArrayList<>();
                     for (Request.Test test:request.getTests()){
-
+                        
                     }
                 })
                 .build();
