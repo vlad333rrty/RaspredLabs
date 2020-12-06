@@ -23,6 +23,7 @@ public class ExecuteActor extends AbstractActor {
     private void executeJSCode(String code) throws ScriptException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
-        Invocable invocable = (Invocable)
+        Invocable invocable = (Invocable) engine;
+        
     }
 }
