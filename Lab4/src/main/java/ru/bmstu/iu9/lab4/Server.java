@@ -19,14 +19,12 @@ public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
     private static final String HOST="localhost";
     private static final int PORT=8080;
-    private Router router;
 
-    public Server() throws IOException {
+    public void run() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         ActorMaterializer materializer=ActorMaterializer.create(system);
-        router=new Router(system);
+        Router router=new Router(system);
         final Http http=Http.get(system);
-
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow,
                 ConnectHttp.toHost(HOST, PORT),materializer);
@@ -34,9 +32,5 @@ public class Server {
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
-    }
-
-    public void run(){
-
     }
 }
