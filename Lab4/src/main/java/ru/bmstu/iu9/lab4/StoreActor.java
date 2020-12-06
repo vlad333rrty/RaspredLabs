@@ -1,11 +1,13 @@
 package ru.bmstu.iu9.lab4;
 
+import akka.actor.AbstractActor;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class StoreActor {
+public class StoreActor extends AbstractActor {
     private final Map<Integer, List<TestResult>> packageIdToTest =new ConcurrentHashMap<>();
 
     public void storeTestResult(int packageId,TestResult testResult){
@@ -20,5 +22,10 @@ public class StoreActor {
 
     public List<TestResult> getTestResult(int packageId){
         return packageIdToTest.get(packageId);
+    }
+
+    @Override
+    public Receive createReceive() {
+        return null;
     }
 }
