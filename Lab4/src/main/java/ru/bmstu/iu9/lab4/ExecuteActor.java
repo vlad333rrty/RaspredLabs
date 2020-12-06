@@ -55,8 +55,6 @@ public class ExecuteActor extends AbstractActor {
             int result=executeJSCode(code,functionName,param);
         } catch (ScriptException e) {
             e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
         }
     }
 }
