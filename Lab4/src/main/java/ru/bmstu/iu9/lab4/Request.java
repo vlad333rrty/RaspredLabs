@@ -18,5 +18,7 @@ public class Request {
     private ArrayList<String> tests;
 
     @JsonCreator
-    public Request(@JsonProperty int packageId,)
+    public Request(@JsonProperty int packageId,@JsonProperty String function,@JsonProperty ArrayList<String> tests){
+        
+    }
 }
