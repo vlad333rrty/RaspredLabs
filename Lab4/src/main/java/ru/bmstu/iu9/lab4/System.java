@@ -5,11 +5,11 @@ import akka.actor.Props;
 
 
 public class System {
-    private static final String SYSTEM_ACTOR_NAME = "store";
+    private static final String STORE_ACTOR_NAME = "store";
 
     private ActorRef storeActor;
 
     public System(ActorSystem system){
-        storeActor=system.actorOf(Props.create(StoreActor.class))
+        storeActor=system.actorOf(Props.create(StoreActor.class), STORE_ACTOR_NAME);
     }
 }
