@@ -14,6 +14,5 @@ public class Router {
     public Router(ActorSystem system){
         storeActor=system.actorOf(Props.create(StoreActor.class), STORE_ACTOR_NAME);
         executeActor=system.actorOf(Props.create(ExecuteActor.class),EXECUTE_ACTOR_NAME);
-        
     }
 }
