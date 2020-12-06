@@ -4,6 +4,7 @@ import akka.NotUsed;
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.http.javadsl.ConnectHttp;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.ServerBinding;
 import akka.http.javadsl.model.HttpRequest;
@@ -25,7 +26,7 @@ public class Server {
         final Http http=Http.get(system);
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
-        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow,"localhost", 8080).bind(router.createRoute());
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow, ConnectHttp.toHost("localhost", 8080)).bind(router.createRoute());
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
