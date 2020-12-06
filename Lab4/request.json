@@ -1,4 +1,18 @@
 {
   "packageId": 1,
-  "function": 
+  "function":"const sqr(x)=>{ return x*x;}",
+  "tests": {
+    "test1": {
+      "passed": 1,
+      "expected": 1
+    },
+    "test2": {
+      "passed": 2,
+      "expected": 4
+    },
+    "test3": {
+      "passed": 5,
+      "expected"25
+    }
+  }
 }
