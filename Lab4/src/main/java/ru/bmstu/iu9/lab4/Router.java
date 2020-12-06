@@ -18,7 +18,7 @@ public class Router extends AbstractActor {
 
     public Router(ActorSystem system){
         storeActor=system.actorOf(Props.create(StoreActor.class), STORE_ACTOR_NAME);
-        executeActor=system.actorOf(new RoundRobinPool().props(Props.create(ExecuteActor.class)),EXECUTE_ACTOR_NAME);
+        executeActor=system.actorOf(new RoundRobinPool(POOL_NUMBER).props(Props.create(ExecuteActor.class)),EXECUTE_ACTOR_NAME);
     }
 
     @Override
