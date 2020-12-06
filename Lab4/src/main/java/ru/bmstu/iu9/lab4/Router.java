@@ -30,6 +30,6 @@ public class Router{
             parameter(GET_PARAMETER,id->{
                 
             })
-        });
+        })
     }
 }
