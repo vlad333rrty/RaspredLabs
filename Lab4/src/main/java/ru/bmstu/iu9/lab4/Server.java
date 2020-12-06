@@ -26,7 +26,8 @@ public class Server {
         final Http http=Http.get(system);
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
-        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow, ConnectHttp.toHost("localhost", 8080)).bind(router.createRoute());
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow, ConnectHttp.toHost("localhost", 8080),materializer)
+                .bind(router.createRoute());
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
