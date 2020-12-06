@@ -29,7 +29,7 @@ public class StoreActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create().match(Request.class,request->{
             System.out.println("Test received");
-            
+
         }).build();
     }
 }
