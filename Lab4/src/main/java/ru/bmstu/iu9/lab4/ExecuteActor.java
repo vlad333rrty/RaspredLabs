@@ -15,7 +15,7 @@ public class ExecuteActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(Test.class,test -> {
-                    
+
                 })
                 .build();
     }
@@ -41,5 +41,9 @@ public class ExecuteActor extends AbstractActor {
             description="An error occurred while testing";
             return new TestResult(status,description);
         }
+    }
+
+    private TestResult getTestResult(int expectedResult,int result){
+
     }
 }
