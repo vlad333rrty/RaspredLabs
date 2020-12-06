@@ -5,4 +5,5 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class StoreActor {
     private final Map<Integer,Object> IntToTest=new ConcurrentHashMap<>();
+    public StoreActor()
 }
