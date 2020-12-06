@@ -23,5 +23,15 @@ public class Request {
         this.tests=tests;
     }
 
-    
+    public int getPackageId() {
+        return packageId;
+    }
+
+    public String getFunction() {
+        return function;
+    }
+
+    public ArrayList<String> getTests() {
+        return tests;
+    }
 }
