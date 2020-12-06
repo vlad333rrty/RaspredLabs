@@ -3,6 +3,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.http.javadsl.server.Directives;
 import akka.http.javadsl.server.Route;
 import akka.japi.pf.ReceiveBuilder;
 import akka.routing.RoundRobinPool;
@@ -23,6 +24,6 @@ public class Router{
     }
 
     public Route getRoute(){
-        return 
+        return Directives.get()
     }
 }
