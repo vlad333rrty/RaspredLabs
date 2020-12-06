@@ -11,13 +11,14 @@ import scala.sys.Prop;
 public class Router extends AbstractActor {
     private static final String STORE_ACTOR_NAME = "store";
     private static final String EXECUTE_ACTOR_NAME="execute";
+    private static final int POOL_NUMBER=10;
 
     private ActorRef storeActor;
     private ActorRef executeActor;
 
     public Router(ActorSystem system){
         storeActor=system.actorOf(Props.create(StoreActor.class), STORE_ACTOR_NAME);
-        executeActor=system.actorOf(new RoundRobinPool().props(Prop.create(ExecuteActor.class)),EXECUTE_ACTOR_NAME);
+        executeActor=system.actorOf(new RoundRobinPool().props(Props.create(ExecuteActor.class)),EXECUTE_ACTOR_NAME);
     }
 
     @Override
