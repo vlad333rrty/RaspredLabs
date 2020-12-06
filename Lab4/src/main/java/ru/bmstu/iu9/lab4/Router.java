@@ -25,10 +25,10 @@ public class Router{
         executeActor=system.actorOf(new RoundRobinPool(POOL_NUMBER).props(Props.create(ExecuteActor.class)),EXECUTE_ACTOR_NAME);
     }
 
-    public Route getRoute(){
+    public Route createRoute(){
         return get(()->{
             parameter(GET_PARAMETER,id->{
-                
+
             })
         })
     }
