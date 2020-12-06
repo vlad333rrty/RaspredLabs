@@ -26,10 +26,7 @@ public class Server {
         final CompletionStage<ServerBinding> binding = http.newServerAt("localhost", 8080).bind(router.createRoute());
         System.in.read();
 
-        binding
-                .thenCompose(ServerBinding::unbind)
-                .thenAccept(unbound -> system.terminate());
-
+        binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
     }
 
     public void run(){
