@@ -20,12 +20,12 @@ public class Server {
 
     public Server() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
-        ActorMaterializer materializer=ActorMaterializer.create()
+        ActorMaterializer materializer=ActorMaterializer.create(system);
         router=new Router(system);
         final Http http=Http.get(system);
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
-        final CompletionStage<ServerBinding> binding = http.bindAndHandle("localhost", 8080).bind(router.createRoute());
+        final CompletionStage<ServerBinding> binding = http.bindAndHandle(routeFlow,"localhost", 8080).bind(router.createRoute());
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
