@@ -38,7 +38,7 @@ public class Request {
     public ArrayList<Test> getTests() {
         ArrayList<Test> testList=new ArrayList<>();
         for (String s:tests){
-            
+            Test test=
         }
         return testList;
     }
