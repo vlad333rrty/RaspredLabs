@@ -12,6 +12,7 @@ import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
 import java.io.IOException;
+import java.util.concurrent.CompletionStage;
 
 public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
@@ -22,6 +23,7 @@ public class Server {
         router=new Router(system);
         final Http http=Http.get(system);
 
+        final CompletionStage<ServerBinding> binding = http.newServerAt("localhost", 8080).bind(app.createRoute());
         System.in.read();
 
         binding
