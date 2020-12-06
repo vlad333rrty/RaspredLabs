@@ -4,7 +4,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 
-public class System extends AbstractActor {
+public class SystemActor extends AbstractActor {
     private static final String SYSTEM_ACTOR_NAME ="routes";
 
     private ActorRef router;
@@ -14,7 +14,7 @@ public class System extends AbstractActor {
         return null;
     }
 
-    public System(){
+    public SystemActor(){
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
 
     }
