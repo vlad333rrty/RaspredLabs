@@ -2,6 +2,7 @@ package ru.bmstu.iu9.lab4;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ public class Request {
     public ArrayList<Test> getTests() {
         ArrayList<Test> testList=new ArrayList<>();
         for (String s:tests){
-            Test test=
+            Test test=new ObjectMapper()
         }
         return testList;
     }
