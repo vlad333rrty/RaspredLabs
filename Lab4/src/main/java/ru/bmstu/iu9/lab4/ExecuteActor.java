@@ -3,6 +3,7 @@ package ru.bmstu.iu9.lab4;
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
 
+import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -22,6 +23,6 @@ public class ExecuteActor extends AbstractActor {
     private void executeJSCode(String code) throws ScriptException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
-        
+        Invocable invocable
     }
 }
