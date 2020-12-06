@@ -23,7 +23,7 @@ public class ExecuteActor extends AbstractActor {
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getPassedValue(),test.getExpectedResult()));
                     }
-                    getContext().actorSelection(STORAGE).tell(results, ActorRef.noSender());
+                    getContext().actorSelection(STORAGE).tell(new ResultsPackage(results,request.getPackageId()), ActorRef.noSender());
                 })
                 .build();
     }
