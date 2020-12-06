@@ -14,22 +14,32 @@ public class ExecuteActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(Request.class,request -> {
-
+                .match(Test.class,test -> {
+                    
                 })
                 .build();
     }
 
-    private TestResult executeJSCode(String code,String functionName,int param,int expectedResult) {
-        TestResult testResult;
+    private TestResult executeAndTestJSCode(String code,String functionName,int param,int expectedResult) {
+        TestResultStatus status;
+        String description;
         try{
             ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
             engine.eval(code);
             Invocable invocable = (Invocable) engine;
-            invocable.invokeFunction(functionName,param);
+            int result=(int)invocable.invokeFunction(functionName,param);
+            if (result==expectedResult){
+                status=TestResultStatus.SUCCEEDED;
+                description="Test finished successfully";
+            }else{
+                status=TestResultStatus.FAILED;
+                description="Status: FAILED. Reason: Wrong result";
+            }
+            return new TestResult(status,description);
         }catch (Exception e){
-            System.out.println("Test failed");
+            status=TestResultStatus.FAILED;
+            description="An error occurred while testing";
+            return new TestResult(status,description);
         }
-
     }
 }
