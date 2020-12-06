@@ -17,6 +17,6 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private void executeJSCode(String code){
-        ScriptEngine
+        ScriptEngine engine=new 
     }
 }
