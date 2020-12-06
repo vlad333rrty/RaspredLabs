@@ -4,22 +4,17 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 
-public class SystemActor extends AbstractActor {
+public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
-
     private Router router;
 
-    @Override
-    public Receive createReceive() {
-        return null;
-    }
-
-    public SystemActor(){
+    public Server(){
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         router=new Router(system);
+        
     }
 
     public void run(){
-        
+
     }
 }
