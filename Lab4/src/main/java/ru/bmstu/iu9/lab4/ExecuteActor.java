@@ -20,10 +20,10 @@ public class ExecuteActor extends AbstractActor {
                 .build();
     }
 
-    private void executeJSCode(String code) throws ScriptException {
+    private void executeJSCode(String code,String functionName) throws ScriptException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         Invocable invocable = (Invocable) engine;
-        invocable.invokeFunction()
+        invocable.invokeFunction(functionName)
     }
 }
