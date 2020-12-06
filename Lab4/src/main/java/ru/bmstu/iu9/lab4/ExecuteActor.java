@@ -7,6 +7,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 public class ExecuteActor extends AbstractActor {
+    private static final String ENGINE_NAME="nashron";
 
     @Override
     public Receive createReceive() {
@@ -18,6 +19,7 @@ public class ExecuteActor extends AbstractActor {
     }
 
     private void executeJSCode(String code){
-        ScriptEngine engine = new ScriptEngineManager().getEngineByName()
+        ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
+        
     }
 }
