@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab4;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
 
 import java.util.ArrayList;
@@ -35,7 +36,7 @@ public class StoreActor extends AbstractActor {
                     }
                 })
                 .match(Integer.class,id -> {
-                    sender().tell(new ResultsPackage(getTestResult(id),id));
+                    sender().tell(new ResultsPackage(getTestResult(id),id), ActorRef.noSender());
                 })
                 .build();
     }
