@@ -20,7 +20,7 @@ public class Server {
     private static final String HOST="localhost";
     private static final int PORT=8080;
 
-    public void run() throws IOException {
+    public void start() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
         ActorMaterializer materializer=ActorMaterializer.create(system);
         Router router=new Router(system);
