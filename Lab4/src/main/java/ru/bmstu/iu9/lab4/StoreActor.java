@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab4;
 
 import akka.actor.AbstractActor;
+import akka.japi.pf.ReceiveBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,6 @@ public class StoreActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return null;
+        return ReceiveBuilder.create().match()
     }
 }
