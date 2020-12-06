@@ -1,5 +1,6 @@
 package ru.bmstu.iu9.lab4;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
@@ -16,5 +17,6 @@ public class Request {
     @JsonProperty(JSON_TESTS)
     private ArrayList<String> tests;
 
-    public Request()
+    @JsonCreator
+    public Request(@JsonProperty int packageId,)
 }
