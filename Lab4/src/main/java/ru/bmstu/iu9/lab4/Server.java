@@ -20,9 +20,11 @@ public class Server {
 
     public Server() throws IOException {
         ActorSystem system=ActorSystem.create(SYSTEM_ACTOR_NAME);
+        ActorMaterializer materializer=
         router=new Router(system);
         final Http http=Http.get(system);
 
+        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle("localhost", 8080).bind(router.createRoute());
         System.in.read();
 
