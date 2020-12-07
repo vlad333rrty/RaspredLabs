@@ -7,6 +7,7 @@ import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.server.Directives;
 import akka.http.javadsl.server.Route;
 import akka.japi.pf.ReceiveBuilder;
+import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
 import scala.sys.Prop;
 
@@ -30,7 +31,7 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            CompletionStage<Object> res=
+            CompletionStage<Object> res= PatternsCS.ask()
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
