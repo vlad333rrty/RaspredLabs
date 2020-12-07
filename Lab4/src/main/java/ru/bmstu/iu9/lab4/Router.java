@@ -25,7 +25,7 @@ public class Router{
     private static final int POOL_NUMBER=10;
     private static final int TIMEOUT_MILLIS=1000;
 
-    public static ActorRef storeActor;
+    private ActorRef storeActor;
     private ActorRef executeActor;
 
     public Router(ActorSystem system){
