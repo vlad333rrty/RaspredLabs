@@ -9,7 +9,7 @@ public class Client {
     private static final String URL ="localhost:8080";
     private static final String JSON_FILE="request.json";
     public static void main(String[] args) throws IOException {
-        HttpClient
+        HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
 
 
