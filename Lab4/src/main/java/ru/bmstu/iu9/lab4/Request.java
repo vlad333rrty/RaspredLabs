@@ -65,6 +65,7 @@ public class Request {
         @JsonProperty(PARAMS)
         private ArrayList<Integer> params;
 
+        @JsonCreator
         public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
                     @JsonProperty(EXPECTED_RESULT) int expectedResult,
                     @JsonProperty(TEST_NAME) String testName){
