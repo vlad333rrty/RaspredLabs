@@ -25,7 +25,7 @@ public class Client {
         System.out.println(request.bodyPublisher());
 
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-        System.out.println(response);
+        System.out.println(response.body());
 
     }
 
