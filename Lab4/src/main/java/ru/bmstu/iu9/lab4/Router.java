@@ -23,6 +23,7 @@ public class Router{
     private static final String EXECUTE_ACTOR_NAME="execute";
     private static final String GET_PARAMETER="packageId";
     private static final int POOL_NUMBER=10;
+    private static final int TIMEOUT_MILLIS=1000;
 
     private ActorRef storeActor;
     private ActorRef executeActor;
@@ -34,8 +35,8 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            CompletionStage<Object> fut=PatternsCS.ask(storeActor,Integer.parseInt(id), 1000);
-            return 
+            CompletionStage<Object> future=PatternsCS.ask(storeActor,Integer.parseInt(id), TIMEOUT_MILLIS);
+            return completeOKWithFuture(future,Jackson.marshaller());
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
