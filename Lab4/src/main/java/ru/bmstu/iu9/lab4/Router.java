@@ -32,7 +32,7 @@ public class Router{
             return null;
         }).orElse(post(()->{
             entity(Jackson.unmarshaller(Request.class),request -> {
-                
+                System.out.println(request.getCode());
             })
         })));
     }
