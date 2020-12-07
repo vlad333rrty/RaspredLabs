@@ -3,9 +3,7 @@ package ru.bmstu.iu9.lab4;
 
 import sun.net.www.http.HttpClient;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 
 public class Client {
@@ -16,15 +14,17 @@ public class Client {
     }
 
     private static String readFile(String fileName){
-        try(BufferedInputStream in=new BufferedInputStream(new FileInputStream(fileName))){
-            int c;
+        try(BufferedReader reader=new BufferedReader(new FileReader(fileName))){
             StringBuilder builder=new StringBuilder();
-            while ((c=in.read())!=-1){
-                builder.append((char)c);
+            String line;
+            while ((line=reader.readLine())!=null){
+                builder.append(line);
             }
+            return builder.toString();
         }catch (Exception e){
             e.printStackTrace();
         }
+        return null;
     }
 
 }
