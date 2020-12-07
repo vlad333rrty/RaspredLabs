@@ -17,7 +17,7 @@ import java.util.concurrent.CompletionStage;
 
 public class Server {
     private static final String SYSTEM_ACTOR_NAME ="routes";
-    private static final String HOST="http://127.0.0.1:8080";
+    private static final String HOST="localhost";
     private static final int PORT=8080;
 
     public void start() throws IOException {
