@@ -10,7 +10,7 @@ public class Client {
     private static final String ADDRESS ="localhost:8080";
     private static final String JSON_FILE="request.json";
     private static final String HEADER="Content-type";
-    private static final String VALUE="application/json"
+    private static final String VALUE="application/json";
 
 
     public static void main(String[] args) throws IOException {
@@ -18,7 +18,7 @@ public class Client {
         String json=readFile(JSON_FILE);
         HttpRequest request=HttpRequest.newBuilder()
                 .uri(URI.create(ADDRESS))
-                .header(HEADER,)
+                .header(HEADER,VALUE)
                 .build();
 
 
