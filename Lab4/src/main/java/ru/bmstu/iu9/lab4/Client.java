@@ -34,6 +34,7 @@ public class Client {
                 .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
+        
 
         System.out.println(request.bodyPublisher());
 
