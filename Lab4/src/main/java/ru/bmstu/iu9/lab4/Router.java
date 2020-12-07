@@ -41,7 +41,7 @@ public class Router{
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println("kek");
             executeActor.tell(request,ActorRef.noSender());
-            return null;
+            return complete();
         }))));
     }
 }
