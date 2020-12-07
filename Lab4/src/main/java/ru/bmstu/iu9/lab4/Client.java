@@ -13,7 +13,7 @@ public class Client {
     private static final String HEADER="Content-type";
     private static final String VALUE="application/json";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
         HttpRequest request=HttpRequest.newBuilder()
@@ -22,11 +22,11 @@ public class Client {
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-        
+
 
     }
 
-    private static String readFile(String fileName){
+    private static String readFile(String fileName) throws IOException {
         try(BufferedReader reader=new BufferedReader(new FileReader(fileName))){
             StringBuilder builder=new StringBuilder();
             String line;
@@ -34,9 +34,6 @@ public class Client {
                 builder.append(line);
             }
             return builder.toString();
-        }catch (Exception e){
-            e.printStackTrace();
         }
-        return null;
     }
 }
