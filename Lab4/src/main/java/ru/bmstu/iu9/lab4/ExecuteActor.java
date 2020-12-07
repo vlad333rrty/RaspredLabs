@@ -11,7 +11,7 @@ import javax.script.ScriptException;
 import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
-    private static final String ENGINE_NAME="nashron";
+    private static final String ENGINE_NAME="nashorn";
     private static final String STORAGE ="store";
 
     @Override
