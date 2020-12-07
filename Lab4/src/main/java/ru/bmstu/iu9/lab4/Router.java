@@ -34,8 +34,6 @@ public class Router{
     }
 
     public Route createRoute(){
-        return post(()->{
-            
-        })
+        return post(()->complete("GG")).orElse(get()->complete("rr"))
     }
 }
