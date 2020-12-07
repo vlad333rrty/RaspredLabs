@@ -3,6 +3,7 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.server.Directives;
 import akka.http.javadsl.server.Route;
 import akka.japi.pf.ReceiveBuilder;
@@ -30,7 +31,7 @@ public class Router{
             System.out.println("kek");
             return null;
         }).orElse(post(()->{
-            
+            entityAsSourceOf(Jackson.unmarshaller(Request.class))
         })));
     }
 }
