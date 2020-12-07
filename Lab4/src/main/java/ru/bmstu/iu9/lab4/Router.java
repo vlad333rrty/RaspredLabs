@@ -10,6 +10,8 @@ import akka.japi.pf.ReceiveBuilder;
 import akka.routing.RoundRobinPool;
 import scala.sys.Prop;
 
+import java.util.concurrent.CompletionStage;
+
 import static akka.http.javadsl.server.Directives.*;
 
 public class Router{
@@ -28,7 +30,7 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            
+            CompletionStage<>
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
