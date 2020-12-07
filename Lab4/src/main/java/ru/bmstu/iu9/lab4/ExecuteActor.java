@@ -23,7 +23,7 @@ public class ExecuteActor extends AbstractActor {
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getParams(),test.getExpectedResult()));
                     }
-                    Router.storeActor.tell(results,ActorRef.noSender());
+                    Router.storeActor.tell(new ResultsPackage(results, request.getPackageId()),ActorRef.noSender());
                 })
                 .build();
     }
