@@ -12,7 +12,6 @@ public class Client {
     private static final String HEADER="Content-type";
     private static final String VALUE="application/json";
 
-
     public static void main(String[] args) throws IOException {
         HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
@@ -21,7 +20,7 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
-
+        
 
 
     }
