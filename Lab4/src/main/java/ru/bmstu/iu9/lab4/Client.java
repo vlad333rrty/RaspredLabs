@@ -12,7 +12,7 @@ public class Client {
     public static void main(String[] args) throws IOException {
         HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
-        HttpRequest
+        HttpRequest request=
 
 
 
