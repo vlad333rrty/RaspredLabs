@@ -13,10 +13,13 @@ public class Request {
     private static final String JSON_FUNCTION_FIELD_NAME="functionName";
     private static final String JSON_TESTS="tests";
 
-    
+    @JsonProperty(JSON_PACKAGE_ID_FIELD_NAME)
     private int packageId;
+    @JsonProperty(JSON_CODE)
     private String code;
+    @JsonProperty(JSON_FUNCTION_FIELD_NAME)
     private String functionName;
+    @JsonProperty(JSON_TESTS)
     private ArrayList<String> tests;
 
     @JsonCreator
