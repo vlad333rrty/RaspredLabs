@@ -34,14 +34,8 @@ public class Router{
     }
 
     public Route createRoute(){
-        return get(()-> parameter(GET_PARAMETER, id-> {
-            System.out.println("gg");
-            CompletionStage<Object> future=PatternsCS.ask(storeActor,Integer.parseInt(id), TIMEOUT_MILLIS);
-            return completeOKWithFuture(future,Jackson.marshaller());
-        }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
-            System.out.println("kek");
-            executeActor.tell(request,ActorRef.noSender());
-            return complete("Test stored");
-        }))));
+        return post(()->{
+            
+        })
     }
 }
