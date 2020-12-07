@@ -14,7 +14,7 @@ public class Client {
     private static final String JSON_FILE="request.json";
     private static final String HEADER="Content-type";
     private static final String VALUE="application/json";
-    private static final String GET_REQUEST=ADDRESS+"/?"
+    private static final String GET_REQUEST=ADDRESS+"/?packageId=11";
 
     public static void main(String[] args) throws IOException, InterruptedException {
         HttpClient httpClient=HttpClient.newHttpClient();
@@ -31,7 +31,7 @@ public class Client {
         System.out.println(response.body());
 
         request=HttpRequest.newBuilder()
-                .uri(URI.create(ADDRESS))
+                .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
 
