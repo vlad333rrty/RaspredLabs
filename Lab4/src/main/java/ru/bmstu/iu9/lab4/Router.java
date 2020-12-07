@@ -3,7 +3,6 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import akka.compat.Future;
 import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.server.Directives;
 import akka.http.javadsl.server.Route;
@@ -12,6 +11,7 @@ import akka.pattern.Patterns;
 import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
 import akka.util.Timeout;
+import scala.concurrent.Future;
 import scala.sys.Prop;
 
 import java.util.concurrent.CompletionStage;
@@ -39,8 +39,8 @@ public class Router{
             return complete("Exec");
         })).orElse(get(()->parameter(GET_PARAMETER,id->{
             System.out.println("GET");
-            CompletionStage<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
-
+            Future<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
+            
         })));
     }
 }
