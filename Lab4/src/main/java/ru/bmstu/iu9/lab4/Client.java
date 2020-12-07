@@ -23,7 +23,6 @@ public class Client {
                 .build();
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
-
     }
 
     private static String readFile(String fileName) throws IOException {
