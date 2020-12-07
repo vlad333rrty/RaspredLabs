@@ -28,14 +28,14 @@ public class ExecuteActor extends AbstractActor {
                 .build();
     }
 
-    private int executeJSCode(String code,String functionName,ArrayList<Integer> params) throws ScriptException, NoSuchMethodException {
+    private Double executeJSCode(String code,String functionName,ArrayList<Integer> params) throws ScriptException, NoSuchMethodException {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         Invocable invocable = (Invocable) engine;
-        return (int) invocable.invokeFunction(functionName, params);
+        return ((Double)invocable.invokeFunction(functionName, params)).doubleValue();
     }
 
-    private TestResult getTestResult(double expectedResult,int result){
+    private TestResult getTestResult(double expectedResult,double result){
         TestResultStatus status;
         String description;
         if (result==expectedResult){
@@ -50,7 +50,7 @@ public class ExecuteActor extends AbstractActor {
 
     private TestResult getTestResult(String code,String functionName,ArrayList<Integer> params,double expectedResult){
         try{
-            int result=executeJSCode(code,functionName,params);
+            double result=executeJSCode(code,functionName,params);
             return getTestResult(expectedResult,result);
         }catch (ScriptException | NoSuchMethodException e){
             return new TestResult(TestResultStatus.FAILED,String.format("An exception occurred while testing:%s",e.getLocalizedMessage()));
