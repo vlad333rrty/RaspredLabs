@@ -1,6 +1,8 @@
 package ru.bmstu.iu9.lab4;
 
 
+import akka.http.javadsl.model.Uri;
+
 import java.io.*;
 import java.net.URI;
 import  java.net.http.HttpClient;
@@ -27,7 +29,10 @@ public class Client {
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
 
-        request=
+        request=HttpRequest.newBuilder()
+                .uri(URI.create(ADDRESS))
+                .POST()
+                .build();
 
     }
 
