@@ -32,7 +32,7 @@ public class ExecuteActor extends AbstractActor {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName(ENGINE_NAME);
         engine.eval(code);
         Invocable invocable = (Invocable) engine;
-        return (Double) invocable.invokeFunction(functionName, params);
+        return (Double) invocable.invokeFunction(functionName, params.get(0),params.get(1));
     }
 
     private TestResult getTestResult(double expectedResult,double result){
