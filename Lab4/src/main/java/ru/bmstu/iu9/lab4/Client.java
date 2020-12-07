@@ -21,8 +21,8 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
-        HttpResponse<String> response=httpClient.send(request,HttpResponse.)
-
+        HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
+        
 
     }
 
