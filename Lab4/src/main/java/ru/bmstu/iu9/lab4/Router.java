@@ -31,7 +31,9 @@ public class Router{
             System.out.println("kek");
             return null;
         }).orElse(post(()->{
-            entityAsSourceOf(Jackson.unmarshaller(Request.class))
+            entity(Jackson.unmarshaller(Request.class),request -> {
+                
+            })
         })));
     }
 }
