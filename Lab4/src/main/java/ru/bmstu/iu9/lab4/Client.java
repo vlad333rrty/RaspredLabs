@@ -1,7 +1,7 @@
 package ru.bmstu.iu9.lab4;
 
 
-import sun.net.www.http.HttpClient;
+
 
 import java.io.*;
 import java.net.URL;
@@ -13,7 +13,7 @@ public class Client {
         HttpClient client = HttpClient.New(new URL(URL));
         String json=readFile(JSON_FILE);
 
-        
+
     }
 
     private static String readFile(String fileName){
