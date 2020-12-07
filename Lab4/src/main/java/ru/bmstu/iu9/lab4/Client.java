@@ -34,9 +34,9 @@ public class Client {
                 .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
-        response=httpClient.send(request,HttpResponse.BodyHandlers.ofString())
+        response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
-        System.out.println(request.bodyPublisher());
+        System.out.println(response.bodyPublisher());
 
     }
 
