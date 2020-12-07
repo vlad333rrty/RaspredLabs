@@ -10,7 +10,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class Client {
-    private static final String ADDRESS ="http://127.0.0.1:8080";;
+    private static final String ADDRESS ="http://127.0.0.1:8080";
     private static final String JSON_FILE="request.json";
     private static final String HEADER="Content-type";
     private static final String VALUE="application/json";
