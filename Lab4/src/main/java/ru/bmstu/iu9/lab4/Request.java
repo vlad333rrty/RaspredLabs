@@ -20,13 +20,13 @@ public class Request {
     @JsonProperty(JSON_FUNCTION_FIELD_NAME)
     private String functionName;
     @JsonProperty(JSON_TESTS)
-    private ArrayList<String> tests;
+    private ArrayList<Test> tests;
 
     @JsonCreator
     public Request(@JsonProperty(JSON_PACKAGE_ID_FIELD_NAME) int packageId,
                    @JsonProperty(JSON_CODE) String code,
                    @JsonProperty(JSON_FUNCTION_FIELD_NAME) String functionName,
-                   @JsonProperty(JSON_TESTS) ArrayList<String> tests){
+                   @JsonProperty(JSON_TESTS) ArrayList<Test> tests){
         this.packageId=packageId;
         this.code=code;
         this.functionName = functionName;
@@ -46,19 +46,16 @@ public class Request {
     }
 
     public ArrayList<Test> getTests() throws IOException {
-        ArrayList<Test> testList=new ArrayList<>();
-        for (String s:tests){
-            Test test=new ObjectMapper().readerFor(Test.class).readValue(s);
-            testList.add(test);
-        }
-        return testList;
+        return tests;
     }
 
     public class Test{
         private static final String PARAMS ="params";
         private static final String EXPECTED_RESULT ="expectedResult";
 
+        @JsonProperty(EXPECTED_RESULT)
         private int expectedResult;
+        @JsonProperty(PARAMS)
         private ArrayList<Integer> params;
 
         public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
