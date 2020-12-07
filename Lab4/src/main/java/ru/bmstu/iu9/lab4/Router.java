@@ -34,10 +34,12 @@ public class Router{
     }
 
     public Route createRoute(){
-        return post(()->{
-            withEnt
-        }).orElse(get(()->{
-
+        return post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
+            executeActor.tell(request,ActorRef.noSender());
+            return complete("Exec");
+        })).orElse(get(()->{
+            System.out.println("GET");
+            
         }));
     }
 }
