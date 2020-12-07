@@ -2,17 +2,20 @@ package ru.bmstu.iu9.lab4;
 
 
 import java.io.*;
-import java.net.URL;
+import java.net.URI;
 import  java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 
 public class Client {
-    private static final String URL ="localhost:8080";
+    private static final String ADDRESS ="localhost:8080";
     private static final String JSON_FILE="request.json";
     public static void main(String[] args) throws IOException {
         HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
-        HttpRequest request=HttpRequest.newBuilder().uri().build();
+        HttpRequest request=HttpRequest.newBuilder()
+                .uri(URI.create(ADDRESS))
+                .header()
+                .build();
 
 
 
