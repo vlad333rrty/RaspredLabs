@@ -40,7 +40,6 @@ public class Client {
         response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.body());
-
     }
 
     private static String readFile(String fileName) throws IOException {
