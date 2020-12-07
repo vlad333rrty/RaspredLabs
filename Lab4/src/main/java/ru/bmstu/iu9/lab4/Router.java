@@ -34,7 +34,8 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            =Patterns.ask(storeActor,Integer.parseInt(id), 1000);
+            CompletionStage<Object> x=PatternsCS.ask(storeActor,Integer.parseInt(id), 1000);
+            return 
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
