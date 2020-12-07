@@ -35,6 +35,7 @@ public class Router{
 
     public Route createRoute(){
         return post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
+            System.out.println("POST");
             executeActor.tell(request,ActorRef.noSender());
             return complete(request.getCode());
         })).orElse(get(()->parameter(GET_PARAMETER,id->{
