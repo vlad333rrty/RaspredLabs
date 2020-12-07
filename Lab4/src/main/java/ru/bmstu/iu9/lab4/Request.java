@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Request {
     private static final String JSON_PACKAGE_ID_FIELD_NAME ="packageId";
-    private static final String JSON_CODE="jsCode";
+    private static final String JSON_CODE="jsScript";
     private static final String JSON_FUNCTION_FIELD_NAME="functionName";
     private static final String JSON_TESTS="tests";
 
