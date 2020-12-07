@@ -1,6 +1,8 @@
 package ru.bmstu.iu9.lab4;
 
 
+import akka.http.javadsl.model.HttpResponse;
+
 import java.io.*;
 import java.net.URI;
 import  java.net.http.HttpClient;
@@ -20,7 +22,7 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
-        
+        HttpResponse
 
 
     }
