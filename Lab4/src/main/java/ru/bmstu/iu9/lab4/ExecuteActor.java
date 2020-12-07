@@ -19,7 +19,7 @@ public class ExecuteActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(Request.class,request -> {
                     ArrayList<TestResult> results=new ArrayList<>();
-                    for (Request.Test test:request.getTests()){
+                    for (Test test:request.getTests()){
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getParams(),test.getExpectedResult()));
                     }
