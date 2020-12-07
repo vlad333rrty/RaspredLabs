@@ -27,19 +27,6 @@ public class Client {
 
         System.out.println(request.bodyPublisher());
 
-        Thread.sleep(500);
-
-        HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-
-        System.out.println(response.body());
-
-        request=HttpRequest.newBuilder()
-                .uri(URI.create(GET_REQUEST))
-                .GET()
-                .build();
-        response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-
-        System.out.println(response.body());
     }
 
     private static String readFile(String fileName) throws IOException {

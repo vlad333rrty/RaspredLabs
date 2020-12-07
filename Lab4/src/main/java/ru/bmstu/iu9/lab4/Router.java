@@ -34,14 +34,14 @@ public class Router{
     }
 
     public Route createRoute(){
-        return get(()->parameter(GET_PARAMETER,id->{
-            System.out.println("GET");
-            Future<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
-            return completeOKWithFuture(future,Jackson.marshaller());
-        })).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
+        return post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println("POST");
             executeActor.tell(request,ActorRef.noSender());
             return complete(request.getCode());
+        })).orElse(get(()->parameter(GET_PARAMETER,id->{
+            System.out.println("GET");
+            Future<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
+            return completeOKWithFuture(future,Jackson.marshaller());
         })));
     }
 }
