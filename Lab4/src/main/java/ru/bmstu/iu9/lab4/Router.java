@@ -39,7 +39,8 @@ public class Router{
             CompletionStage<Object> future=PatternsCS.ask(storeActor,Integer.parseInt(id), TIMEOUT_MILLIS);
             return completeOKWithFuture(future,Jackson.marshaller());
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
-            System.out.println(request.getCode());
+            System.out.println("kek");
+            
             return null;
         }))));
     }
