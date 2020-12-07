@@ -14,10 +14,13 @@ public class Request {
 
     @JsonProperty(PACKAGE_ID)
     private int packageId;
+
     @JsonProperty(JS_SCRIPT)
     private String code;
+
     @JsonProperty(FUNCTION_NAME)
     private String functionName;
+
     @JsonProperty(TESTS)
     private ArrayList<Test> tests;
 
@@ -55,8 +58,10 @@ public class Request {
 
         @JsonProperty(EXPECTED_RESULT)
         private int expectedResult;
+
         @JsonProperty(PARAMS)
         private ArrayList<Integer> params;
+
         @JsonProperty(TEST_NAME)
         private String testName;
 
