@@ -29,7 +29,7 @@ public class Router{
         return get(()-> parameter(GET_PARAMETER, id->{
             System.out.println("kek");
             return null;
-        }).orElse(()->post(()->{
+        }).orElse(post(()->{
             
         })));
     }
