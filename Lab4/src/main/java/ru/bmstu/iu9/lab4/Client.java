@@ -36,7 +36,7 @@ public class Client {
                 .build();
         response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
-        System.out.println(response.bodyPublisher());
+        System.out.println(response.body());
 
     }
 
