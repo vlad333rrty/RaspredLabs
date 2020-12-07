@@ -28,6 +28,9 @@ public class Client {
         System.out.println(request.bodyPublisher());
 
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
+
+        Thread.sleep(500);
+
         System.out.println(response.body());
 
         request=HttpRequest.newBuilder()
