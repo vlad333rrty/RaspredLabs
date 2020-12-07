@@ -31,7 +31,7 @@ public class Client {
 
         request=HttpRequest.newBuilder()
                 .uri(URI.create(ADDRESS))
-                .POST()
+                .GET()
                 .build();
 
     }
