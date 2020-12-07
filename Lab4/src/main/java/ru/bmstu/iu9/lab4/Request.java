@@ -56,14 +56,14 @@ public class Request {
         private static final String EXPECTED_RESULT ="expectedResult";
         private static final String TEST_NAME="testName";
 
+        @JsonProperty(TEST_NAME)
+        private String testName;
+
         @JsonProperty(EXPECTED_RESULT)
         private int expectedResult;
 
         @JsonProperty(PARAMS)
         private ArrayList<Integer> params;
-
-        @JsonProperty(TEST_NAME)
-        private String testName;
 
         public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
                     @JsonProperty(EXPECTED_RESULT) int expectedResult,
