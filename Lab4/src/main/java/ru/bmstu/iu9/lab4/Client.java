@@ -9,6 +9,9 @@ import java.net.http.HttpRequest;
 public class Client {
     private static final String ADDRESS ="localhost:8080";
     private static final String JSON_FILE="request.json";
+    private static final String HEADER="Content-Type"
+
+
     public static void main(String[] args) throws IOException {
         HttpClient httpClient=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
