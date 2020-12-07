@@ -23,8 +23,6 @@ public class Client {
                 .build();
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
-        
-
 
     }
 
