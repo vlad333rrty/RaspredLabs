@@ -10,9 +10,11 @@ import akka.japi.pf.ReceiveBuilder;
 import akka.pattern.Patterns;
 import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
+import akka.util.Timeout;
 import scala.sys.Prop;
 
 import java.util.concurrent.CompletionStage;
+import java.util.concurrent.Future;
 
 import static akka.http.javadsl.server.Directives.*;
 
@@ -32,7 +34,7 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            Patterns.ask(executeActor,)
+             =Patterns.ask(storeActor,Integer.parseInt(id), 1000);
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
