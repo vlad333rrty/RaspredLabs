@@ -30,11 +30,9 @@ public class Router{
         return get(()-> parameter(GET_PARAMETER, id->{
             System.out.println("kek");
             return null;
-        }).orElse(post(()->{
-            entity(Jackson.unmarshaller(Request.class),request -> {
-                System.out.println(request.getCode());
-                return null;
-            })
-        })));
+        }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
+            System.out.println(request.getCode());
+            return null;
+        }))));
     }
 }
