@@ -64,6 +64,7 @@ public class Request {
                     @JsonProperty(EXPECTED_RESULT) int expectedResult,
                     @JsonProperty(TEST_NAME) String testName){
             this.params=params;
+            this.expectedResult=expectedResult;
             this.testName=testName;
         }
 
