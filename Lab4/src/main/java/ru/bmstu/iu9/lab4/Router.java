@@ -30,7 +30,7 @@ public class Router{
 
     public Route createRoute(){
         return get(()-> parameter(GET_PARAMETER, id-> {
-            CompletionStage<>
+            CompletionStage<Object> 
         }).orElse(post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             System.out.println(request.getCode());
             return null;
