@@ -37,7 +37,7 @@ public class Router{
         return post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             executeActor.tell(request,ActorRef.noSender());
             return complete("Exec");
-        })).orElse(get(()->parameter(){
+        })).orElse(get(()->parameter(GET_PARAMETER,){
             System.out.println("GET");
             CompletionStage<Object> future=Patterns.ask(storeActor,)
         }));
