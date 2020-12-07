@@ -35,7 +35,10 @@ public class StoreActor extends AbstractActor {
                         storeTestResult(resultsPackage.getPackageId(),result);
                     }
                 })
-                .match(Integer.class,id -> sender().tell(new ResultsPackage(getTestResult(id),id), ActorRef.noSender()))
+                .match(Integer.class,id -> {
+                    System.out.println(getTestResult(id));
+                    sender().tell(new ResultsPackage(getTestResult(id), id), ActorRef.noSender());
+                })
                 .build();
     }
 }
