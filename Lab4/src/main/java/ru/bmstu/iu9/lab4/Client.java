@@ -22,7 +22,7 @@ public class Client {
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
 
-        System.out.println(reques);
+        System.out.println(request.bodyPublisher());
 
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
