@@ -2,31 +2,30 @@ package ru.bmstu.iu9.lab4;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class Request {
-    private static final String JSON_PACKAGE_ID_FIELD_NAME ="packageId";
-    private static final String JSON_CODE="jsScript";
-    private static final String JSON_FUNCTION_FIELD_NAME="functionName";
-    private static final String JSON_TESTS="tests";
+    private static final String PACKAGE_ID ="packageId";
+    private static final String JS_SCRIPT ="jsScript";
+    private static final String FUNCTION_NAME ="functionName";
+    private static final String TESTS ="tests";
 
-    @JsonProperty(JSON_PACKAGE_ID_FIELD_NAME)
+    @JsonProperty(PACKAGE_ID)
     private int packageId;
-    @JsonProperty(JSON_CODE)
+    @JsonProperty(JS_SCRIPT)
     private String code;
-    @JsonProperty(JSON_FUNCTION_FIELD_NAME)
+    @JsonProperty(FUNCTION_NAME)
     private String functionName;
-    @JsonProperty(JSON_TESTS)
+    @JsonProperty(TESTS)
     private ArrayList<Test> tests;
 
     @JsonCreator
-    public Request(@JsonProperty(JSON_PACKAGE_ID_FIELD_NAME) int packageId,
-                   @JsonProperty(JSON_CODE) String code,
-                   @JsonProperty(JSON_FUNCTION_FIELD_NAME) String functionName,
-                   @JsonProperty(JSON_TESTS) ArrayList<Test> tests){
+    public Request(@JsonProperty(PACKAGE_ID) int packageId,
+                   @JsonProperty(JS_SCRIPT) String code,
+                   @JsonProperty(FUNCTION_NAME) String functionName,
+                   @JsonProperty(TESTS) ArrayList<Test> tests){
         this.packageId=packageId;
         this.code=code;
         this.functionName = functionName;
@@ -52,17 +51,20 @@ public class Request {
     public class Test{
         private static final String PARAMS ="params";
         private static final String EXPECTED_RESULT ="expectedResult";
-        private static final String TEST_NAME="testName"
+        private static final String TEST_NAME="testName";
 
         @JsonProperty(EXPECTED_RESULT)
         private int expectedResult;
         @JsonProperty(PARAMS)
         private ArrayList<Integer> params;
+        @JsonProperty(TEST_NAME)
+        private String testName;
 
         public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
-                    @JsonProperty(EXPECTED_RESULT) int expectedResult){
+                    @JsonProperty(EXPECTED_RESULT) int expectedResult,
+                    @JsonProperty(TEST_NAME) String testName){
             this.params=params;
-            this.expectedResult=expectedResult;
+            this.testName=testName;
         }
 
         public ArrayList<Integer> getParams() {
@@ -71,6 +73,10 @@ public class Request {
 
         public int getExpectedResult() {
             return expectedResult;
+        }
+
+        public String getTestName(){
+            return testName;
         }
     }
 }
