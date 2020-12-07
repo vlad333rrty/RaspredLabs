@@ -1,8 +1,6 @@
 package ru.bmstu.iu9.lab4;
 
 
-
-
 import sun.net.www.http.HttpClient;
 
 import java.io.*;
