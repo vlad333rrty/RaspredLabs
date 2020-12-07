@@ -19,7 +19,7 @@ public class Client {
         HttpRequest request=HttpRequest.newBuilder()
                 .uri(URI.create(ADDRESS))
                 .header(HEADER,VALUE)
-                .POST(HttpRequest.BodyPublishers)
+                .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
 
 
