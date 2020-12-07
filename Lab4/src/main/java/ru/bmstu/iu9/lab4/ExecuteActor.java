@@ -35,7 +35,7 @@ public class ExecuteActor extends AbstractActor {
         return (int) invocable.invokeFunction(functionName, params);
     }
 
-    private TestResult getTestResult(int expectedResult,int result){
+    private TestResult getTestResult(double expectedResult,int result){
         TestResultStatus status;
         String description;
         if (result==expectedResult){
@@ -48,7 +48,7 @@ public class ExecuteActor extends AbstractActor {
         return new TestResult(status,description);
     }
 
-    private TestResult getTestResult(String code,String functionName,ArrayList<Integer> params,int expectedResult){
+    private TestResult getTestResult(String code,String functionName,ArrayList<Integer> params,double expectedResult){
         try{
             int result=executeJSCode(code,functionName,params);
             return getTestResult(expectedResult,result);

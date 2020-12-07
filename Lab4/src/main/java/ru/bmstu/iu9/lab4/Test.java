@@ -14,14 +14,14 @@ public class Test{
     private String testName;
 
     @JsonProperty(EXPECTED_RESULT)
-    private int expectedResult;
+    private double expectedResult;
 
     @JsonProperty(PARAMS)
     private ArrayList<Integer> params;
 
     @JsonCreator
     public Test(@JsonProperty(PARAMS) ArrayList<Integer> params,
-                @JsonProperty(EXPECTED_RESULT) int expectedResult,
+                @JsonProperty(EXPECTED_RESULT) double expectedResult,
                 @JsonProperty(TEST_NAME) String testName){
         this.params=params;
         this.expectedResult=expectedResult;
@@ -32,7 +32,7 @@ public class Test{
         return params;
     }
 
-    public int getExpectedResult() {
+    public double getExpectedResult() {
         return expectedResult;
     }
 
