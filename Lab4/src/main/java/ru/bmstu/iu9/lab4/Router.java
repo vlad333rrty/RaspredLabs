@@ -36,7 +36,7 @@ public class Router{
     public Route createRoute(){
         return post(()-> entity(Jackson.unmarshaller(Request.class), request -> {
             executeActor.tell(request,ActorRef.noSender());
-            return complete("Exec");
+            return complete(request.getCode());
         })).orElse(get(()->parameter(GET_PARAMETER,id->{
             System.out.println("GET");
             Future<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
