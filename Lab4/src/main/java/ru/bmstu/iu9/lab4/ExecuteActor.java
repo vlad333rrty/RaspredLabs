@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class ExecuteActor extends AbstractActor {
     private static final String ENGINE_NAME="nashorn";
-    private static final String STORAGE ="store";
+    private static final String STORAGE ="/user/store";
 
     @Override
     public Receive createReceive() {
@@ -23,7 +23,7 @@ public class ExecuteActor extends AbstractActor {
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
                                 test.getParams(),test.getExpectedResult()));
                     }
-                    Router.storeActor.tell(new ResultsPackage(results, request.getPackageId()),ActorRef.noSender());
+                    getContext().actorSelection(STORAGE).tell(new ResultsPackage(results, request.getPackageId()),ActorRef.noSender());
                 })
                 .build();
     }
