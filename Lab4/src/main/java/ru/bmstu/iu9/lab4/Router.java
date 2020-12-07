@@ -39,7 +39,7 @@ public class Router{
             return complete(request.getCode());
         })).orElse(get(()->parameter(GET_PARAMETER,id->{
             System.out.println("GET");
-            CompletionStage<Object> future=PatternsCS.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
+            Future<Object> future=Patterns.ask(storeActor,Integer.parseInt(id),TIMEOUT_MILLIS);
             return completeOKWithFuture(future,Jackson.marshaller());
         })));
     }
