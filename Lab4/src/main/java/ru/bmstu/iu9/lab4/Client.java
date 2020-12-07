@@ -1,18 +1,12 @@
 package ru.bmstu.iu9.lab4;
 
 
+import akka.http.javadsl.model.HttpRequest;
 import sun.net.www.http.HttpClient;
 
 public class Client {
-    private static final String URI="http://"
+    private static final String URI="http://";
     public static void main(String[] args){
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://openjdk.java.net/"))
-                .build();
-        client.sendAsync(request, BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
-                .thenAccept(System.out::println)
-                .join();
-    }
+        HttpClient client = HttpClient.New(URI);
+
 }
