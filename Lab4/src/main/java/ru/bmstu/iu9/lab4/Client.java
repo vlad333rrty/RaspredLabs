@@ -17,7 +17,7 @@ public class Client {
         String json=readFile(JSON_FILE);
         HttpRequest request=HttpRequest.newBuilder()
                 .uri(URI.create(ADDRESS))
-                .header()
+                .header(HEADER,)
                 .build();
 
 
