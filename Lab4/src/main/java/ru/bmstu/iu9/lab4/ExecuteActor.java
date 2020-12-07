@@ -51,6 +51,7 @@ public class ExecuteActor extends AbstractActor {
     private TestResult getTestResult(String code,String functionName,ArrayList<Integer> params,double expectedResult){
         try{
             double result=executeJSCode(code,functionName,params);
+            System.out.println(result);
             return getTestResult(expectedResult,result);
         }catch (ScriptException | NoSuchMethodException e){
             return new TestResult(TestResultStatus.FAILED,String.format("An exception occurred while testing:%s",e.getLocalizedMessage()));
