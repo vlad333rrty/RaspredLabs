@@ -27,7 +27,7 @@ public class Client {
         HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
 
-        request
+        
 
     }
 
