@@ -31,11 +31,13 @@ public class Client {
 
         System.out.println(response.body());
 
+        Thread.sleep(500);
+
         request=HttpRequest.newBuilder()
                 .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
-       // response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
+        response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.body());
     }
