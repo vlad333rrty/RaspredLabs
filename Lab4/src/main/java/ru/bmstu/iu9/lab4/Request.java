@@ -52,6 +52,7 @@ public class Request {
     public class Test{
         private static final String PARAMS ="params";
         private static final String EXPECTED_RESULT ="expectedResult";
+        private static final String TEST_NAME="testName"
 
         @JsonProperty(EXPECTED_RESULT)
         private int expectedResult;
