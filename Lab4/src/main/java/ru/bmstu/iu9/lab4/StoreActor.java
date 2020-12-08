@@ -3,6 +3,8 @@ package ru.bmstu.iu9.lab4;
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
+import ru.bmstu.iu9.lab4.data.ResultsPackage;
+import ru.bmstu.iu9.lab4.data.TestResult;
 
 import java.util.ArrayList;
 import java.util.List;

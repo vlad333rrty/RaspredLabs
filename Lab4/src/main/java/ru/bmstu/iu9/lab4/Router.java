@@ -7,6 +7,7 @@ import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
+import ru.bmstu.iu9.lab4.data.Request;
 import scala.concurrent.Future;
 
 import static akka.http.javadsl.server.Directives.*;

@@ -1,4 +1,4 @@
-package ru.bmstu.iu9.lab4;
+package ru.bmstu.iu9.lab4.data;
 
 import java.util.List;
 

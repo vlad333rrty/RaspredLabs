@@ -3,6 +3,7 @@ package ru.bmstu.iu9.lab4;
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
+import ru.bmstu.iu9.lab4.data.*;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
@@ -18,7 +19,7 @@ public class ExecuteActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(Request.class,request -> {
+                .match(Request.class, request -> {
                     ArrayList<TestResult> results=new ArrayList<>();
                     for (Test test:request.getTests()){
                         results.add(getTestResult(request.getCode(),request.getFunctionName(),
