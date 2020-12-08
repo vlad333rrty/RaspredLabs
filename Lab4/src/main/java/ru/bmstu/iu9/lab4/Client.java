@@ -33,7 +33,7 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(data))
                 .build();
-        Thread.sleep(200);
+        waitForResponse();
         return client.send(request,HttpResponse.BodyHandlers.ofString());
     }
 
@@ -42,8 +42,14 @@ public class Client {
                 .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
+        waitForResponse();
         return client.send(request,HttpResponse.BodyHandlers.ofString());
     }
+
+    private static void waitForResponse() throws InterruptedException {
+        Thread.sleep(200);
+    }
+
     private static String readFile(String fileName) throws IOException {
         try(BufferedReader reader=new BufferedReader(new FileReader(fileName))){
             StringBuilder builder=new StringBuilder();
