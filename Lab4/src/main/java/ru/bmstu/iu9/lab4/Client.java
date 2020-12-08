@@ -1,8 +1,5 @@
 package ru.bmstu.iu9.lab4;
 
-
-import akka.http.javadsl.model.Uri;
-
 import java.io.*;
 import java.net.URI;
 import  java.net.http.HttpClient;
