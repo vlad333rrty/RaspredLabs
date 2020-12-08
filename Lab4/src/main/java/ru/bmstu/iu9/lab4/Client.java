@@ -21,8 +21,6 @@ public class Client {
         response=post(client,json);
         System.out.println(response.body());
 
-        Thread.sleep(500);
-
         response=get(client);
         System.out.println(response.body());
     }
