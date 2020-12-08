@@ -33,7 +33,7 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(data))
                 .build();
-        waitForResponse();
+        waitForRequestProcessing();
         return client.send(request,HttpResponse.BodyHandlers.ofString());
     }
 
@@ -42,11 +42,11 @@ public class Client {
                 .uri(URI.create(GET_REQUEST))
                 .GET()
                 .build();
-        waitForResponse();
+        waitForRequestProcessing();
         return client.send(request,HttpResponse.BodyHandlers.ofString());
     }
 
-    private static void waitForResponse() throws InterruptedException {
+    private static void waitForRequestProcessing() throws InterruptedException {
         Thread.sleep(200);
     }
 
