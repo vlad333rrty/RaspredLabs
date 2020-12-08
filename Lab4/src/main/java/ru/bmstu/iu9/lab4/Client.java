@@ -14,31 +14,35 @@ public class Client {
     private static final String GET_REQUEST=ADDRESS+"/?packageId=11";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        HttpClient httpClient=HttpClient.newHttpClient();
+        HttpClient client=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
-        HttpRequest request=HttpRequest.newBuilder()
-                .uri(URI.create(ADDRESS))
-                .header(HEADER,VALUE)
-                .POST(HttpRequest.BodyPublishers.ofString(json))
-                .build();
-
-        Thread.sleep(200);
-
-        HttpResponse<String> response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-
+        HttpResponse<String> response;
+        
+        response=post(client,json);
         System.out.println(response.body());
 
         Thread.sleep(500);
 
-        request=HttpRequest.newBuilder()
-                .uri(URI.create(GET_REQUEST))
-                .GET()
-                .build();
-        response=httpClient.send(request,HttpResponse.BodyHandlers.ofString());
-
+        response=get(client);
         System.out.println(response.body());
     }
 
+    private static HttpResponse<String> post(HttpClient client,String data) throws IOException, InterruptedException {
+        HttpRequest request=HttpRequest.newBuilder()
+                .uri(URI.create(ADDRESS))
+                .header(HEADER,VALUE)
+                .POST(HttpRequest.BodyPublishers.ofString(data))
+                .build();
+        return client.send(request,HttpResponse.BodyHandlers.ofString());
+    }
+
+    private static HttpResponse<String> get(HttpClient client) throws IOException, InterruptedException {
+        HttpRequest request=HttpRequest.newBuilder()
+                .uri(URI.create(GET_REQUEST))
+                .GET()
+                .build();
+        return client.send(request,HttpResponse.BodyHandlers.ofString());
+    }
     private static String readFile(String fileName) throws IOException {
         try(BufferedReader reader=new BufferedReader(new FileReader(fileName))){
             StringBuilder builder=new StringBuilder();
