@@ -3,8 +3,8 @@ package ru.bmstu.iu9.lab4;
 import java.util.List;
 
 public class ResultsPackage {
-    private List<TestResult> results;
-    private int packageId;
+    private final List<TestResult> results;
+    private final int packageId;
 
     public ResultsPackage(List<TestResult> results, int packageId) {
         this.results = results;

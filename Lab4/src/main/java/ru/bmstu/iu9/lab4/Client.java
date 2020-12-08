@@ -12,6 +12,7 @@ public class Client {
     private static final String HEADER="Content-type";
     private static final String VALUE="application/json";
     private static final String GET_REQUEST=ADDRESS+"/?packageId=11";
+    private static final int TIME_TO_WAIT_MILLIS=200;
 
     public static void main(String[] args) throws IOException, InterruptedException {
         HttpClient client=HttpClient.newHttpClient();
@@ -45,7 +46,7 @@ public class Client {
     }
 
     private static void waitForRequestProcessing() throws InterruptedException {
-        Thread.sleep(200);
+        Thread.sleep(TIME_TO_WAIT_MILLIS);
     }
 
     private static String readFile(String fileName) throws IOException {

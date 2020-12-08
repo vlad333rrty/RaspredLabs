@@ -3,7 +3,6 @@ package ru.bmstu.iu9.lab4;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Request {
@@ -13,16 +12,16 @@ public class Request {
     private static final String TESTS ="tests";
 
     @JsonProperty(PACKAGE_ID)
-    private int packageId;
+    private final int packageId;
 
     @JsonProperty(JS_SCRIPT)
-    private String code;
+    private final String code;
 
     @JsonProperty(FUNCTION_NAME)
-    private String functionName;
+    private final String functionName;
 
     @JsonProperty(TESTS)
-    private ArrayList<Test> tests;
+    private final ArrayList<Test> tests;
 
     @JsonCreator
     public Request(@JsonProperty(PACKAGE_ID) int packageId,
@@ -47,7 +46,7 @@ public class Request {
         return code;
     }
 
-    public ArrayList<Test> getTests() throws IOException {
+    public ArrayList<Test> getTests() {
         return tests;
     }
 }

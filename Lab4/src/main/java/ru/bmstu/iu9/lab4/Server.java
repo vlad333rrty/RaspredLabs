@@ -1,8 +1,6 @@
 package ru.bmstu.iu9.lab4;
 
 import akka.NotUsed;
-import akka.actor.AbstractActor;
-import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.http.javadsl.ConnectHttp;
 import akka.http.javadsl.Http;
