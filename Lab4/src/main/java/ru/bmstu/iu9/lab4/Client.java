@@ -17,7 +17,7 @@ public class Client {
         HttpClient client=HttpClient.newHttpClient();
         String json=readFile(JSON_FILE);
         HttpResponse<String> response;
-        
+
         response=post(client,json);
         System.out.println(response.body());
 
@@ -33,6 +33,7 @@ public class Client {
                 .header(HEADER,VALUE)
                 .POST(HttpRequest.BodyPublishers.ofString(data))
                 .build();
+        Thread.sleep(200);
         return client.send(request,HttpResponse.BodyHandlers.ofString());
     }
 
