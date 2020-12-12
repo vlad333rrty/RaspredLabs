@@ -79,19 +79,11 @@
             <version>${akka-http.version}</version>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.asynchttpclient</groupId>
-                <artifactId>async-http-client-bom</artifactId>
-                <version>LATEST_VERSION</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.asynchttpclient</groupId>
-                <artifactId>async-http-client</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <dependency>
+        <groupId>org.asynchttpclient</groupId>
+        <artifactId>async-http-client-bom</artifactId>
+        <version>LATEST_VERSION</version>
+        <type>pom</type>
+        <scope>import</scope>
+    </dependency>
 </project>
