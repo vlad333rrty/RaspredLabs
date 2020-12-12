@@ -9,11 +9,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class StoreActor extends AbstractActor {
     private final Map<String,Integer> URLtoInt=new ConcurrentHashMap<>();
 
+    private 
+
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(String.class,url->{
-                    
+
                 })
                 .build();
     }
