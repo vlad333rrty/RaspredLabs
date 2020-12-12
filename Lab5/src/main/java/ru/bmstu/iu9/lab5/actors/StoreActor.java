@@ -5,7 +5,7 @@ import akka.actor.AbstractActor;
 import java.util.Map;
 
 public class StoreActor extends AbstractActor {
-    private final Map<String,Integer> 
+    private final Map<String,Integer>   
 
 
     @Override
