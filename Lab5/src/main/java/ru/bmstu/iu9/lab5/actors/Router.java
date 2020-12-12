@@ -43,7 +43,9 @@ public class Router{
 
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Source.from(Collections.singletonList(request))
+
+                    
+                    return Source.from(Collections.singletonList(request))
                             .toMat(testSink, Keep.right()).run(materializer);
                 })
     }
