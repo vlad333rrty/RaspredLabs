@@ -31,6 +31,7 @@ public class Router{
     private static final String TEST_URL="testUrl";
     private static final String REQUEST_NUMBER="count";
     private static final int POOL_NUMBER=10;
+    private static final int TIMEOUT_MILLIS=1000;
 
     private final ActorRef storeActor;
 
@@ -54,7 +55,8 @@ public class Router{
                 .mapAsync(POOL_NUMBER,request->{
                     Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
                             Integer.parseInt(request.second()));
-                    Future future=Patterns.ask(storeActor,r);
+                    Future future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
+                    
                     return Source.from(Collections.singletonList(request))
                             .toMat(testSink, Keep.right()).run(materializer);
                 })
