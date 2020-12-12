@@ -19,11 +19,9 @@ public class Router{
     private static final int TIMEOUT_MILLIS=1000;
 
     private final ActorRef storeActor;
-    private final ActorRef executeActor;
 
     public Router(ActorSystem system){
        storeActor=null;
-       executeActor=null;
     }
 
     public Route createRoute(){
