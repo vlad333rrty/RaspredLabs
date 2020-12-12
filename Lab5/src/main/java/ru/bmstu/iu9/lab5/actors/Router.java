@@ -20,10 +20,6 @@ import static akka.http.javadsl.server.Directives.*;
 
 public class Router{
     private static final String STORE_ACTOR_NAME = "store";
-    private static final String EXECUTE_ACTOR_NAME="execute";
-    private static final String GET_PARAMETER="packageId";
-    private static final int POOL_NUMBER=10;
-    private static final int TIMEOUT_MILLIS=1000;
 
     private final ActorRef storeActor;
 
