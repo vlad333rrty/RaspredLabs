@@ -3,7 +3,7 @@ package ru.bmstu.iu9.lab5.actors;
 import akka.actor.AbstractActor;
 
 public class StoreActor extends AbstractActor {
-    private final Map<>
+    private final Map<String,>
 
 
     @Override
