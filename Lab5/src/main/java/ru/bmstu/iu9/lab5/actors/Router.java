@@ -55,8 +55,10 @@ public class Router{
                 .mapAsync(POOL_NUMBER,request->{
                     Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
                             Integer.parseInt(request.second()));
-                    Future future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
-                    
+                    Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
+                    if (future==null){
+                        
+                    }
                     return Source.from(Collections.singletonList(request))
                             .toMat(testSink, Keep.right()).run(materializer);
                 })
