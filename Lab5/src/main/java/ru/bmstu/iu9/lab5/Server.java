@@ -29,8 +29,8 @@ public class Server {
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
                 ConnectHttp.toHost(HOST, PORT),
-                materializer);
-
+                materializer
+        );
         System.in.read();
 
         binding.thenCompose(ServerBinding::unbind).thenAccept(unbound -> system.terminate());
