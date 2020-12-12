@@ -24,6 +24,7 @@ import scala.sys.Prop;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.concurrent.CompletionStage;
 
 import static akka.http.javadsl.server.Directives.*;
 
@@ -58,7 +59,7 @@ public class Router{
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
-                    Sink<Pair<Sitrn,String>>
+                    Sink<Pair<String,String>, CompletionStage>
                 })
     }
 }
