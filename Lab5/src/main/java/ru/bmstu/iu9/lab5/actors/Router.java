@@ -43,6 +43,8 @@ public class Router{
         return Flow.of(HttpRequest.class)
                 .map(request->{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
+                    String param=paramToValue.get(TEST_URL);
+                    String value=paramToValue.get(REQUEST_NUMBER);
                     
                 })
                 .mapAsync(POOL_NUMBER,request->{
