@@ -22,7 +22,7 @@ public class Router{
     private final ActorRef storeActor;
 
     public Router(ActorSystem system){
-       storeActor=system.actorOf(Props.create())
+       storeActor=system.actorOf(Props.create(StoreActor.class),STORE_ACTOR_NAME);
     }
 
     public Route createRoute(){
