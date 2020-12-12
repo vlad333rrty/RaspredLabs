@@ -28,7 +28,8 @@ public class Server {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = router.createRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost(HOST, PORT),materializer);
+                ConnectHttp.toHost(HOST, PORT),
+                materializer);
 
         System.in.read();
 
