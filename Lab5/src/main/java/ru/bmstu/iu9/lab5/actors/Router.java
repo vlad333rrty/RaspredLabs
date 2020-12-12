@@ -1,12 +1,16 @@
 package ru.bmstu.iu9.lab5.actors;
 
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.marshallers.jackson.Jackson;
+import akka.http.javadsl.model.HttpRequest;
+import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
+import akka.stream.javadsl.Flow;
 import scala.concurrent.Future;
 import scala.sys.Prop;
 
@@ -27,5 +31,9 @@ public class Router{
 
     public Route createRoute(){
         return null;
+    }
+
+    public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(){
+        
     }
 }
