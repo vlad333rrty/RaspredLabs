@@ -8,6 +8,7 @@ import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
 import scala.concurrent.Future;
+import scala.sys.Prop;
 
 import static akka.http.javadsl.server.Directives.*;
 
@@ -21,7 +22,7 @@ public class Router{
     private final ActorRef storeActor;
 
     public Router(ActorSystem system){
-       storeActor=Props.create(StoreActor.class);
+       storeActor=system.actorOf(Props.create())
     }
 
     public Route createRoute(){
