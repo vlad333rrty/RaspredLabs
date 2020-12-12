@@ -27,11 +27,9 @@ public class StoreActor extends AbstractActor {
                     if (request.getType().equals(RequestType.GET_RESULT)){
                         sender().tell();
                     }else if (request.getType().equals(RequestType.ADD_RESULT)){
-                        addResult(request.getUrl(),request.getResult());
+                        addResult(request.getId(),request.getResult());
                     }
                 })
                 .build();
     }
-
-
 }

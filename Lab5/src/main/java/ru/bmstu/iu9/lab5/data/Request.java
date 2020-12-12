@@ -2,12 +2,12 @@ package ru.bmstu.iu9.lab5.data;
 
 public class Request {
     private final RequestType type;
-    private final String url;
+    private final String id;
     private final double result;
 
-    public Request(RequestType type, String url, double result){
+    public Request(RequestType type, String id, double result){
         this.type=type;
-        this.url = url;
+        this.id = id;
         this.result = result;
     }
 
@@ -15,8 +15,8 @@ public class Request {
         return type;
     }
 
-    public String getUrl() {
-        return url;
+    public String getId() {
+        return id;
     }
 
     public double getResult() {
