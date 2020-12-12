@@ -11,13 +11,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class StoreActor extends AbstractActor {
 
-    private final Map<String,Double> URLtoTime=new ConcurrentHashMap<>();
+    private final Map<String,Long> URLtoTime=new ConcurrentHashMap<>();
 
-    private double getResult(String value){
+    private long getResult(String value){
         return URLtoTime.get(value);
     }
 
-    private void addResult(String value,double result){
+    private void addResult(String value,long result){
         URLtoTime.put(value,result);
     }
 

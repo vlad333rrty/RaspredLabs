@@ -59,12 +59,14 @@ public class Router{
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
-                    Sink<Pair<String,String>,CompletionStage<Long>> fold=Sink.fold(0,
-                            (agg,next)-> agg+System.currentTimeMillis()-Integer.parseInt(next.second()))
+                    System.out.println(future.value().get().get());
+
+                    Sink<Pair<String,String>,CompletionStage<Long>> fold=Sink.fold(0L,
+                            (agg,next)-> agg+System.currentTimeMillis()-Integer.parseInt(next.second()));
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
-                            <Pair<String,String>>create()
-                            .con
+                            <Pair<String,String>>create();
+
 
                 })
     }

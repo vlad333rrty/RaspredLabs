@@ -3,9 +3,9 @@ package ru.bmstu.iu9.lab5.data;
 public class Request {
     private final RequestType type;
     private final String id;
-    private final double result;
+    private final long result;
 
-    public Request(RequestType type, String id, double result){
+    public Request(RequestType type, String id, long result){
         this.type=type;
         this.id = id;
         this.result = result;
@@ -19,7 +19,7 @@ public class Request {
         return id;
     }
 
-    public double getResult() {
+    public long getResult() {
         return result;
     }
 }
