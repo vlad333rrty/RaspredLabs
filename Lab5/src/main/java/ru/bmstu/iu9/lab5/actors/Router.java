@@ -34,6 +34,7 @@ public class Router{
     }
 
     public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(){
-        return Flow.of(HttpRequest.class).map()
+        return Flow.of(HttpRequest.class)
+                .map()
     }
 }
