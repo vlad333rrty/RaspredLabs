@@ -67,7 +67,7 @@ public class Router{
                     Sink<Pair<String,Integer>, CompletionStage<Long>> testSink=Flow.
                             <Pair<String,Integer>>create()
                             .mapConcat(pair-> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
-                            .mapAsync()
+                            .map()
 
 
 
