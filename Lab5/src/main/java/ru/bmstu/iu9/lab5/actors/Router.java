@@ -59,7 +59,7 @@ public class Router{
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
-                    Sink<Pair<HttpRequest>>
+                    Sink<Pair<>>
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
                             <Pair<String,String>>create()
