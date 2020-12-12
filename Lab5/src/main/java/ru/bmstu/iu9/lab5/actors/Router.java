@@ -47,7 +47,7 @@ public class Router{
                     String param=paramToValue.get(TEST_URL);
                     String value=paramToValue.get(REQUEST_NUMBER);
 
-                    return new Pair<String,String>(param,value);
+                    return new Pair<>(param, value);
                 })
                 .mapAsync(POOL_NUMBER,request->{
 
