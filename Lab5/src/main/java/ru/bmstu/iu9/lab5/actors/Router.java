@@ -64,9 +64,9 @@ public class Router{
                     Sink<Pair<String,Integer>,CompletionStage<Long>> fold=Sink.fold(0L,
                             (agg,next)-> agg+System.currentTimeMillis()-next.second());
 
-                    Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
+                    Sink<Pair<String,Integer>, CompletionStage<Long>> testSink=Flow.
                             <Pair<String,String>>create()
-                            
+
 
 
                 })
