@@ -89,5 +89,11 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
+        <dependencies>
+            <dependency>
+                <groupId>org.asynchttpclient</groupId>
+                <artifactId>async-http-client</artifactId>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 </project>
