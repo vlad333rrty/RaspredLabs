@@ -66,6 +66,7 @@ public class Router{
 
                     Sink<Pair<String,Integer>, CompletionStage<Long>> testSink=Flow.
                             <Pair<String,String>>create()
+                            .mapConcat()
 
 
 
