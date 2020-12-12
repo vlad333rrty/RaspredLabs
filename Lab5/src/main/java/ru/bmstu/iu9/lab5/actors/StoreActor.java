@@ -25,7 +25,7 @@ public class StoreActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(Request.class, request->{
                     if (request.getType().equals(RequestType.GET_RESULT)){
-                        getContext().actorSelection()
+                        sender().tell();
                     }else if (request.getType().equals(RequestType.ADD_RESULT)){
                         addResult(request.getUrl(),request.getResult());
                     }
