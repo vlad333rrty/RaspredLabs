@@ -21,7 +21,7 @@ public class Router{
     private final ActorRef storeActor;
 
     public Router(ActorSystem system){
-       storeActor=null;
+       storeActor=Props.create(StoreActor.class);
     }
 
     public Route createRoute(){
