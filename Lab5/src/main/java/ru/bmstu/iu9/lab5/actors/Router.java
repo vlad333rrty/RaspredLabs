@@ -38,7 +38,8 @@ public class Router{
     public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(){
         return Flow.of(HttpRequest.class)
                 .map(request->{
-                    Map<String,String> 
+                    Map<String,String> paramToValue=request.getUri().query().toMap();
+                    
                 })
     }
 }
