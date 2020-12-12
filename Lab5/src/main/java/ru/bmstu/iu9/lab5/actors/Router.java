@@ -44,10 +44,10 @@ public class Router{
         return Flow.of(HttpRequest.class)
                 .map(request->{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
-                    String param=paramToValue.get(TEST_URL);
-                    String value=paramToValue.get(REQUEST_NUMBER);
+                    String testUrl=paramToValue.get(TEST_URL);
+                    String count=paramToValue.get(REQUEST_NUMBER);
 
-                    return new Pair<>(param, value);
+                    return new Pair<>(testUrl, count);
                 })
                 .mapAsync(POOL_NUMBER,request->{
                     
