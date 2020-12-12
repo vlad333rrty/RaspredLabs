@@ -58,7 +58,7 @@ public class Router{
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
-                    Sink
+                    Sink<Pair<Sitrn,String>>
                 })
     }
 }
