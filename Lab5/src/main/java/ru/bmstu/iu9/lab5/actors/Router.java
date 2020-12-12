@@ -60,7 +60,6 @@ public class Router{
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.Pair<String,String>
-                            .create()
 
                 })
     }
