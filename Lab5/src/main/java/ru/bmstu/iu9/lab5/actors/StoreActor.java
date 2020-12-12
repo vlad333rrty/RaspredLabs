@@ -1,6 +1,7 @@
 package ru.bmstu.iu9.lab5.actors;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.japi.pf.ReceiveBuilder;
 import ru.bmstu.iu9.lab5.data.Request;
 import ru.bmstu.iu9.lab5.data.RequestType;
@@ -25,7 +26,7 @@ public class StoreActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(Request.class, request->{
                     if (request.getType().equals(RequestType.GET_RESULT)){
-                        sender().tell();
+                        sender().tell(getResult(request.getId()), ActorRef.noSender());
                     }else if (request.getType().equals(RequestType.ADD_RESULT)){
                         addResult(request.getId(),request.getResult());
                     }
