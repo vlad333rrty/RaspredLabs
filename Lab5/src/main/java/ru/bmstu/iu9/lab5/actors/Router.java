@@ -14,6 +14,8 @@ import akka.stream.javadsl.Flow;
 import scala.concurrent.Future;
 import scala.sys.Prop;
 
+import java.util.Map;
+
 import static akka.http.javadsl.server.Directives.*;
 
 public class Router{
@@ -36,7 +38,7 @@ public class Router{
     public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(){
         return Flow.of(HttpRequest.class)
                 .map(request->{
-                    
+                    Map<String,String> 
                 })
     }
 }
