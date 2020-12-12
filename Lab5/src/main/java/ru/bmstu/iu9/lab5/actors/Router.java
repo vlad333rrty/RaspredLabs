@@ -65,9 +65,9 @@ public class Router{
                             (agg,next)-> agg+System.currentTimeMillis()-next.second());
 
                     Sink<Pair<String,Integer>, CompletionStage<Long>> testSink=Flow.
-                            <Pair<String,String>>create()
+                            <Pair<String,Integer>>create()
                             .mapConcat(pair-> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
-                            
+
 
 
 
