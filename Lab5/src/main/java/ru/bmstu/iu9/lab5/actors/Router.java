@@ -51,18 +51,17 @@ public class Router{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
                     String testUrl=paramToValue.get(TEST_URL);
                     String count=paramToValue.get(REQUEST_NUMBER);
-
-                    return new Pair<>(testUrl, count);
+                    return new Pair<>(testUrl, Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
                     Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
-                            Integer.parseInt(request.second()));
+                            request.second());
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
                     System.out.println(future.value().get().get());
 
-                    Sink<Pair<String,String>,CompletionStage<Long>> fold=Sink.fold(0L,
-                            (agg,next)-> agg+System.currentTimeMillis()-Integer.parseInt(next.second()));
+                    Sink<Pair<String,Integer>,CompletionStage<Long>> fold=Sink.fold(0L,
+                            (agg,next)-> agg+System.currentTimeMillis()-next.second());
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
                             <Pair<String,String>>create();
