@@ -60,7 +60,7 @@ public class Router{
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
 
                     Sink<Pair<String,String>,CompletionStage<Long>> fold=Sink.fold(0,(agg,next)->{
-                        return 
+                        return agg+
                     })
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
