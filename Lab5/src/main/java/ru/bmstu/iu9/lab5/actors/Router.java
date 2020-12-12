@@ -15,6 +15,7 @@ import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import akka.stream.javadsl.Keep;
+import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
 import ru.bmstu.iu9.lab5.data.Request;
 import ru.bmstu.iu9.lab5.data.RequestType;
@@ -57,7 +58,7 @@ public class Router{
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
                     if (future.value()==null){
-                        
+                        Sink
 
                         return Source.from(Collections.singletonList(request))
                                 .toMat(testSink, Keep.right()).run(materializer);
