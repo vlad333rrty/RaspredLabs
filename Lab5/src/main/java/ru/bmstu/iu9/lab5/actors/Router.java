@@ -57,11 +57,8 @@ public class Router{
                     Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
                             Integer.parseInt(request.second()));
                     Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
-                    if (future.value()==null){
-                        
-                    }else{
-                        return completeOKWithFuture(future,Jackson.marshaller());
-                    }
+
+                    Sink
                 })
     }
 }
