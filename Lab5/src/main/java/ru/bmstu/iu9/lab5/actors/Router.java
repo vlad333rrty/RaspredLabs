@@ -16,6 +16,8 @@ import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Source;
+import ru.bmstu.iu9.lab5.data.Request;
+import ru.bmstu.iu9.lab5.data.RequestType;
 import scala.concurrent.Future;
 import scala.sys.Prop;
 
@@ -50,7 +52,9 @@ public class Router{
                     return new Pair<>(testUrl, count);
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    
+                    Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
+                            Integer.parseInt(request.second()));
+                    storeActor.tell();
                     return Source.from(Collections.singletonList(request))
                             .toMat(testSink, Keep.right()).run(materializer);
                 })
