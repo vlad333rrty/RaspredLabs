@@ -22,6 +22,7 @@ import ru.bmstu.iu9.lab5.data.RequestType;
 import scala.concurrent.Future;
 import scala.sys.Prop;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.CompletionStage;
@@ -65,7 +66,7 @@ public class Router{
 
                     Sink<Pair<String,String>, CompletionStage<Double>> testSink=Flow.
                             <Pair<String,String>>create()
-                            .mapConcat(param -> )
+                            .mapConcat(param -> new ArrayList<>())
 
 
                 })
