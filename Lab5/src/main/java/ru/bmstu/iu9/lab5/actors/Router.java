@@ -11,6 +11,7 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
+import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Source;
@@ -35,14 +36,14 @@ public class Router{
         return null;
     }
 
-    public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(Http http,ActorSystem system,){
+    public Flow<HttpRequest, HttpResponse, NotUsed> createFlow(Http http, ActorSystem system, ActorMaterializer materializer){
         return Flow.of(HttpRequest.class)
                 .map(request->{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
 
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Source.from(Collections.singletonList(r))
+                    Source.from(Collections.singletonList(request))
                             .toMat(testSink, Keep.right()).run(materializer);
                 })
     }
