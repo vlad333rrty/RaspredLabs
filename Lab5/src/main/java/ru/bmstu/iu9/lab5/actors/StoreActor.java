@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class StoreActor extends AbstractActor {
     private final Map<String,Integer> URLtoInt=new ConcurrentHashMap<>();
-    
+
     @Override
     public Receive createReceive() {
         return null;
