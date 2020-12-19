@@ -63,7 +63,7 @@ public class Router{
                             Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()), Duration.ofMillis(TIMEOUT_MILLIS));
                     future.thenCompose((res)->{
                        if (res!=null){
-                           return HttpResponse
+                           return HttpResponse.create().withEntity(res);
                        }
                     });
 
