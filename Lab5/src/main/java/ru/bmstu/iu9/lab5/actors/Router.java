@@ -73,6 +73,8 @@ public class Router{
                             .run(materializer)
                             .thenApply(average ->  average/request.second());
                 })
-                .map()
+                .map(result->{
+                    
+                })
     }
 }
