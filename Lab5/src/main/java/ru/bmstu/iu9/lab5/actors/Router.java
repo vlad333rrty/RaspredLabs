@@ -53,7 +53,7 @@ public class Router{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
                     String testUrl=paramToValue.get(TEST_URL);
                     String count=paramToValue.get(REQUEST_NUMBER);
-                    return new Pair<>(HttpRequest.create(), Integer.parseInt(count));
+                    return new Pair<>(HttpRequest.create(testUrl), Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
                     Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
