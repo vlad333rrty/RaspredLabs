@@ -7,6 +7,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 
 public class Client {
+    private static final String ADDRESS ="http://127.0.0.1:8080";
     public static void main(String[] args) {
         HttpClient client= HttpClient.newHttpClient();
 
