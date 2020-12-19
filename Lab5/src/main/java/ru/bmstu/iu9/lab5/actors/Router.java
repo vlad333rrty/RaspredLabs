@@ -62,7 +62,9 @@ public class Router{
                     CompletionStage<Object> future=
                             Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()), Duration.ofMillis(TIMEOUT_MILLIS));
                     future.thenCompose((res)->{
-                        
+                       if (res!=null){
+                           return HttpResponse
+                       }
                     });
 
 
