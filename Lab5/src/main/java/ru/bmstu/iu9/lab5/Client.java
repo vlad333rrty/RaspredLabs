@@ -1,9 +1,12 @@
 package ru.bmstu.iu9.lab5;
 
+import akka.http.javadsl.Http;
+
 import java.net.http.HttpClient;
 
 public class Client {
     public static void main(String[] args) {
-        HttpClient client=
+        HttpClient client= HttpClient.newHttpClient();
+        
     }
 }
