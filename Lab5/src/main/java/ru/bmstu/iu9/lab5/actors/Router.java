@@ -72,7 +72,7 @@ public class Router{
                             .mapConcat(pair-> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
                             .map(pair->{
                                 new Pair<>(pair.first(),System.currentTimeMillis());
-                            }).via(client).toMat()
+                            }).via(client).toMat(fold,)
                 })
     }
 }
