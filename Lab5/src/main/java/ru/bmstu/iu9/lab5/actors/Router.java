@@ -61,7 +61,9 @@ public class Router{
                 .mapAsync(POOL_NUMBER,request->{
                     CompletionStage<Object> future=
                             Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()), Duration.ofMillis(TIMEOUT_MILLIS));
-                    
+                    future.thenCompose((res)->{
+                        
+                    });
 
 
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
