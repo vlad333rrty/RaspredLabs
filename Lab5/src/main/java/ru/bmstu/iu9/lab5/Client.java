@@ -14,6 +14,7 @@ public class Client {
 
         HttpRequest request=HttpRequest.newBuilder()
                 .uri(URI.create(GET_REQUEST))
+                .header()
                 .build();
     }
 }
