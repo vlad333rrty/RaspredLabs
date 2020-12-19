@@ -10,6 +10,7 @@ public class Client {
         HttpClient client= HttpClient.newHttpClient();
 
         HttpRequest request=HttpRequest.newBuilder()
+                .uri()
                 .build();
     }
 }
