@@ -68,7 +68,9 @@ public class Router{
                             .map(pair -> new Pair<>(pair.first(),System.currentTimeMillis()))
                             .via(client)
                             .toMat(fold,Keep.right());
-                    return Source.from(Collections.singleton(request)).toMat(testSink,)
+                    return Source.from(Collections.singleton(request))
+                            .toMat(testSink,Keep.right())
+                            
                 })
     }
 }
