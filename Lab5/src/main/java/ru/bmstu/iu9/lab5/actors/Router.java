@@ -72,6 +72,6 @@ public class Router{
                             .toMat(testSink,Keep.right())
                             .run(materializer)
                             .thenApply(average ->  average/request.second());
-                })
+                }).mapAsync()
     }
 }
