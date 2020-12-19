@@ -24,6 +24,7 @@ import scala.sys.Prop;
 import scala.util.Try;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.CompletionStage;
@@ -67,7 +68,7 @@ public class Router{
                             .map(pair -> new Pair<>(pair.first(),System.currentTimeMillis()))
                             .via(client)
                             .toMat(fold,Keep.right());
-                    return Source.from()
+                    return Source.from(Collections.singleton(request))
                 })
     }
 }
