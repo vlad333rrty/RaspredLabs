@@ -59,7 +59,7 @@ public class Router{
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
                     Sink<Pair<Try<HttpResponse>,Long>,CompletionStage<Long>> fold=
-                            Sink.fold(0L, (agg,next)->agg-next+System.currentTimeMillis());
+                            Sink.fold(0L, (agg,next)->agg;
 
                     Sink<Pair<HttpRequest,Integer>,CompletionStage<Long>> testSink= Flow
                             .<Pair<HttpRequest, Integer>>create()
