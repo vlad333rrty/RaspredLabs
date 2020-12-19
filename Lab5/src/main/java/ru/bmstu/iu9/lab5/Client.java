@@ -2,6 +2,7 @@ package ru.bmstu.iu9.lab5;
 
 import akka.http.javadsl.Http;
 
+import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 
@@ -10,7 +11,7 @@ public class Client {
         HttpClient client= HttpClient.newHttpClient();
 
         HttpRequest request=HttpRequest.newBuilder()
-                .uri()
+                .uri(URI.create())
                 .build();
     }
 }
