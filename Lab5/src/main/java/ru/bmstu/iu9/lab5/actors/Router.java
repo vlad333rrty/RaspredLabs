@@ -60,6 +60,7 @@ public class Router{
                     Sink<Pair<HttpRequest,Integer>,CompletionStage<Long>> testSink= Flow
                             .<Pair<HttpRequest, Integer>>create()
                             .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
+                            .map()
                 })
     }
 }
