@@ -20,6 +20,7 @@ import akka.stream.javadsl.Source;
 import ru.bmstu.iu9.lab5.data.Request;
 import ru.bmstu.iu9.lab5.data.RequestType;
 import scala.concurrent.Future;
+import scala.concurrent.Future$;
 import scala.sys.Prop;
 import scala.util.Try;
 
@@ -57,7 +58,8 @@ public class Router{
                     return new Pair<>(testUrl, Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    CompletionStage<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()),TIMEOUT_MILLIS);
+                    Future<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()),TIMEOUT_MILLIS);
+                    
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
                     Sink<Pair<Try<HttpResponse>,Long>,CompletionStage<Long>> fold=
