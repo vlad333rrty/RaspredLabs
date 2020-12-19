@@ -56,7 +56,7 @@ public class Router{
                     return new Pair<>(HttpRequest.create(testUrl), Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Flow
+                    Flow<Pair<HttpRequest>>
                 })
     }
 }
