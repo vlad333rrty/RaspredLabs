@@ -54,10 +54,10 @@ public class Router{
                     Map<String,String> paramToValue=request.getUri().query().toMap();
                     String testUrl=paramToValue.get(TEST_URL);
                     String count=paramToValue.get(REQUEST_NUMBER);
-                    return new Pair<>(HttpRequest.create(testUrl), Integer.parseInt(count));
+                    return new Pair<>(testUrl, Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    CompletionStage<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,))
+                    CompletionStage<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()))
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
                     Sink<Pair<Try<HttpResponse>,Long>,CompletionStage<Long>> fold=
