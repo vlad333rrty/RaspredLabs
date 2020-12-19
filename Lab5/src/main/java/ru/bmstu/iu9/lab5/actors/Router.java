@@ -56,25 +56,7 @@ public class Router{
                     return new Pair<>(HttpRequest.create(testUrl), Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Request r=new Request(RequestType.GET_RESULT,request.first()+request.second(),
-                            request.second());
-                    Future<Object> future=Patterns.ask(storeActor,r,TIMEOUT_MILLIS);
-
-                    System.out.println(future.value().get().get());
-
-                    Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
-
-                    Sink<Pair<String,Integer>,CompletionStage<Long>> fold=Sink.fold(0L,
-                            (agg,next)-> agg+System.currentTimeMillis()-next.second());
-
-                    Sink<Pair<String,Integer>, CompletionStage<Long>> testSink=Flow.
-                            <Pair<String,Integer>>create()
-                            .mapConcat(pair-> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
-                            .map(pair->
-                                new Pair<>(pair.first(),System.currentTimeMillis())
-                            )
-                            .via(client)
-                            .toMat(fold,Keep.right());
+                    
                 })
     }
 }
