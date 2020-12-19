@@ -11,6 +11,12 @@ public class Request {
         this.result = result;
     }
 
+    public Request(RequestType type, String id){
+        this.type=type;
+        this.id = id;
+        this.result = 0;
+    }
+
     public RequestType getType() {
         return type;
     }
