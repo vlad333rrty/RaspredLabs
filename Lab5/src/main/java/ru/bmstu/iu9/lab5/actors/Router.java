@@ -71,10 +71,10 @@ public class Router{
                     return Source.from(Collections.singleton(request))
                             .toMat(testSink,Keep.right())
                             .run(materializer)
-                            .thenApply(average ->  new Pair(request.first(),average/));
+                            .thenApply(average ->  new Pair(request.first(),average/request.second()));
                 })
                 .map(result-> {
-                    storeActor.tell(new Request(RequestType.ADD_RESULT,resul));
+                    storeActor.tell(new Request(RequestType.ADD_RESULT, result.first(),result.second()));
                     return HttpResponse.create().withEntity(result.toString())
                 });
     }
