@@ -62,11 +62,10 @@ public class Router{
                     CompletionStage<Object> future=
                             Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()), Duration.ofMillis(TIMEOUT_MILLIS));
                     future.thenCompose((res)->{
-                       if (res!=null){
-                           return HttpResponse.create().withEntity(res);
+                       if (res!=null) {
+                           return HttpResponse.create().withEntity(res.toString());
                        }
                     });
-
 
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
@@ -75,8 +74,8 @@ public class Router{
 
                     Sink<Pair<HttpRequest,Integer>,CompletionStage<Long>> testSink= Flow
                             .<Pair<HttpRequest, Integer>>create()
-                            .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
-                            .map(pair -> new Pair<>(pair.first(),System.currentTimeMillis()))
+                            .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),HttpRequest.create(request.first()))))
+                            .map(pair -> new Pair<>(HttpRequest.create(request.first()),System.currentTimeMillis()))
                             .via(client)
                             .toMat(fold,Keep.right());
                     return Source.from(Collections.singleton(request))
