@@ -62,8 +62,7 @@ public class Router{
 
                     System.out.println(future.value().get().get());
 
-                    Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool()
-
+                    Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool();
 
                     Sink<Pair<String,Integer>,CompletionStage<Long>> fold=Sink.fold(0L,
                             (agg,next)-> agg+System.currentTimeMillis()-next.second());
@@ -73,7 +72,7 @@ public class Router{
                             .mapConcat(pair-> new ArrayList<>(Collections.nCopies(pair.second(),pair)))
                             .map(pair->{
                                 new Pair<>(pair.first(),System.currentTimeMillis());
-                            }).via()
+                            }).via(client)
                 })
     }
 }
