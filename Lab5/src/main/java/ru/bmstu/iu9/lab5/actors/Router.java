@@ -75,7 +75,7 @@ public class Router{
                 })
                 .map(result-> {
                     storeActor.tell(new Request(RequestType.ADD_RESULT, result.first().toString(),(long)result.second()),ActorRef.noSender());
-                    return HttpResponse.create().withEntity(result.toString())
+                    return HttpResponse.create().withEntity(result.toString());
                 });
     }
 }
