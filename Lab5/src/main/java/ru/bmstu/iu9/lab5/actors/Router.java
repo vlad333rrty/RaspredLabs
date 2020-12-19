@@ -24,6 +24,7 @@ import scala.concurrent.Future$;
 import scala.sys.Prop;
 import scala.util.Try;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -58,9 +59,9 @@ public class Router{
                     return new Pair<>(testUrl, Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Future<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()),TIMEOUT_MILLIS);
+                    CompletionStage<Object> future=Patterns.ask(storeActor,new Request(RequestType.GET_RESULT,request.first()), Duration.ofMillis(TIMEOUT_MILLIS));
 
-                    
+
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
                     Sink<Pair<Try<HttpResponse>,Long>,CompletionStage<Long>> fold=
