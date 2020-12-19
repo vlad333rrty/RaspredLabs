@@ -71,7 +71,7 @@ public class Router{
                     return Source.from(Collections.singleton(request))
                             .toMat(testSink,Keep.right())
                             .run(materializer)
-                            .thenApply(average ->  average)
+                            .thenApply(average ->  average/request.second());
                 })
     }
 }
