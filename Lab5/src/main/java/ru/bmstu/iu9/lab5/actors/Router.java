@@ -58,7 +58,7 @@ public class Router{
                 .mapAsync(POOL_NUMBER,request->{
                     Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
 
-                    var a=Sink.fold(0L, (agg,next)->agg-next+System.currentTimeMillis())
+                     a=Sink.fold(0L, (agg,next)->agg-next+System.currentTimeMillis())
 
                     Sink<Pair<HttpRequest,Integer>,CompletionStage<Long>> testSink= Flow
                             .<Pair<HttpRequest, Integer>>create()
