@@ -56,7 +56,8 @@ public class Router{
                     return new Pair<>(HttpRequest.create(testUrl), Integer.parseInt(count));
                 })
                 .mapAsync(POOL_NUMBER,request->{
-                    Flow<Pair<HttpRequest,Long>,Pair<Try<HttpRequest>>>
+                    Flow<Pair<HttpRequest,Long>,Pair<Try<HttpResponse>,Long>,NotUsed> client=http.superPool(materializer);
+                    
                 })
     }
 }
