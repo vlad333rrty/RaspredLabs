@@ -9,6 +9,6 @@ public class Client {
     public static void main(String[] args) {
         HttpClient client= HttpClient.newHttpClient();
 
-        HttpRequest request
+        HttpRequest request=HttpRequest
     }
 }
