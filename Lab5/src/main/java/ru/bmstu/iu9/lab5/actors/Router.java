@@ -73,6 +73,6 @@ public class Router{
                             .run(materializer)
                             .thenApply(average ->  average/request.second());
                 })
-                .map(result-> HttpResponse.create().withEntity())
+                .map(result-> HttpResponse.create().withEntity(result.toString()));
     }
 }
