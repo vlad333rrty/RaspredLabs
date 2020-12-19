@@ -74,7 +74,7 @@ public class Router{
                             .thenApply(average ->  average/request.second());
                 })
                 .map(result-> {
-                    storeActor.tell();
+                    storeActor.tell(new Request(RequestType.ADD_RESULT,resul));
                     return HttpResponse.create().withEntity(result.toString())
                 });
     }
