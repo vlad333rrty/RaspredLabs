@@ -73,7 +73,7 @@ public class Router{
                         Sink<Pair<HttpRequest,Integer>,CompletionStage<Long>> testSink= Flow
                                 .<Pair<HttpRequest, Integer>>create()
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),HttpRequest.create(request.first()))))
-                                .mapAsync()
+                                .mapAsync(res)
                 })
                 .map(result-> {
                     storeActor.tell(new Request(RequestType.ADD_RESULT, result.first().toString(),(long)result.second()),ActorRef.noSender());
