@@ -75,7 +75,7 @@ public class Router{
                                 .<Pair<HttpRequest, Integer>>create()
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),HttpRequest.create(request.first()))))
                                 .mapAsync(request.second(),(url)->{
-                                    Future<Response> responseFuture = 
+                                    Future<Response> response = 
                                 });
                     })
                 })
