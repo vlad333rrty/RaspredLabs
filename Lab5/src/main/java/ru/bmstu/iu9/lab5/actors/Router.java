@@ -81,7 +81,7 @@ public class Router{
                     return Source.from(Collections.singleton(request))
                             .toMat(testSink,Keep.right())
                             .run(materializer)
-                            .thenApply(average ->  new Pair(request.first(),average/request.second()));
+                            .thenApply(average ->  new Pair(request.first(),/request.second()));
                 })
                 .map(result-> {
                     storeActor.tell(new Request(RequestType.ADD_RESULT, result.first().toString(),(long)result.second()),ActorRef.noSender());
