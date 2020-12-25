@@ -75,7 +75,7 @@ public class Router{
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),HttpRequest.create(request.first()))))
                                 .mapAsync(request.second(),(url)->{
                                     
-                                })
+                                });
                     })
                 })
                 .map(result-> {
