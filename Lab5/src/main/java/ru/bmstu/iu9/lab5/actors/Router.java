@@ -17,6 +17,7 @@ import akka.stream.javadsl.Flow;
 import akka.stream.javadsl.Keep;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
+import org.asynchttpclient.Response;
 import ru.bmstu.iu9.lab5.data.Request;
 import ru.bmstu.iu9.lab5.data.RequestType;
 import scala.concurrent.Future;
@@ -74,7 +75,7 @@ public class Router{
                                 .<Pair<HttpRequest, Integer>>create()
                                 .mapConcat(pair -> new ArrayList<>(Collections.nCopies(pair.second(),HttpRequest.create(request.first()))))
                                 .mapAsync(request.second(),(url)->{
-                                    
+                                    Future<Response>
                                 });
                     })
                 })
